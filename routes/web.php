@@ -18,11 +18,7 @@ use App\Http\Controllers\ProfileController;
 
 Route::get('/', function () {
     // dd( Hash::make('123456789x') );
-    return view('welcome');
-});
-
-Route::get('/login', function () {
-    return redirect('/');
+    return redirect('/login');
 });
 
 
@@ -32,6 +28,7 @@ Route::get('/dashboard', function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('/mon_compte/dashboard_bank',[BankingController::class,'index'])->name('dashboard.ptang');
+    Route::get('/mon_compte/profile',[BankingController::class,'profile'])->name('dashboard.profile');
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');

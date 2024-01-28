@@ -19,19 +19,19 @@
                             Details</a></li>
                 </ul>
             </li>
-            <li><a class="ai-icon" href="javascript:void()" aria-expanded="false" href="poty/profile.html">
+            <li><a class="ai-icon"  href="{{ route('dashboard.profile') }}">
                 <i class="flaticon-381-user"></i>
                     <span class="nav-text">Profile</span>
                     </a>
             </li>
 
-            <li><a class="ai-icon" aria-expanded="false" href="poty/profile.html">
+            <li><a class="ai-icon"  href="{{ route('dashboard.profile') }}">
                 <i class="flaticon-381-list"></i>
                     <span class="nav-text">Portefueille</span>
                     </a>
             </li>
 
-            <li><a class="ai-icon" aria-expanded="false" href="poty/profile.html">
+            <li><a class="ai-icon"  href="{{ route('dashboard.profile') }}">
                 <i class="flaticon-381-list"></i>
                     <span class="nav-text">Transactions</span>
                     </a>

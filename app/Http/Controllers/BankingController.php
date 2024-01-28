@@ -27,4 +27,8 @@ class BankingController extends Controller
         ]);
 
     }
+
+    public function profile()  {
+        return view('bank.pages.profile');
+    }
 }
