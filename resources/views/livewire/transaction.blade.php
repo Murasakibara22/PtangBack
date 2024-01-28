@@ -1,6 +1,92 @@
 <div class="content-body">
     <!-- row -->
 	<div class="container-fluid">
+
+        <div class="row">
+            <div class="col-xl-3 col-lg-6 col-sm-6">
+				<div class="widget-stat card">
+					<div class="card-body p-4">
+						<div class="media ai-icon">
+							<span class="me-3 bgl-primary text-primary">
+								<!-- <i class="ti-user"></i> -->
+								<svg id="icon-customers" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+									<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+									<circle cx="12" cy="7" r="4"></circle>
+								</svg>
+							</span>
+							<div class="media-body">
+								<p class="mb-1">Total</p>
+								<h4 class="mb-0">3280</h4>
+								<span class="badge badge-primary">+3.5%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-sm-6">
+                <div class="widget-stat card">
+					<div class="card-body p-4">
+						<div class="media ai-icon">
+							<span class="me-3 bgl-warning text-warning">
+								<svg id="icon-orders" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+									<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+									<polyline points="14 2 14 8 20 8"></polyline>
+									<line x1="16" y1="13" x2="8" y2="13"></line>
+									<line x1="16" y1="17" x2="8" y2="17"></line>
+									<polyline points="10 9 9 9 8 9"></polyline>
+								</svg>
+							</span>
+							<div class="media-body">
+								<p class="mb-1">En cour</p>
+								<h4 class="mb-0">2570</h4>
+								<span class="badge badge-warning">+3.5%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-sm-6">
+                <div class="widget-stat card">
+					<div class="card-body  p-4">
+						<div class="media ai-icon">
+							<span class="me-3 bgl-danger text-danger">
+								<svg id="icon-revenue" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-dollar-sign">
+									<line x1="12" y1="1" x2="12" y2="23"></line>
+									<path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+								</svg>
+							</span>
+							<div class="media-body">
+								<p class="mb-1">Echouer</p>
+								<h4 class="mb-0">364.50K</h4>
+								<span class="badge badge-danger">-3.5%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="col-xl-3 col-lg-6 col-sm-6">
+                <div class="widget-stat card">
+					<div class="card-body p-4">
+						<div class="media ai-icon">
+							<span class="me-3 bgl-success text-success">
+								<svg id="icon-database-widget" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-database">
+									<ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+									<path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+									<path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+								</svg>
+							</span>
+							<div class="media-body">
+								<p class="mb-1">Réussite</p>
+								<h4 class="mb-0">364.50K</h4>
+								<span class="badge badge-success">-3.5%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+
+
 		<div class= "page-titles form-head d-flex flex-wrap justify-content-between align-items-center mb-4">
 			<h2 class="text-black font-w600 mb-0 me-auto mb-2 pe-3">Historiques des Transactions</h2>
 			<a href="javascript:void(0)" class="btn btn-primary btn-rounded me-3 " data-bs-toggle="modal" data-bs-target="#exampledownload">
@@ -38,194 +124,58 @@
 							</tr>
 						</thead>
 						<tbody>
-							<tr>
-								<td><span class="text-black font-w500">#123412451</span></td>
-								<td><span class="text-black text-nowrap">#June 1, 2020, 08:22 AM</span></td>
-								<td>
-									<div class="d-flex align-items-center">
-										<img src="https://mophy.dexignzone.com/codeigniter/demo/public/assets/images/avatar/11.png" alt="" class="rounded-circle me-3" width="50">
-										<div>
-											<h6 class="fs-16 font-w600 mb-0 text-nowrap"><a href="https://mophy.dexignzone.com/codeigniter/demo/admin/transactions_details" class="text-black">David Oconner</a></h6>
-										</div>
-									</div>
-								</td>
-								<td><span class="text-black fs-16 font-w600">$128.89</span></td>
-								<td>
-									<div class="text-black">
-										<span class="me-2 oi-icon bgl-success">
-											<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<g clip-path="url(#clip0)">
-												<path d="M11.4238 16.2304C11.2206 15.8106 11.4001 15.3027 11.8199 15.0996C12.9878 14.5376 13.9764 13.6642 14.6805 12.5707C15.4016 11.4501 15.7842 10.1501 15.7842 8.80952C15.7842 4.96369 12.6561 1.83556 8.81022 1.83556C4.96439 1.83556 1.83626 4.96369 1.83626 8.80952C1.83626 10.1501 2.21881 11.4501 2.93652 12.5741C3.6373 13.6676 4.62923 14.541 5.7972 15.103C6.21699 15.3061 6.39642 15.8106 6.19329 16.2337C5.99017 16.6535 5.48574 16.833 5.06256 16.6298C3.61022 15.9324 2.38131 14.8491 1.51126 13.4882C0.617512 12.0934 0.143554 10.4751 0.143554 8.80952C0.143554 6.49389 1.04408 4.31707 2.68262 2.68192C4.31777 1.04337 6.4946 0.142853 8.81022 0.142854C11.1258 0.142854 13.3027 1.04337 14.9378 2.68192C16.5764 4.32046 17.4769 6.4939 17.4769 8.80952C17.4769 10.4751 17.0029 12.0934 16.1058 13.4882C15.2324 14.8457 14.0034 15.9324 12.5545 16.6298C12.1313 16.8296 11.6269 16.6535 11.4238 16.2304Z" fill="#2BC155"/>
-												<path d="M12.1045 9.2598C12.2704 9.42569 12.3516 9.64235 12.3516 9.85902C12.3516 10.0757 12.2704 10.2924 12.1045 10.4582L9.97506 12.5877C9.66361 12.8991 9.25059 13.0684 8.81387 13.0684C8.37715 13.0684 7.96074 12.8957 7.65267 12.5877L5.52324 10.4582C5.19147 10.1265 5.19147 9.59157 5.52324 9.2598C5.85501 8.92803 6.38991 8.92803 6.72168 9.2598L7.9709 10.509L7.9709 5.69834C7.9709 5.23116 8.35007 4.85199 8.81725 4.85199C9.28444 4.85199 9.66361 5.23116 9.66361 5.69834L9.66361 10.5124L10.9128 9.26319C11.2378 8.93142 11.7727 8.93142 12.1045 9.2598Z" fill="#2BC155"/>
-												</g>
-												<defs>
-												<clipPath id="clip0">
-												<rect width="17.3333" height="17.3333" fill="white" transform="matrix(-9.93477e-08 1 1 9.93477e-08 0.143555 0.142853)"/>
-												</clipPath>
-												</defs>
-											</svg>
-										</span>
-										Outcome
-									</div>
-								</td>
-								<td><span class="text-black">Medan, <br>Sumut Indonesia</span></td>
-								<td><a href="javascript:void(0)" class="btn btn-sm btn-warning light">Pending</a></td>
-								<td>
-									<div class="dropdown mb-auto">
-										<div class="btn-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M10 11.9999C10 13.1045 10.8954 13.9999 12 13.9999C13.1046 13.9999 14 13.1045 14 11.9999C14 10.8954 13.1046 9.99994 12 9.99994C10.8954 9.99994 10 10.8954 10 11.9999Z" fill="black"></path>
-												<path d="M10 4.00006C10 5.10463 10.8954 6.00006 12 6.00006C13.1046 6.00006 14 5.10463 14 4.00006C14 2.89549 13.1046 2.00006 12 2.00006C10.8954 2.00006 10 2.89549 10 4.00006Z" fill="black"></path>
-												<path d="M10 20C10 21.1046 10.8954 22 12 22C13.1046 22 14 21.1046 14 20C14 18.8954 13.1046 18 12 18C10.8954 18 10 18.8954 10 20Z" fill="black"></path>
-											</svg>
-										</div>
-										<div class="dropdown-menu dropdown-menu-end">
-											<a class="dropdown-item" href="javascript:void(0)">Delete</a>
-											<a class="dropdown-item" href="javascript:void(0)">Edit</a>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><span class="text-black font-w500">#123412451</span></td>
-								<td><span class="text-black text-nowrap">#June 1, 2020, 08:22 AM</span></td>
-								<td>
-									<div class="d-flex align-items-center">
-										<img src="https://mophy.dexignzone.com/codeigniter/demo/public/assets/images/avatar/17.png" alt="" class="rounded-circle me-3" width="50">
-										<div>
-											<h6 class="fs-16 font-w600 mb-0 text-nowrap"><a href="https://mophy.dexignzone.com/codeigniter/demo/admin/transactions_details" class="text-black">Julia Esteh</a></h6>
-										</div>
-									</div>
-								</td>
-								<td><span class="text-black fs-16 font-w600">$128.89</span></td>
-								<td>
-									<div class="text-black">
-										<span class="me-2 oi-icon bgl-success">
-											<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<g clip-path="url(#clip2)">
-												<path d="M11.4238 16.2304C11.2206 15.8106 11.4001 15.3027 11.8199 15.0996C12.9878 14.5376 13.9764 13.6642 14.6805 12.5707C15.4016 11.4501 15.7842 10.1501 15.7842 8.80952C15.7842 4.96369 12.6561 1.83556 8.81022 1.83556C4.96439 1.83556 1.83626 4.96369 1.83626 8.80952C1.83626 10.1501 2.21881 11.4501 2.93652 12.5741C3.6373 13.6676 4.62923 14.541 5.7972 15.103C6.21699 15.3061 6.39642 15.8106 6.19329 16.2337C5.99017 16.6535 5.48574 16.833 5.06256 16.6298C3.61022 15.9324 2.38131 14.8491 1.51126 13.4882C0.617512 12.0934 0.143554 10.4751 0.143554 8.80952C0.143554 6.49389 1.04408 4.31707 2.68262 2.68192C4.31777 1.04337 6.4946 0.142853 8.81022 0.142854C11.1258 0.142854 13.3027 1.04337 14.9378 2.68192C16.5764 4.32046 17.4769 6.4939 17.4769 8.80952C17.4769 10.4751 17.0029 12.0934 16.1058 13.4882C15.2324 14.8457 14.0034 15.9324 12.5545 16.6298C12.1313 16.8296 11.6269 16.6535 11.4238 16.2304Z" fill="#2BC155"/>
-												<path d="M12.1045 9.2598C12.2704 9.42569 12.3516 9.64235 12.3516 9.85902C12.3516 10.0757 12.2704 10.2924 12.1045 10.4582L9.97506 12.5877C9.66361 12.8991 9.25059 13.0684 8.81387 13.0684C8.37715 13.0684 7.96074 12.8957 7.65267 12.5877L5.52324 10.4582C5.19147 10.1265 5.19147 9.59157 5.52324 9.2598C5.85501 8.92803 6.38991 8.92803 6.72168 9.2598L7.9709 10.509L7.9709 5.69834C7.9709 5.23116 8.35007 4.85199 8.81725 4.85199C9.28444 4.85199 9.66361 5.23116 9.66361 5.69834L9.66361 10.5124L10.9128 9.26319C11.2378 8.93142 11.7727 8.93142 12.1045 9.2598Z" fill="#2BC155"/>
-												</g>
-												<defs>
-												<clipPath id="clip2">
-												<rect width="17.3333" height="17.3333" fill="white" transform="matrix(-9.93477e-08 1 1 9.93477e-08 0.143555 0.142853)"/>
-												</clipPath>
-												</defs>
-											</svg>
-										</span>
-										Income
-									</div>
-								</td>
-								<td><span class="text-black">Bangladesh,<br>India</span></td>
-								<td><a href="javascript:void(0)" class="btn btn-sm btn-danger light">Canceled</a></td>
-								<td>
-									<div class="dropdown mb-auto">
-										<div class="btn-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M10 11.9999C10 13.1045 10.8954 13.9999 12 13.9999C13.1046 13.9999 14 13.1045 14 11.9999C14 10.8954 13.1046 9.99994 12 9.99994C10.8954 9.99994 10 10.8954 10 11.9999Z" fill="black"></path>
-												<path d="M10 4.00006C10 5.10463 10.8954 6.00006 12 6.00006C13.1046 6.00006 14 5.10463 14 4.00006C14 2.89549 13.1046 2.00006 12 2.00006C10.8954 2.00006 10 2.89549 10 4.00006Z" fill="black"></path>
-												<path d="M10 20C10 21.1046 10.8954 22 12 22C13.1046 22 14 21.1046 14 20C14 18.8954 13.1046 18 12 18C10.8954 18 10 18.8954 10 20Z" fill="black"></path>
-											</svg>
-										</div>
-										<div class="dropdown-menu dropdown-menu-end">
-											<a class="dropdown-item" href="javascript:void(0)">Delete</a>
-											<a class="dropdown-item" href="javascript:void(0)">Edit</a>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><span class="text-black font-w500">#123412451</span></td>
-								<td><span class="text-black text-nowrap">#June 1, 2020, 08:22 AM</span></td>
-								<td>
-									<div class="d-flex align-items-center">
-										<img src="https://mophy.dexignzone.com/codeigniter/demo/public/assets/images/avatar/25.png" alt="" class="rounded-circle me-3" width="50">
-										<div>
-											<h6 class="fs-16 font-w600 mb-0 text-nowrap"><a href="https://mophy.dexignzone.com/codeigniter/demo/admin/transactions_details" class="text-black">Clown Studio</a></h6>
-											<span class="fs-14">Freelancer</span>
-										</div>
-									</div>
-								</td>
-								<td><span class="text-black fs-16 font-w600">$560.67</span></td>
-								<td>
-									<div class="text-black">
-										<span class="me-2 oi-icon bgl-danger">
-											<svg width="18" height="18" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M6.57624 0.769646C6.77936 1.18944 6.59993 1.69725 6.18014 1.90038C5.01217 2.46236 4.02363 3.33579 3.31947 4.42928C2.59837 5.54986 2.21582 6.84986 2.21582 8.19048C2.21582 12.0363 5.34394 15.1644 9.18978 15.1644C13.0356 15.1644 16.1637 12.0363 16.1637 8.19048C16.1637 6.84986 15.7812 5.54985 15.0635 4.4259C14.3627 3.33241 13.3708 2.45897 12.2028 1.89699C11.783 1.69387 11.6036 1.18944 11.8067 0.766262C12.0098 0.34647 12.5143 0.167042 12.9374 0.370167C14.3898 1.06756 15.6187 2.1509 16.4887 3.51183C17.3825 4.90663 17.8564 6.52486 17.8564 8.19048C17.8564 10.5061 16.9559 12.6829 15.3174 14.3181C13.6822 15.9566 11.5054 16.8571 9.18978 16.8571C6.87415 16.8571 4.69733 15.9566 3.06217 14.3181C1.42363 12.6795 0.523111 10.5061 0.523111 8.19048C0.523111 6.52486 0.99707 4.90663 1.89421 3.51183C2.76764 2.15428 3.99655 1.06756 5.44551 0.370167C5.86868 0.170427 6.37311 0.34647 6.57624 0.769646Z" fill="#FF2E2E"/>
-												<path d="M5.89551 7.7402C5.72962 7.57431 5.64837 7.35765 5.64837 7.14098C5.64837 6.92431 5.72962 6.70765 5.89551 6.54176L8.02493 4.41233C8.33639 4.10088 8.74941 3.93161 9.18613 3.93161C9.62285 3.93161 10.0393 4.10426 10.3473 4.41233L12.4768 6.54176C12.8085 6.87353 12.8085 7.40843 12.4768 7.7402C12.145 8.07197 11.6101 8.07197 11.2783 7.7402L10.0291 6.49098L10.0291 11.3017C10.0291 11.7688 9.64993 12.148 9.18275 12.148C8.71556 12.148 8.33639 11.7688 8.33639 11.3017L8.33639 6.4876L7.08717 7.73681C6.76217 8.06858 6.22728 8.06858 5.89551 7.7402Z" fill="#FF2E2E"/>
-												</svg>
-
-										</span>
-										Outcome
-									</div>
-								</td>
-								<td><span class="text-black">London, <br>England</span></td>
-								<td><a href="javascript:void(0)" class="btn btn-sm btn-success light">Completed</a></td>
-								<td>
-									<div class="dropdown mb-auto">
-										<div class="btn-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M10 11.9999C10 13.1045 10.8954 13.9999 12 13.9999C13.1046 13.9999 14 13.1045 14 11.9999C14 10.8954 13.1046 9.99994 12 9.99994C10.8954 9.99994 10 10.8954 10 11.9999Z" fill="black"></path>
-												<path d="M10 4.00006C10 5.10463 10.8954 6.00006 12 6.00006C13.1046 6.00006 14 5.10463 14 4.00006C14 2.89549 13.1046 2.00006 12 2.00006C10.8954 2.00006 10 2.89549 10 4.00006Z" fill="black"></path>
-												<path d="M10 20C10 21.1046 10.8954 22 12 22C13.1046 22 14 21.1046 14 20C14 18.8954 13.1046 18 12 18C10.8954 18 10 18.8954 10 20Z" fill="black"></path>
-											</svg>
-										</div>
-										<div class="dropdown-menu dropdown-menu-end">
-											<a class="dropdown-item" href="javascript:void(0)">Delete</a>
-											<a class="dropdown-item" href="javascript:void(0)">Edit</a>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td><span class="text-black font-w500">#123412451</span></td>
-								<td><span class="text-black text-nowrap">#June 1, 2020, 08:22 AM</span></td>
-								<td>
-									<div class="d-flex align-items-center">
-										<img src="https://mophy.dexignzone.com/codeigniter/demo/public/assets/images/avatar/27.png" alt="" class="rounded-circle me-3" width="50">
-										<div>
-											<h6 class="fs-16 font-w600 mb-0 text-nowrap"><a href="https://mophy.dexignzone.com/codeigniter/demo/admin/transactions_details" class="text-black">Jeremy Tedy</a></h6>
-										</div>
-									</div>
-								</td>
-								<td><span class="text-black fs-16 font-w600">$783.22</span></td>
-								<td>
-									<div class="text-black">
-										<span class="me-2 oi-icon bgl-success">
-											<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<g clip-path="url(#clip6)">
-												<path d="M11.4238 16.2304C11.2206 15.8106 11.4001 15.3027 11.8199 15.0996C12.9878 14.5376 13.9764 13.6642 14.6805 12.5707C15.4016 11.4501 15.7842 10.1501 15.7842 8.80952C15.7842 4.96369 12.6561 1.83556 8.81022 1.83556C4.96439 1.83556 1.83626 4.96369 1.83626 8.80952C1.83626 10.1501 2.21881 11.4501 2.93652 12.5741C3.6373 13.6676 4.62923 14.541 5.7972 15.103C6.21699 15.3061 6.39642 15.8106 6.19329 16.2337C5.99017 16.6535 5.48574 16.833 5.06256 16.6298C3.61022 15.9324 2.38131 14.8491 1.51126 13.4882C0.617512 12.0934 0.143554 10.4751 0.143554 8.80952C0.143554 6.49389 1.04408 4.31707 2.68262 2.68192C4.31777 1.04337 6.4946 0.142853 8.81022 0.142854C11.1258 0.142854 13.3027 1.04337 14.9378 2.68192C16.5764 4.32046 17.4769 6.4939 17.4769 8.80952C17.4769 10.4751 17.0029 12.0934 16.1058 13.4882C15.2324 14.8457 14.0034 15.9324 12.5545 16.6298C12.1313 16.8296 11.6269 16.6535 11.4238 16.2304Z" fill="#2BC155"/>
-												<path d="M12.1045 9.2598C12.2704 9.42569 12.3516 9.64235 12.3516 9.85902C12.3516 10.0757 12.2704 10.2924 12.1045 10.4582L9.97506 12.5877C9.66361 12.8991 9.25059 13.0684 8.81387 13.0684C8.37715 13.0684 7.96074 12.8957 7.65267 12.5877L5.52324 10.4582C5.19147 10.1265 5.19147 9.59157 5.52324 9.2598C5.85501 8.92803 6.38991 8.92803 6.72168 9.2598L7.9709 10.509L7.9709 5.69834C7.9709 5.23116 8.35007 4.85199 8.81725 4.85199C9.28444 4.85199 9.66361 5.23116 9.66361 5.69834L9.66361 10.5124L10.9128 9.26319C11.2378 8.93142 11.7727 8.93142 12.1045 9.2598Z" fill="#2BC155"/>
-												</g>
-												<defs>
-												<clipPath id="clip6">
-												<rect width="17.3333" height="17.3333" fill="white" transform="matrix(-9.93477e-08 1 1 9.93477e-08 0.143555 0.142853)"/>
-												</clipPath>
-												</defs>
-											</svg>
-										</span>
-										Income
-									</div>
-								</td>
-								<td><span class="text-black">Medan, <br>Sumut Indonesia</span></td>
-								<td><a href="javascript:void(0)" class="btn btn-sm btn-warning light">Pending</a></td>
-								<td>
-									<div class="dropdown mb-auto">
-										<div class="btn-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-											<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path d="M10 11.9999C10 13.1045 10.8954 13.9999 12 13.9999C13.1046 13.9999 14 13.1045 14 11.9999C14 10.8954 13.1046 9.99994 12 9.99994C10.8954 9.99994 10 10.8954 10 11.9999Z" fill="black"></path>
-												<path d="M10 4.00006C10 5.10463 10.8954 6.00006 12 6.00006C13.1046 6.00006 14 5.10463 14 4.00006C14 2.89549 13.1046 2.00006 12 2.00006C10.8954 2.00006 10 2.89549 10 4.00006Z" fill="black"></path>
-												<path d="M10 20C10 21.1046 10.8954 22 12 22C13.1046 22 14 21.1046 14 20C14 18.8954 13.1046 18 12 18C10.8954 18 10 18.8954 10 20Z" fill="black"></path>
-											</svg>
-										</div>
-										<div class="dropdown-menu dropdown-menu-end">
-											<a class="dropdown-item" href="javascript:void(0)">Delete</a>
-											<a class="dropdown-item" href="javascript:void(0)">Edit</a>
-										</div>
-									</div>
-								</td>
-							</tr>
-
+                            @if(!is_null($transaction_list) && $transaction_list->count() > 0)
+                            @foreach ($transaction_list as $item_transac)
+                                <tr>
+                                    <td><span class="text-black font-w500">{{$item_transac->ref}}</span></td>
+                                    <td><span class="text-black text-nowrap">{{ date('j M,Y', strtotime($item_transac->created_at) ) }}</span></td>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <img src="https://mophy.dexignzone.com/codeigniter/demo/public/assets/images/avatar/11.png" alt="" class="rounded-circle me-3" width="50">
+                                            <div>
+                                                <h6 class="fs-16 font-w600 mb-0 text-nowrap"><a href="https://mophy.dexignzone.com/codeigniter/demo/admin/transactions_details" class="text-black">{{$item_transac->user->nom.' '.$item_transac->user->prenom}}</a></h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="text-black fs-16 font-w600">{{ $item_transac->montant}} EUR</span></td>
+                                    <td>
+                                        <div class="text-black">
+                                            <span class="me-2 oi-icon bgl-success">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0)">
+                                                    <path d="M11.4238 16.2304C11.2206 15.8106 11.4001 15.3027 11.8199 15.0996C12.9878 14.5376 13.9764 13.6642 14.6805 12.5707C15.4016 11.4501 15.7842 10.1501 15.7842 8.80952C15.7842 4.96369 12.6561 1.83556 8.81022 1.83556C4.96439 1.83556 1.83626 4.96369 1.83626 8.80952C1.83626 10.1501 2.21881 11.4501 2.93652 12.5741C3.6373 13.6676 4.62923 14.541 5.7972 15.103C6.21699 15.3061 6.39642 15.8106 6.19329 16.2337C5.99017 16.6535 5.48574 16.833 5.06256 16.6298C3.61022 15.9324 2.38131 14.8491 1.51126 13.4882C0.617512 12.0934 0.143554 10.4751 0.143554 8.80952C0.143554 6.49389 1.04408 4.31707 2.68262 2.68192C4.31777 1.04337 6.4946 0.142853 8.81022 0.142854C11.1258 0.142854 13.3027 1.04337 14.9378 2.68192C16.5764 4.32046 17.4769 6.4939 17.4769 8.80952C17.4769 10.4751 17.0029 12.0934 16.1058 13.4882C15.2324 14.8457 14.0034 15.9324 12.5545 16.6298C12.1313 16.8296 11.6269 16.6535 11.4238 16.2304Z" fill="#2BC155"/>
+                                                    <path d="M12.1045 9.2598C12.2704 9.42569 12.3516 9.64235 12.3516 9.85902C12.3516 10.0757 12.2704 10.2924 12.1045 10.4582L9.97506 12.5877C9.66361 12.8991 9.25059 13.0684 8.81387 13.0684C8.37715 13.0684 7.96074 12.8957 7.65267 12.5877L5.52324 10.4582C5.19147 10.1265 5.19147 9.59157 5.52324 9.2598C5.85501 8.92803 6.38991 8.92803 6.72168 9.2598L7.9709 10.509L7.9709 5.69834C7.9709 5.23116 8.35007 4.85199 8.81725 4.85199C9.28444 4.85199 9.66361 5.23116 9.66361 5.69834L9.66361 10.5124L10.9128 9.26319C11.2378 8.93142 11.7727 8.93142 12.1045 9.2598Z" fill="#2BC155"/>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0">
+                                                    <rect width="17.3333" height="17.3333" fill="white" transform="matrix(-9.93477e-08 1 1 9.93477e-08 0.143555 0.142853)"/>
+                                                    </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+                                            Envoie
+                                        </div>
+                                    </td>
+                                    <td><span class="text-black">{{$item_transac->user->adresse}}</td>
+                                    <td><a href="javascript:void(0)" class="btn btn-sm btn-warning light">En cour</a></td>
+                                    <td>
+                                        <div class="dropdown mb-auto">
+                                            <div class="btn-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 11.9999C10 13.1045 10.8954 13.9999 12 13.9999C13.1046 13.9999 14 13.1045 14 11.9999C14 10.8954 13.1046 9.99994 12 9.99994C10.8954 9.99994 10 10.8954 10 11.9999Z" fill="black"></path>
+                                                    <path d="M10 4.00006C10 5.10463 10.8954 6.00006 12 6.00006C13.1046 6.00006 14 5.10463 14 4.00006C14 2.89549 13.1046 2.00006 12 2.00006C10.8954 2.00006 10 2.89549 10 4.00006Z" fill="black"></path>
+                                                    <path d="M10 20C10 21.1046 10.8954 22 12 22C13.1046 22 14 21.1046 14 20C14 18.8954 13.1046 18 12 18C10.8954 18 10 18.8954 10 20Z" fill="black"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="dropdown-menu dropdown-menu-end">
+                                                <a class="dropdown-item" href="javascript:void(0)">Delete</a>
+                                                <a class="dropdown-item" href="javascript:void(0)">Edit</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            @endforeach
+                            @endif
 						</tbody>
 					</table>
 				</div>
@@ -237,20 +187,49 @@
 
     	 <!-- Modal -->
 			<div class="modal fade" id="exampledownload">
-				<div class="modal-dialog modal-dialog-centered" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title">Modal title</h5>
-							<button type="button" class="close" data-bs-dismiss="modal"><span>&times;</span>
+				<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+					<div class="modal-content ">
+						<div class="modal-header bg-primary">
+							<h5 class="modal-title text-white text-uppercase">Renseigner les informations du compte</h5>
+							<button type="button color-white" class="close" data-bs-dismiss="modal"><span>&times;</span>
 							</button>
 						</div>
+                        <form>
 						<div class="modal-body">
-							<p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+
+                            <div class="basic-form">
+                                    <div class="row">
+                                        <div class="mb-3 col-md-6">
+                                            <label class="form-label">Numero de la transaction</label>
+                                            <input type="text" class="form-control" placeholder="1234 Main St">
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                            <label class="form-label">Email</label>
+                                            <input type="email" class="form-control" placeholder="Email">
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                            <label class="form-label">Password</label>
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                            <label>City</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="mb-3 col-md-4">
+                                            <label class="form-label">CVV/CVC</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                            </div>
+
+
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Close</button>
-							<button type="button" class="btn btn-primary">Save changes</button>
+							<button type="button" class="btn btn-success">Valider</button>
 						</div>
+                    </form>
 					</div>
 				</div>
 			</div>
