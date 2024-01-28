@@ -26,6 +26,7 @@
 
 	<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css">
 
+    @livewireStyles
 </head>
 
 <body>
@@ -56,6 +57,7 @@
     </div>
 
 
+@livewireScripts
 
     <script src="{{ asset('assets/js/global.min.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap-select.min.js') }}"></script>
