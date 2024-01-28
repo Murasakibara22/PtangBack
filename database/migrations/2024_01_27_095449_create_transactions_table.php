@@ -18,10 +18,12 @@ return new class extends Migration
             $table->string('montant');
             $table->text('description');
             $table->string('ref');
-            $table->integer('numero_compte');
+            $table->string('numero_compte');
             $table->string('nom_banque')->default('societer generale');
             $table->string('slug')->unique();
             $table->timestamps();
+
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
         });
     }
 
