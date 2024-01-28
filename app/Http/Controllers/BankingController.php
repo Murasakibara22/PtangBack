@@ -31,4 +31,12 @@ class BankingController extends Controller
     public function profile()  {
         return view('bank.pages.profile');
     }
+
+    public function get_transaction()  {
+        return view('bank.pages.transaction');
+    }
+
+    public function get_wallet()  {
+        return view('bank.pages.wallet');
+    }
 }
