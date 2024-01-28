@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nom');
             $table->string('prenom');
-            $table->integer('numero_compte');
+            $table->string('numero_compte');
             $table->date('date_exp')->nullable();
             $table->integer('code_securiter'); //CVV/CVC
             $table->string('adresse');
@@ -27,7 +27,6 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
 
-            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
 
         });
     }
