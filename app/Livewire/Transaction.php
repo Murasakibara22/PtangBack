@@ -13,7 +13,7 @@ class Transaction extends Component
     public $numero_transaction , $montant ,$description,$nom_banque ;
     public $code_IBAN = '07n';
 
-
+ 
     protected $rules = [
         'numero_transaction' => ['required'],
         'code_IBAN' => ['required','min:5'],

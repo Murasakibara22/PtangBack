@@ -186,7 +186,7 @@
 
 
     	 <!-- Modal -->
-			<div class="modal fade" id="exampledownload">
+			<div class="modal fade" id="exampledownload" wire:ignore.self>
 				<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 					<div class="modal-content ">
 						<div class="modal-header bg-primary">
@@ -201,15 +201,35 @@
                                     <div class="row">
                                         <div class="mb-3 col-md-6">
                                             <label class="form-label">Numero de la transaction</label>
-                                            <input type="text" class="form-control" placeholder="1234 Main St">
+                                            <input type="text" wire:model='numero_transaction' class="form-control" placeholder="---X---X---">
+                                            @error('numero_transaction')
+                                                <span  class="text-danger">{{$message}} </span>
+                                            @enderror
                                         </div>
                                         <div class="mb-3 col-md-6">
                                             <label class="form-label">Email</label>
-                                            <input type="email" class="form-control" placeholder="Email">
+                                            <input type="email" class="form-control" placeholder="Entrer votre adresse email">
                                         </div>
                                         <div class="mb-3 col-md-6">
-                                            <label class="form-label">Password</label>
-                                            <input type="password" class="form-control" placeholder="Password">
+                                            <label class="form-label">Montant</label>
+                                            <input type="number" wire:model='montant' class="form-control" placeholder="Entrer le montant">
+                                            @error('montant')
+                                                <span  class="text-danger">{{$message}} </span>
+                                            @enderror
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                            <label class="form-label">Banque</label>
+                                            <input type="text" wire:model='nom_banque' class="form-control" placeholder="Nom de la banque">
+                                            @error('nom_banque')
+                                                <span  class="text-danger">{{$message}} </span>
+                                            @enderror
+                                        </div>
+                                        <div class="mb-3 col-md-6">
+                                            <label class="form-label">IBAN</label>
+                                            <input type="text" wire:model='code_IBAN' class="form-control" placeholder="Entrer le code IBAN">
+                                            @error('code_IBAN')
+                                                <span  class="text-danger">{{$message}} </span>
+                                            @enderror
                                         </div>
                                         <div class="mb-3 col-md-6">
                                             <label>City</label>
@@ -217,7 +237,7 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="mb-3 col-md-4">
+                                        <div class="mb-3 col-md-2">
                                             <label class="form-label">CVV/CVC</label>
                                             <input type="text" class="form-control">
                                         </div>
