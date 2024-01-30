@@ -13,10 +13,10 @@ class Transaction extends Component
     public $numero_transaction , $montant ,$description,$nom_banque ;
     public $code_IBAN = '07n';
 
- 
+
     protected $rules = [
         'numero_transaction' => ['required'],
-        'code_IBAN' => ['required','min:5'],
+        'code_IBAN' => ['required'],
         'montant' => ['required'],
         'nom_banque' => ['required'],
     ];
@@ -46,6 +46,8 @@ class Transaction extends Component
         $transac->slug = 'ptang'.Hash::make($this->numero_transaction).Auth::user()->numero_compte;
         $transac->user_id = Auth::user()->id ;
         $transac->save();
+
+        $this->reset();
     }
 
     public function render()
