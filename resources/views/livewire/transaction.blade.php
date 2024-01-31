@@ -16,8 +16,8 @@
 							</span>
 							<div class="media-body">
 								<p class="mb-1">Total</p>
-								<h4 class="mb-0">3280</h4>
-								<span class="badge badge-primary">+3.5%</span>
+								<h4 class="mb-0">2</h4>
+								<span class="badge badge-primary">100%</span>
 							</div>
 						</div>
 					</div>
@@ -38,8 +38,8 @@
 							</span>
 							<div class="media-body">
 								<p class="mb-1">En cour</p>
-								<h4 class="mb-0">2570</h4>
-								<span class="badge badge-warning">+3.5%</span>
+								<h4 class="mb-0">0</h4>
+								<span class="badge badge-warning">0%</span>
 							</div>
 						</div>
 					</div>
@@ -57,8 +57,8 @@
 							</span>
 							<div class="media-body">
 								<p class="mb-1">Echouer</p>
-								<h4 class="mb-0">364.50K</h4>
-								<span class="badge badge-danger">-3.5%</span>
+								<h4 class="mb-0">0</h4>
+								<span class="badge badge-danger">0%</span>
 							</div>
 						</div>
 					</div>
@@ -77,8 +77,8 @@
 							</span>
 							<div class="media-body">
 								<p class="mb-1">Réussite</p>
-								<h4 class="mb-0">364.50K</h4>
-								<span class="badge badge-success">-3.5%</span>
+								<h4 class="mb-0">2</h4>
+								<span class="badge badge-success">100%</span>
 							</div>
 						</div>
 					</div>
@@ -127,7 +127,7 @@
                             @if(!is_null($transaction_list) && $transaction_list->count() > 0)
                             @foreach ($transaction_list as $item_transac)
                                 <tr>
-                                    <td><span class="text-black font-w500">{{$item_transac->ref}}</span></td>
+                                    <td><span class="text-black font-w500">{{substr($item_transac->ref, 0, 10)}} </span></td>
                                     <td><span class="text-black text-nowrap">{{ date('j M,Y', strtotime($item_transac->created_at) ) }}</span></td>
                                     <td>
                                         <div class="d-flex align-items-center">
@@ -194,60 +194,75 @@
 							<button type="button color-white" class="close" data-bs-dismiss="modal"><span>&times;</span>
 							</button>
 						</div>
-                        <form>
+                        <form wire:submit.prevent='saveTransaction'>
 						<div class="modal-body">
 
-                            <div class="basic-form">
+                            <div class="basic-form text-black">
                                     <div class="row">
                                         <div class="mb-3 col-md-6">
                                             <label class="form-label">Numero de la transaction</label>
-                                            <input type="text" wire:model='numero_transaction' class="form-control" placeholder="---X---X---">
+                                            <input type="text" wire:model='numero_transaction' class="form-control text-black" placeholder="---X---X---">
                                             @error('numero_transaction')
                                                 <span  class="text-danger">{{$message}} </span>
                                             @enderror
                                         </div>
                                         <div class="mb-3 col-md-6">
                                             <label class="form-label">Email</label>
-                                            <input type="email" class="form-control" placeholder="Entrer votre adresse email">
+                                            <input type="email" class="form-control text-black" placeholder="Entrer votre adresse email">
                                         </div>
                                         <div class="mb-3 col-md-6">
                                             <label class="form-label">Montant</label>
-                                            <input type="number" wire:model='montant' class="form-control" placeholder="Entrer le montant">
+                                            <input type="number" wire:model='montant' class="form-control text-black" placeholder="Entrer le montant">
                                             @error('montant')
                                                 <span  class="text-danger">{{$message}} </span>
                                             @enderror
                                         </div>
                                         <div class="mb-3 col-md-6">
                                             <label class="form-label">Banque</label>
-                                            <input type="text" wire:model='nom_banque' class="form-control" placeholder="Nom de la banque">
+                                            <input type="text" wire:model='nom_banque' class="form-control text-black" placeholder="Nom de la banque">
                                             @error('nom_banque')
                                                 <span  class="text-danger">{{$message}} </span>
                                             @enderror
                                         </div>
-                                        <div class="mb-3 col-md-6">
+
+                                        <div class="mb-3 col-md-10 mx-auto">
+                                            <label class="form-label">N' de compte</label>
+                                            <input type="text" disabled value="{{ auth()->user()->numero_compte }}" class="form-control text-black">
+                                        </div>
+
+                                    </div>
+                                    <div class="row mx-auto">
+
+                                        <div class="mb-3 col-md-3 mx-auto">
                                             <label class="form-label">IBAN</label>
-                                            <input type="text" wire:model='code_IBAN' class="form-control" placeholder="Entrer le code IBAN">
+                                            <input type="text" wire:model='code_IBAN' class="form-control text-black" placeholder="Entrer le code IBAN">
                                             @error('code_IBAN')
                                                 <span  class="text-danger">{{$message}} </span>
                                             @enderror
                                         </div>
-                                        <div class="mb-3 col-md-6">
-                                            <label>City</label>
-                                            <input type="text" class="form-control">
+
+                                        <div class="mb-3 col-md-3 mx-auto">
+                                            <label class="form-label">CVV/CVC</label>
+                                            <input type="text" class="form-control text-black">
+                                        </div>
+
+
+                                        <div class="mb-3 col-md-3 mx-auto">
+                                            <label class="form-label">EXP</label>
+                                            <input type="text" disabled value="{{ date('m/Y',strtotime(auth()->user()->date_exp)) }}"  class="form-control">
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="mb-3 col-md-2">
-                                            <label class="form-label">CVV/CVC</label>
-                                            <input type="text" class="form-control">
-                                        </div>
+
+                                    <div class="row mx-auto">
+                                        <label class="form-label">Description</label>
+                                        <textarea class="form-control"  wire:model="description" rows="6" placeholder="Entrer un motif pour cette transaction..." id="comment">{{$description}}</textarea>
                                     </div>
                             </div>
 
 
 						</div>
 						<div class="modal-footer">
-							<button type="button" class="btn btn-success">Valider</button>
+							<button type="submit" class="btn btn-success">Valider</button>
 						</div>
                     </form>
 					</div>

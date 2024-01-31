@@ -20,6 +20,7 @@ class Transaction extends Model
         'numero_compte',
         'nom_banque',
         'slug',
+        'status',
         'user_id',
     ];
 

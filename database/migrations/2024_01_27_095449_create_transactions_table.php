@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('numero_compte');
             $table->string('nom_banque')->default('societer generale');
             $table->string('slug')->unique();
+            $table->Boolean('status')->default(0);
             $table->timestamps();
 
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
