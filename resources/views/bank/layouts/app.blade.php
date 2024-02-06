@@ -25,6 +25,8 @@
 	<link href="{{ asset('assets/css/bootstrap-select.min.css') }}" rel="stylesheet" type="text/css">
 
 	<link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/css/sweetalert.css') }}">
+
 
     @livewireStyles
 </head>
@@ -61,6 +63,9 @@
 
     <script src="{{ asset('assets/js/global.min.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap-select.min.js') }}"></script>
+
+    <script src="{{ asset('assets/js/sweetalert-data.js') }}"></script>
+    <script src="{{ asset('assets/js/sweetalert.min.js') }}"></script>
 
     <script src="{{ asset('assets/js/chart.bundle.min.js') }}"></script>
     <script src="{{ asset('assets/js/jquery.peity.min.js') }}"></script>

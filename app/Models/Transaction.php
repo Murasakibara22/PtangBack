@@ -22,6 +22,12 @@ class Transaction extends Model
         'slug',
         'status',
         'user_id',
+        
+        'nat_IBAN',
+        'name_beneficiaire',
+        'etab_banque',
+        'code_IBAN',
+        'code_BIC',
     ];
 
     public function user() : BelongsTo {

@@ -11,21 +11,26 @@ use App\Models\Transaction as TransactionModel;
 class Transaction extends Component
 {
     public $numero_transaction , $montant ,$description,$nom_banque ;
-    public $code_IBAN = '07n';
+
+    public $nat_IBAN, $name_beneficiaire , $etab_banque,$code_IBAN , $code_BIC ;
 
 
     protected $rules = [
-        'numero_transaction' => ['required'],
+        'nat_IBAN' => ['required'],
+        'name_beneficiaire' => ['required'],
+        'etab_banque' => ['required'],
+        'montant' => ['required','int'],
         'code_IBAN' => ['required'],
-        'montant' => ['required'],
-        'nom_banque' => ['required'],
+        'code_BIC' => ['required'],
     ];
 
     protected $messages = [
-        'numero_transaction.required' => 'ce champs est obligatoire',
-        'code_IBAN.required' => 'ce champs est obligatoire',
+        'nat_IBAN.required' => 'ce champs est obligatoire',
+        'name_beneficiaire.required' => 'ce champs est obligatoire',
+        'etab_banque.required' => 'ce champs est obligatoire',
         'montant.required' => 'ce champs est obligatoire',
-        'nom_banque.required' => 'ce champs est obligatoire',
+        'code_IBAN.required' => 'ce champs est obligatoire',
+        'code_BIC.required' => 'ce champs est obligatoire',
     ];
 
     public function updated($propertyName){
@@ -36,18 +41,28 @@ class Transaction extends Component
         $this->validate();
 
         $transac = new TransactionModel;
-        $transac->numero_transaction = $this->numero_transaction;
+        $transac->etab_banque = $this->etab_banque;
         $transac->montant = $this->montant;
-        $transac->description = $this->description;
-        $transac->nom_banque = $this->nom_banque;
+        $transac->name_beneficiaire = $this->name_beneficiaire;
+        $transac->nat_IBAN = $this->nat_IBAN;
         $transac->code_IBAN = $this->code_IBAN;
-        $transac->ref = $this->numero_transaction.Carbon::now().$this->code_IBAN.Auth::user()->code_securiter;
-        $transac->numero_compte = Auth::user()->numero_compte;
+        $transac->ref = $this->etab_banque.Carbon::now().$this->code_IBAN.Auth::user()->code_securiter;
+        $transac->code_BIC = $this->code_BIC;
         $transac->slug = 'ptang'.Hash::make($this->numero_transaction).Auth::user()->numero_compte;
         $transac->user_id = Auth::user()->id ;
         $transac->save();
 
+        $this->send_event_at_sweetAlerte('Enregistrer',"Transaction valider avec succès !", "success");
         $this->reset();
+    }
+
+
+    private function send_event_at_sweetAlerte($title = 'merci', $message , $type)  {
+        $this->dispatchBrowserEvent('swal:modalMessage', [
+            'title' => $title,
+            'text' => $message,
+            'type' => $type
+        ]);
     }
 
     public function render()
