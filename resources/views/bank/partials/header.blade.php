@@ -36,10 +36,10 @@
                                 <span class="text-black">Bienvenue,<strong> {{ auth()->user()->nom }} </strong></span>
                                 <p class="fs-12 mb-0">{{ auth()->user()->nom.' '.auth()->user()->prenom}}</p>
                             </div>
-                            <img src="{{ asset('assets/images/card.png') }}" width="20" alt="">
+                            <img @if(auth()->user()->photo )  src="{{ asset('images/User/'.auth()->user()->photo ) }}"   @else  src="{{ asset('assets/images/card.png') }}" @endif width="20" alt="">
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
-                            <a href="/profile.html"
+                            <a href="{{ route('dashboard.profile') }}"
                                 class="dropdown-item ai-icon">
                                 <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary"
                                     width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"

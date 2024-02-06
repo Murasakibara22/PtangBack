@@ -60,8 +60,8 @@
                                 </div>
 
                                 <div class="col-4">
-                                    <div class="card-bx h-100">
-                                        <img src="{{ asset('assets/images/card.png') }}" alt="" class="mw-100"> {{-- Image ici  --}}
+                                    <div class="card-bx ">
+                                        <img @if(auth()->user()->photo )  src="{{ asset('images/User/'.auth()->user()->photo ) }}"   @else src="{{ asset('assets/images/card.png') }}" alt="" >  @endif {{-- Image ici  --}}
                                         <div class="card-info text-white">
                                         </div>
                                     </div>
@@ -86,7 +86,25 @@
 						<div class="modal-body">
 
                             <div class="basic-form text-black">
+
+
                                 <div class="row">
+                                    <div class="mx-auto author-profile">
+                                        <div class="author-media">
+                                            <img @if (!is_null($AsImage)) src="{{ $AsImage->temporaryUrl() }}" @elseif( auth()->user()->photo ) src="{{ asset('images/User/'.auth()->user()->photo ) }}" @else
+                                                src="../Backend/images/user.jpg" @endif
+                                                alt="" style="width: 150px; height: 150px;">
+                                            <div class="upload-link" title="" data-toggle="tooltip"
+                                                data-placement="right" data-original-title="update">
+                                                <input type="file" wire:model="AsImage" class="update-flie">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+
                                     <div class="mb-3 col-md-6">
                                         <label class="form-label">Nom </label>
                                         <input type="text" wire:model='nom' class="form-control text-black" placeholder="---X---X---">

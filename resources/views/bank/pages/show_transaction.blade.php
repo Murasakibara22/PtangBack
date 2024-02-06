@@ -2,6 +2,6 @@
 
 @section('content')
 
-<livewire:transaction>
+<livewire:show :transaction="$transaction">
 
 @endsection

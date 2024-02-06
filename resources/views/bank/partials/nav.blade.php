@@ -7,14 +7,7 @@
                     <span class="nav-text">Mon Compte</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="poty/profile.html">Profile</a>
-                    </li>
-                    <li><a href="poty/portefueille.html">Portefueille</a></li>
-                    <!-- <li><a href="https://mophy.dexignzone.com/codeigniter/demo/admin/cards_center">Cards
-                            Center</a></li> -->
-                    <li><a
-                            href="/poty/transactions.html">Transactions</a>
-                    </li>
+                   
                     <li><a href="/poty/transactions_details.html">Transactions
                             Details</a></li>
                 </ul>

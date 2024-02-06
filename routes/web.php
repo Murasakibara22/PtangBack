@@ -32,6 +32,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/mon_compte/profile',[BankingController::class,'profile'])->name('dashboard.profile');
     Route::get('/mon_compte/transactions',[BankingController::class,'get_transaction'])->name('transaction.index');
     Route::get('/mon_compte/Wallet',[BankingController::class,'get_wallet'])->name('wallet.index');
+    Route::get('/mon_compte/show_transaction/{id}',[BankingController::class,'show_transac'])->name('wallet.show');
 
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
