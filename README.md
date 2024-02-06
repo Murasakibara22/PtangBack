@@ -1,5 +1,5 @@
 
-## About PTANG BANK
+## A propos de PTANG BANK
 
 
 - la page Transaction : Resources/Views/livewire/transaction.blade.php ,
