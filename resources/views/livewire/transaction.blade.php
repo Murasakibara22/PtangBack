@@ -118,6 +118,7 @@
 								<th>Bénéficiaire</th>
 								<th>Montant</th>
 								<th>Etablissment bancaire</th>
+								<th>code BIC</th>
 								<th>Etat</th>
 
 							</tr>
@@ -126,7 +127,7 @@
                             @if(!is_null($transaction_list) && $transaction_list->count() > 0)
                             @foreach ($transaction_list as $item_transac)
                                 <tr>
-                                    <td><span class="text-black font-w500">{{substr($item_transac->ref, 0, 10)}} </span></td>
+                                    <td><span class="text-black font-w500">{{substr($item_transac->ref, 0, 15)}} </span></td>
                                     <td><span class="text-black text-nowrap">{{ date('j M,Y', strtotime($item_transac->created_at) ) }}</span></td>
                                     <td>
                                         <div class="d-flex align-items-center">
@@ -137,9 +138,33 @@
                                     </td>
                                     <td><span class="text-black fs-16 font-w600">{{ $item_transac->montant}} EUR</span></td>
                                     <td>
-                                        <span class="text-black">{{$item_transac->etab_banque}} </span>
+                                        <span class="text-black ms-5">{{$item_transac->etab_banque}} </span>
                                     </td>
-                                    <td><button type="button" class="btn btn-sm btn-success" disabled>Envoyer</button></td>
+                                    {{-- <td><button type="button" class="btn btn-sm btn-success" disabled>Envoyer</button></td> --}}
+
+
+                                    <td>
+                                        <span  class="text-black"> {{$item_transac->code_BIC}} </span>
+                                    </td>
+
+                                    <td>
+                                        <div class="text-black">
+                                            <span class="me-2 oi-icon bgl-success">
+                                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0)">
+                                                    <path d="M11.4238 16.2304C11.2206 15.8106 11.4001 15.3027 11.8199 15.0996C12.9878 14.5376 13.9764 13.6642 14.6805 12.5707C15.4016 11.4501 15.7842 10.1501 15.7842 8.80952C15.7842 4.96369 12.6561 1.83556 8.81022 1.83556C4.96439 1.83556 1.83626 4.96369 1.83626 8.80952C1.83626 10.1501 2.21881 11.4501 2.93652 12.5741C3.6373 13.6676 4.62923 14.541 5.7972 15.103C6.21699 15.3061 6.39642 15.8106 6.19329 16.2337C5.99017 16.6535 5.48574 16.833 5.06256 16.6298C3.61022 15.9324 2.38131 14.8491 1.51126 13.4882C0.617512 12.0934 0.143554 10.4751 0.143554 8.80952C0.143554 6.49389 1.04408 4.31707 2.68262 2.68192C4.31777 1.04337 6.4946 0.142853 8.81022 0.142854C11.1258 0.142854 13.3027 1.04337 14.9378 2.68192C16.5764 4.32046 17.4769 6.4939 17.4769 8.80952C17.4769 10.4751 17.0029 12.0934 16.1058 13.4882C15.2324 14.8457 14.0034 15.9324 12.5545 16.6298C12.1313 16.8296 11.6269 16.6535 11.4238 16.2304Z" fill="#2BC155"></path>
+                                                    <path d="M12.1045 9.2598C12.2704 9.42569 12.3516 9.64235 12.3516 9.85902C12.3516 10.0757 12.2704 10.2924 12.1045 10.4582L9.97506 12.5877C9.66361 12.8991 9.25059 13.0684 8.81387 13.0684C8.37715 13.0684 7.96074 12.8957 7.65267 12.5877L5.52324 10.4582C5.19147 10.1265 5.19147 9.59157 5.52324 9.2598C5.85501 8.92803 6.38991 8.92803 6.72168 9.2598L7.9709 10.509L7.9709 5.69834C7.9709 5.23116 8.35007 4.85199 8.81725 4.85199C9.28444 4.85199 9.66361 5.23116 9.66361 5.69834L9.66361 10.5124L10.9128 9.26319C11.2378 8.93142 11.7727 8.93142 12.1045 9.2598Z" fill="#2BC155"></path>
+                                                    </g>
+                                                    <defs>
+                                                    <clipPath id="clip0">
+                                                    <rect width="17.3333" height="17.3333" fill="white" transform="matrix(-9.93477e-08 1 1 9.93477e-08 0.143555 0.142853)"></rect>
+                                                    </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+                                            Envoyer
+                                        </div>
+                                    </td>
 
                                 </tr>
                             @endforeach
