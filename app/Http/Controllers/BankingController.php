@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Transaction;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Providers\RouteServiceProvider;
@@ -38,5 +39,10 @@ class BankingController extends Controller
 
     public function get_wallet()  {
         return view('bank.pages.wallet');
+    }
+
+    public function show_transac($id)  {
+        $transaction = Transaction::where('id',$id)->first();
+        return view('bank.pages.show_transaction', compact('transaction'));
     }
 }
