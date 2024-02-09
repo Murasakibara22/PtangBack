@@ -45,4 +45,6 @@ Route::get('/deconnexion', function () {
 });
 
 
+Route::get('/location_get',[BankingController::class,'getUserInfo']);
+
 require __DIR__.'/auth.php';
