@@ -41,7 +41,7 @@
 									<div class="col-xl-3 mb-3 col-xxl-6 col-sm-6">
 										<div class="media align-items-center bgl-secondary rounded p-2">
 											<div class="d-inline-block me-3 position-relative donut-chart-sale2">
-												<span class="donut2" data-peity="{ " fill":="" ["rgb(172,="" 57,="" 212)",="" "rgba(255,="" 255,="" 0)"],="" "innerradius":="" 23,="" "radius":="" 10}"="">3/8</span>
+												<span class="donut2" data-peity="{ " fill":="" ["rgb(172,="" 57,="" 212)",="" "rgba(255,="" 255,="" 0)"],="" "innerradius":="" 23,="" "radius":="" 10}"="">0/8</span>
 												<small class="text-secondary">0%</small>
 											</div>
 											<div class="media-body">
@@ -53,7 +53,7 @@
 									<div class="col-xl-3 mb-3 col-xxl-6 col-sm-6">
 										<div class="media bgl-success rounded p-2 align-items-center">
 											<div class="d-inline-block me-3 position-relative donut-chart-sale2">
-												<span class="donut2" data-peity="{ " fill":="" ["rgb(43,="" 193,="" 85)",="" "rgba(255,="" 255,="" 0)"],="" "innerradius":="" 23,="" "radius":="" 10}"="">8/10</span>
+												<span class="donut2" data-peity="{ " fill":="" ["rgb(43,="" 193,="" 85)",="" "rgba(255,="" 255,="" 0)"],="" "innerradius":="" 23,="" "radius":="" 10}"="">0/10</span>
 												<small class="text-success">0%</small>
 											</div>
 											<div class="media-body">
@@ -65,7 +65,7 @@
 									<div class="col-xl-3 mb-3 col-xxl-6 col-sm-6">
 										<div class="media bgl-info rounded p-2 align-items-center">
 											<div class="d-inline-block me-3 position-relative donut-chart-sale2">
-												<span class="donut2" data-peity="{ " fill":="" ["rgb(70,="" 30,="" 231)",="" "rgba(255,="" 255,="" 0)"],="" "innerradius":="" 23,="" "radius":="" 10}"="">4/10</span>
+												<span class="donut2" data-peity="{ " fill":="" ["rgb(70,="" 30,="" 231)",="" "rgba(255,="" 255,="" 0)"],="" "innerradius":="" 23,="" "radius":="" 10}"="">0/10</span>
 												<small class="text-info">0%</small>
 											</div>
 											<div class="media-body">
