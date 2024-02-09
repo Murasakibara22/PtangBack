@@ -28,7 +28,7 @@
 								</div>
 								<div class="me-3 mb-3">
 									<p class="fs-14 mb-1">Fellonneau </p>
-									<span class="text-black">Nathalie Muriel</span>.</span>
+									<span class="text-black">Drechsler Ines</span>.</span>
 								</div>
 								<span class="fs-20 text-black font-w500 me-3 mb-3">**** **** **** 3456</span>
 							</div>

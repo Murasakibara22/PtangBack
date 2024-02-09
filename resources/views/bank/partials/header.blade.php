@@ -1,6 +1,6 @@
 <div class="nav-header">
     <a href="/" class="brand-logo">
-        <!-- <img class="logo-abbr" src="images/logo.png" alt=""> -->
+        <img class="logo-abbr" src="{{ asset('creditAgriLogo.png') }}" alt="">
         <img class="logo-compact" src="{{ asset('creditAgriLogo.png') }}" alt="">
         <img class="brand-title" src="{{ asset('creditAgriLogo.png') }}" alt="">
     </a>
