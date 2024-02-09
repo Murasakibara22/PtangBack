@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Transaction;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use App\Providers\RouteServiceProvider;
 
 class BankingController extends Controller
@@ -22,11 +24,7 @@ class BankingController extends Controller
             return redirect(RouteServiceProvider::HOME);
         }
 
-        // Authentification échouée
-        return back()->withErrors([
-            'numero_compte' => 'Les informations d\'identification fournies ne correspondent pas à nos enregistrements.',
-        ]);
-
+        return redirect()->back();
     }
 
     public function profile()  {

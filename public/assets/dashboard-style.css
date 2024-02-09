@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+
 }
 
 .dashboard-container {
@@ -20,7 +20,7 @@ body {
 }
 
 .logo img {
-    max-width: 100px;
+    max-width: 200px;
 }
 
 .logo h2 {
@@ -147,7 +147,7 @@ h2, h3 {
 .transactions-card li {
     margin-bottom: 10px;
     color: #777;
-   
+
 }
 
 
@@ -278,9 +278,9 @@ h2, h3 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    
+
 }
-    
+
 
 
 .logout-btn:hover {

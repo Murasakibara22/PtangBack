@@ -19,13 +19,13 @@
     </script>
 
     <nav class="navbar">
-        <img src="" alt="Logo de la banque" style="width: 100px ! important;">
+        <img src="{{ asset('logo.png') }}" alt="Logo de la banque" style="width: 200px ! important;">
         <!-- <h2>Slogan de la banque</h2> -->
         <ul>
-            <li><a href="#">Comptes & Cartes</a></li>
-            <li><a href="#">Epargne</a></li>
-            <li><a href="#">Assurance</a></li>
-            <li><a href="#">Credit</a></li>
+            <li><a href="https://mabanque.bnpparibas/fr/ma-banque-et-moi/bienvenue-chez-bnpparibas">Comptes & Cartes</a></li>
+            <li><a href="https://mabanque.bnpparibas/fr/epargner/comptes-livrets-epargne/livret-a">Epargne</a></li>
+            <li><a href="https://mabanque.bnpparibas/fr/assurer/logement/assurance-pret-immobilier">Assurance</a></li>
+            <li><a href="https://mabanqueprivee.bnpparibas/">Credit</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
         <button class="menu-btn">&#9776;</button>
