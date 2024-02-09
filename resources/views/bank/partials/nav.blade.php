@@ -6,11 +6,7 @@
                     <i class="flaticon-381-networking"></i>
                     <span class="nav-text">Mon Compte</span>
                 </a>
-                <ul aria-expanded="false">
-                   
-                    <li><a href="/poty/transactions_details.html">Transactions
-                            Details</a></li>
-                </ul>
+             
             </li>
 
             <li>

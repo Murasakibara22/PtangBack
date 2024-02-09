@@ -19,7 +19,7 @@
 									</svg>
 									<div class="me-auto">
 										<h5 class="fs-20 text-black font-w600">Compte Principal</h5>
-										<span class="text-num text-black font-w600">780 000 €</span>
+										<span class="text-num text-black font-w600">787 635,00 €</span>
 									</div>
 								</div>
 								<div class="me-3 mb-3">
