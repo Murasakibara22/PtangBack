@@ -17,7 +17,7 @@
 							<div class="media-body">
 								<p class="mb-1">Total</p>
 								<h4 class="mb-0">{{ App\Models\Transaction::count() }}</h4>
-								<span class="badge badge-primary">100%</span>
+								<span class="badge badge-primary">0%</span>
 							</div>
 						</div>
 					</div>
@@ -54,7 +54,7 @@
 							</span>
 							<div class="media-body">
 								<p class="mb-1">Echouer</p>
-								<h4 class="mb-0">3</h4>
+								<h4 class="mb-0">0</h4>
 								<span class="badge badge-danger">0%</span>
 							</div>
 						</div>
@@ -75,7 +75,7 @@
 							<div class="media-body">
 								<p class="mb-1">Réussite</p>
 								<h4 class="mb-0">{{ App\Models\Transaction::count() }}</h4>
-								<span class="badge badge-success">100%</span>
+								<span class="badge badge-success">0%</span>
 							</div>
 						</div>
 					</div>
