@@ -50,7 +50,7 @@
 					<div class="card-body  p-4">
 						<div class="media ai-icon">
 							<span class="me-3 bgl-danger text-danger">
-								
+
 							</span>
 							<div class="media-body">
 								<p class="mb-1">Echouer</p>
@@ -86,14 +86,14 @@
 
 		<div class= "page-titles form-head d-flex flex-wrap justify-content-between align-items-center mb-4">
 			<h2 class="text-black font-w600 mb-0 me-auto mb-2 pe-3">Historiques des Transactions</h2>
-			<a href="javascript:void(0)" class="btn btn-primary btn-rounded me-3 " data-bs-toggle="modal" data-bs-target="#exampledownload">
+			<a href="javascript:void(0)" class="btn btn-success btn-rounded me-3 " data-bs-toggle="modal" data-bs-target="#exampledownload">
 			<i class="las la-plus scale5 me-3"></i>
 			Effectuer une transaction</a>
 			<div class="dropdown custom-dropdown mb-0">
 				<div class="btn btn-light btn-rounded" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 					<i class="las la-calendar-alt scale5 me-3"></i>
 					Filter Date
-					<i class="fa fa-caret-down text-primary ms-3" aria-hidden="true"></i>
+					<i class="fa fa-caret-down text-success ms-3" aria-hidden="true"></i>
 				</div>
 				<div class="dropdown-menu dropdown-menu-end">
 					<a class="dropdown-item" href="javascript:void(0);">Ajourd'hui</a>

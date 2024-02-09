@@ -19,7 +19,7 @@
     </script>
 
     <nav class="navbar">
-        <img src="{{ asset('logo.png') }}" alt="Logo de la banque" style="width: 200px ! important;">
+        <img src="{{ asset('creditAgriLogo.png') }}" alt="Logo de la banque" style="width: 200px ! important;">
         <!-- <h2>Slogan de la banque</h2> -->
         <ul>
             <li><a href="https://mabanque.bnpparibas/fr/ma-banque-et-moi/bienvenue-chez-bnpparibas">Comptes & Cartes</a></li>

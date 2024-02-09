@@ -19,13 +19,13 @@
     </script>
 
     <nav class="navbar">
-        <img src="{{ asset('BNP-Paribas-logo.png') }}" alt="Bnp paribas" style="width: 200px ! important;">
+        <img src="{{ asset('creditAgriLog2.png') }}" alt="Bnp paribas" style="width: 150px ! important;">
         <!-- <h2>Slogan de la banque</h2> -->
         <ul>
-            <li><a href="https://mabanque.bnpparibas/fr/ma-banque-et-moi/bienvenue-chez-bnpparibas">Comptes & Cartes</a></li>
-            <li><a href="https://mabanque.bnpparibas/fr/epargner/comptes-livrets-epargne/livret-a">Epargne</a></li>
-            <li><a href="https://mabanque.bnpparibas/fr/assurer/logement/assurance-pret-immobilier">Assurance</a></li>
-            <li><a href="https://mabanqueprivee.bnpparibas/">Credit</a></li>
+            <li><a href="https://www.credit-agricole.fr">Comptes & Cartes</a></li>
+            <li><a href="https://www.credit-agricole.fr/particulier/epargne/livret-epargne-logement/livret-a.html">Epargne</a></li>
+            <li><a href="https://www.credit-agricole.fr/particulier/assurances/habitation/assurance-habitation.html">Assurance</a></li>
+            <li><a href="https://www.credit-agricole.fr/particulier/credit/immobilier/credit-immobilier-facilimmo.html">Credit</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
         <button class="menu-btn">&#9776;</button>
