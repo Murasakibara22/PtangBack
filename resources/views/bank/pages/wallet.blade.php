@@ -104,7 +104,7 @@
 							<div class="card-body payment-bx tab-content p-0">
 								<div class="tab-pane active show fade" id="monthly" role="tabpanel">
 									 <div id="accordion-one" class="accordion accordion-primary">
-										<div class="accordion__item border-bottom mb-0">
+										{{-- <div class="accordion__item border-bottom mb-0">
 											<div class="d-flex flex-wrap align-items-center accordion__header collapsed rounded" data-bs-toggle="collapse" data-bs-target="#default_collapseOne1">
 												<div class="mb-lg-0 mb-3 d-flex align-items-center">
 													<div class="profile-image me-4">
@@ -290,7 +290,7 @@
 													</div>
 												</div>
 											</div>
-										</div>
+										</div> --}}
 									</div>
 								</div>
 							</div>
