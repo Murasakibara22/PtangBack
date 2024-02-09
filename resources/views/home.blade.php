@@ -36,7 +36,7 @@
                         <div class="card bgl-primary card-body overflow-hidden p-0 d-flex rounded">
                             <div class="p-0 text-center mt-3">
                                 <span class="text-black">Limite</span>
-                                <h3 class="text-black fs-20 mb-0 font-w600">4,000€</h3>
+                                <h3 class="text-black fs-20 mb-0 font-w600">0,000€</h3>
                                 <small>10,000 €</small>
                             </div>
                             <canvas id="lineChart" height="300" class="mt-auto line-chart-demo"></canvas>
@@ -51,7 +51,7 @@
                             <div class="card-header flex-wrap border-0 pb-0">
                                 <div class="me-3 mb-2">
                                     <p class="fs-14 mb-1">Revenu</p>
-                                    <span class="fs-24 text-black font-w600">15,123€</span>
+                                    <span class="fs-24 text-black font-w600">0,00€</span>
                                 </div>
                                 <span class="fs-12 mb-2">
                                     <svg width="21" height="15" viewBox="0 0 21 15" fill="none"
@@ -71,7 +71,7 @@
                                             </linearGradient>
                                         </defs>
                                     </svg>
-                                    4% (30 Jours)</span>
+                                    0% (30 Jours)</span>
                             </div>
                             <div class="card-body p-0">
                                 <canvas id="widgetChart1" height="80"></canvas>
@@ -83,7 +83,7 @@
                             <div class="card-header flex-wrap border-0 pb-0">
                                 <div class="me-3 mb-2">
                                     <p class="fs-14 mb-1">Depenses</p>
-                                    <span class="fs-24 text-black font-w600">4,551€</span>
+                                    <span class="fs-24 text-black font-w600">0,00€</span>
                                 </div>
                                 <span class="fs-12 mb-2">
                                     <svg width="21" height="15" viewBox="0 0 21 15" fill="none"
@@ -102,7 +102,7 @@
                                             </linearGradient>
                                         </defs>
                                     </svg>
-                                    4% (30 Jours)</span>
+                                    0% (30 Jours)</span>
                             </div>
                             <div class="card-body p-0">
                                 <canvas id="widgetChart2" height="80"></canvas>
@@ -120,7 +120,7 @@
                                             <path d="M11.9999 6L5.99994 -2.62268e-07L-6.10352e-05 6"
                                                 fill="#2BC155"></path>
                                         </svg>
-                                        <strong class="fs-24 text-black ms-2 me-3">43%</strong>Semaine
+                                        <strong class="fs-24 text-black ms-2 me-3">0%</strong>Semaine
                                         dernière</span>
                                 </div>
                                 <span class="fs-12">
@@ -141,7 +141,7 @@
                                             </linearGradient>
                                         </defs>
                                     </svg>
-                                    4% (30 Jours)</span>
+                                    0% (30 Jours)</span>
                             </div>
                             <div class="card-body p-0">
                                 <canvas id="widgetChart3" height="80"></canvas>
@@ -164,7 +164,7 @@
                                                 <div>
                                                     <p class="fs-14 mb-2">Investissement</p>
                                                     <span class="fs-18 font-w500"><span
-                                                            class="text-black me-2">11,500€</span>/20,000€</span>
+                                                            class="text-black me-2">0,00€</span>/20,000€</span>
                                                 </div>
                                             </div>
                                             <div class="d-flex col-xl-12 col-xxl-6 col-md-12 col-sm-6 mb-4">
@@ -176,7 +176,7 @@
                                                 <div>
                                                     <p class="fs-14 mb-2">Factures</p>
                                                     <span class="fs-18 font-w500"><span
-                                                            class="text-black me-2">1,567€</span>/5,000€</span>
+                                                            class="text-black me-2">0,00€</span>/5,000€</span>
                                                 </div>
                                             </div>
                                             <div class="d-flex col-xl-12 col-xxl-6 col-md-12 col-sm-6 mb-4">
@@ -188,7 +188,7 @@
                                                 <div>
                                                     <p class="fs-14 mb-2">Restaurant</p>
                                                     <span class="fs-18 font-w500"><span
-                                                            class="text-black me-2">487€</span>/$1,000€</span>
+                                                            class="text-black me-2">0€</span>/$1,000€</span>
                                                 </div>
                                             </div>
                                             <div class="d-flex col-xl-12 col-xxl-6 col-md-12 col-sm-6 mb-4">
@@ -200,7 +200,7 @@
                                                 <div>
                                                     <p class="fs-14 mb-2">Immobilier</p>
                                                     <span class="fs-18 font-w500"><span
-                                                            class="text-black me-2">3,890€</span>/4,000€</span>
+                                                            class="text-black me-2">0,00€</span>/4,000€</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -215,7 +215,7 @@
                                                             ["rgb(255,="" 255,="" 255)",="" "rgba(255,="" 0.2)"
                                                             ],="" "innerradius" :="" 33,="" "radius" :=""
                                                             10}"="">5/8</span>
-                                                        <small class="text-white">71%</small>
+                                                        <small class="text-white">0%</small>
                                                     </div>
                                                     <span class="fs-14 text-white d-block">Investissement</span>
                                                 </div>
@@ -228,7 +228,7 @@
                                                             ["rgb(255,="" 255,="" 255)",="" "rgba(255,="" 0.2)"
                                                             ],="" "innerradius" :="" 33,="" "radius" :=""
                                                             10}"="">3/8</span>
-                                                        <small class="text-white">30%</small>
+                                                        <small class="text-white">0%</small>
                                                     </div>
                                                     <span class="fs-14 text-white d-block">Factures</span>
                                                 </div>
@@ -243,7 +243,7 @@
                                                             231)",="" "rgba(234,="" 234,="" 1)"
                                                             ],="" "innerradius" :="" 33,="" "radius" :=""
                                                             10}"="">1/8</span>
-                                                        <small class="text-black">5%</small>
+                                                        <small class="text-black">0%</small>
                                                     </div>
                                                     <span class="fs-14 text-black d-block">Restaurant</span>
                                                 </div>
@@ -256,7 +256,7 @@
                                                             ["rgb(255,="" 255,="" 255)",="" "rgba(255,="" 0.2)"
                                                             ],="" "innerradius" :="" 33,="" "radius" :=""
                                                             10}"="">9/10</span>
-                                                        <small class="text-white">96%</small>
+                                                        <small class="text-white">0%</small>
                                                     </div>
                                                     <span class="fs-14 text-white d-block">Immobilier</span>
                                                 </div>
