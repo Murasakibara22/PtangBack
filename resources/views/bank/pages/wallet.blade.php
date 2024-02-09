@@ -27,7 +27,6 @@
 									<span class="text-black">08/29</span>
 								</div>
 								<div class="me-3 mb-3">
-									<p class="fs-14 mb-1">Fellonneau </p>
 									<span class="text-black">Drechsler Ines</span>.</span>
 								</div>
 								<span class="fs-20 text-black font-w500 me-3 mb-3">**** **** **** 3456</span>
@@ -35,7 +34,7 @@
 							<div class="card-body">
 								<div class="progress mb-4" style="height:18px;">
 									<div class="progress-bar bg-inverse progress-animated" style="width: 40%; height:18px;" role="progressbar">
-										<span class="sr-only">60% Complete</span>
+										<span class="sr-only">0% Complete</span>
 									</div>
 								</div>
 								<div class="row align-items-center">
@@ -43,11 +42,11 @@
 										<div class="media align-items-center bgl-secondary rounded p-2">
 											<div class="d-inline-block me-3 position-relative donut-chart-sale2">
 												<span class="donut2" data-peity="{ " fill":="" ["rgb(172,="" 57,="" 212)",="" "rgba(255,="" 255,="" 0)"],="" "innerradius":="" 23,="" "radius":="" 10}"="">3/8</span>
-												<small class="text-secondary">24%</small>
+												<small class="text-secondary">0%</small>
 											</div>
 											<div class="media-body">
 												<h4 class="fs-15 text-black font-w600 mb-0">Factures</h4>
-												<span class="fs-14">5,000€</span>
+												<span class="fs-14">0,00€</span>
 											</div>
 										</div>
 									</div>
@@ -55,11 +54,11 @@
 										<div class="media bgl-success rounded p-2 align-items-center">
 											<div class="d-inline-block me-3 position-relative donut-chart-sale2">
 												<span class="donut2" data-peity="{ " fill":="" ["rgb(43,="" 193,="" 85)",="" "rgba(255,="" 255,="" 0)"],="" "innerradius":="" 23,="" "radius":="" 10}"="">8/10</span>
-												<small class="text-success">74%</small>
+												<small class="text-success">0%</small>
 											</div>
 											<div class="media-body">
 												<h4 class="fs-15 text-black font-w600 mb-0">Investissement</h4>
-												<span class="fs-14">20,000€</span>
+												<span class="fs-14">0,00€</span>
 											</div>
 										</div>
 									</div>
@@ -67,11 +66,11 @@
 										<div class="media bgl-info rounded p-2 align-items-center">
 											<div class="d-inline-block me-3 position-relative donut-chart-sale2">
 												<span class="donut2" data-peity="{ " fill":="" ["rgb(70,="" 30,="" 231)",="" "rgba(255,="" 255,="" 0)"],="" "innerradius":="" 23,="" "radius":="" 10}"="">4/10</span>
-												<small class="text-info">34%</small>
+												<small class="text-info">0%</small>
 											</div>
 											<div class="media-body">
 												<h4 class="fs-15 text-black font-w600 mb-0">Restaurant</h4>
-												<span class="fs-14">1,000€</span>
+												<span class="fs-14">0,00€</span>
 											</div>
 										</div>
 									</div>
