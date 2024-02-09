@@ -214,7 +214,7 @@
                                                         <span class="donut1" data-peity="{ " fill":=""
                                                             ["rgb(255,="" 255,="" 255)",="" "rgba(255,="" 0.2)"
                                                             ],="" "innerradius" :="" 33,="" "radius" :=""
-                                                            10}"="">5/8</span>
+                                                            10}"="">0/8</span>
                                                         <small class="text-white">0%</small>
                                                     </div>
                                                     <span class="fs-14 text-white d-block">Investissement</span>
@@ -227,7 +227,7 @@
                                                         <span class="donut1" data-peity="{ " fill":=""
                                                             ["rgb(255,="" 255,="" 255)",="" "rgba(255,="" 0.2)"
                                                             ],="" "innerradius" :="" 33,="" "radius" :=""
-                                                            10}"="">3/8</span>
+                                                            10}"="">0/8</span>
                                                         <small class="text-white">0%</small>
                                                     </div>
                                                     <span class="fs-14 text-white d-block">Factures</span>
@@ -242,7 +242,7 @@
                                                             ["rgb(30,="" 170,=""
                                                             231)",="" "rgba(234,="" 234,="" 1)"
                                                             ],="" "innerradius" :="" 33,="" "radius" :=""
-                                                            10}"="">1/8</span>
+                                                            10}"="">0/8</span>
                                                         <small class="text-black">0%</small>
                                                     </div>
                                                     <span class="fs-14 text-black d-block">Restaurant</span>
@@ -255,7 +255,7 @@
                                                         <span class="donut1" data-peity="{ " fill":=""
                                                             ["rgb(255,="" 255,="" 255)",="" "rgba(255,="" 0.2)"
                                                             ],="" "innerradius" :="" 33,="" "radius" :=""
-                                                            10}"="">9/10</span>
+                                                            10}"="">0/10</span>
                                                         <small class="text-white">0%</small>
                                                     </div>
                                                     <span class="fs-14 text-white d-block">Immobilier</span>
