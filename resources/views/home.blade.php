@@ -23,7 +23,7 @@
                                 </div>
                                 <div class="d-flex">
                                     <div class="me-5">
-                                        <p class="fs-14 mb-1 op6">Fellonneau</p>
+                                        <p class="fs-14 mb-1 op6">Drechsler Ines</p>
                                         <span>08/29</span>
                                     </div>
                                 </div>
