@@ -16,7 +16,7 @@
                             <img src="{{ asset('assets/images/card.png') }}" alt="" class="mw-100">
                             <div class="card-info text-white">
                                 <p class="mb-1">Compte Principal</p>
-                                <h2 class="fs-36 text-white mb-sm-4 mb-3">787 635,00 €</h2>
+                                <h2 class="fs-36 text-white mb-sm-4 mb-3">68.726,00 €</h2>
                                 <div class="d-flex align-items-center justify-content-between mb-sm-5 mb-3">
                                     <img src="{{ asset('assets/images/dual-dot.png') }}" alt="" class="dot-img">
                                     <h4 class="fs-20 text-white mb-0">**** **** **** 3456</h4>
@@ -51,7 +51,7 @@
                             <div class="card-header flex-wrap border-0 pb-0">
                                 <div class="me-3 mb-2">
                                     <p class="fs-14 mb-1">Revenu</p>
-                                    <span class="fs-24 text-black font-w600">165,123€</span>
+                                    <span class="fs-24 text-black font-w600">15,123€</span>
                                 </div>
                                 <span class="fs-12 mb-2">
                                     <svg width="21" height="15" viewBox="0 0 21 15" fill="none"
@@ -83,7 +83,7 @@
                             <div class="card-header flex-wrap border-0 pb-0">
                                 <div class="me-3 mb-2">
                                     <p class="fs-14 mb-1">Depenses</p>
-                                    <span class="fs-24 text-black font-w600">24,551€</span>
+                                    <span class="fs-24 text-black font-w600">4,551€</span>
                                 </div>
                                 <span class="fs-12 mb-2">
                                     <svg width="21" height="15" viewBox="0 0 21 15" fill="none"
@@ -164,7 +164,7 @@
                                                 <div>
                                                     <p class="fs-14 mb-2">Investissement</p>
                                                     <span class="fs-18 font-w500"><span
-                                                            class="text-black me-2">141,500€</span>/200,000€</span>
+                                                            class="text-black me-2">11,500€</span>/20,000€</span>
                                                 </div>
                                             </div>
                                             <div class="d-flex col-xl-12 col-xxl-6 col-md-12 col-sm-6 mb-4">
@@ -188,7 +188,7 @@
                                                 <div>
                                                     <p class="fs-14 mb-2">Restaurant</p>
                                                     <span class="fs-18 font-w500"><span
-                                                            class="text-black me-2">487€</span>/$10,000€</span>
+                                                            class="text-black me-2">487€</span>/$1,000€</span>
                                                 </div>
                                             </div>
                                             <div class="d-flex col-xl-12 col-xxl-6 col-md-12 col-sm-6 mb-4">

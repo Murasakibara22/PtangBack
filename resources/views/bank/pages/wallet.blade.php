@@ -19,7 +19,7 @@
 									</svg>
 									<div class="me-auto">
 										<h5 class="fs-20 text-black font-w600">Compte Principal</h5>
-										<span class="text-num text-black font-w600">787 635,00 €</span>
+										<span class="text-num text-black font-w600">68.726,00 €</span>
 									</div>
 								</div>
 								<div class="me-3 mb-3">
@@ -59,7 +59,7 @@
 											</div>
 											<div class="media-body">
 												<h4 class="fs-15 text-black font-w600 mb-0">Investissement</h4>
-												<span class="fs-14">200,000€</span>
+												<span class="fs-14">20,000€</span>
 											</div>
 										</div>
 									</div>
@@ -71,7 +71,7 @@
 											</div>
 											<div class="media-body">
 												<h4 class="fs-15 text-black font-w600 mb-0">Restaurant</h4>
-												<span class="fs-14">10,000€</span>
+												<span class="fs-14">1,000€</span>
 											</div>
 										</div>
 									</div>
