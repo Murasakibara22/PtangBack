@@ -61,6 +61,7 @@
 												<span class="fs-14">0,00€</span>
 											</div>
 										</div>
+                                        
 									</div>
 									<div class="col-xl-3 mb-3 col-xxl-6 col-sm-6">
 										<div class="media bgl-info rounded p-2 align-items-center">

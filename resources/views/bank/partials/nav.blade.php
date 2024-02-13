@@ -9,13 +9,6 @@
 
             </li>
 
-            <li>
-                <a href="{{ route('dashboard.profile') }}" class="ai-icon" aria-expanded="false">
-                    <i class="flaticon-381-settings-2"></i>
-                    <span class="nav-text">Profile</span>
-                </a>
-            </li>
-
             <li><a href="{{ route('wallet.index') }}">
                 <i class="flaticon-381-list"></i>
                     <span class="nav-text">Portefueille</span>
@@ -26,6 +19,13 @@
                 <i class="flaticon-381-list"></i>
                     <span class="nav-text">Transactions</span>
                     </a>
+            </li>
+
+            <li>
+                <a href="{{ route('dashboard.profile') }}" class="ai-icon" aria-expanded="false">
+                    <i class="flaticon-381-settings-2"></i>
+                    <span class="nav-text">Profile</span>
+                </a>
             </li>
     </div>
 </div>

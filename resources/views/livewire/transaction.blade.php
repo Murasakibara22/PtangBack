@@ -17,7 +17,7 @@
 							<div class="media-body">
 								<p class="mb-1">Total</p>
 								<h4 class="mb-0">{{ App\Models\Transaction::count() }}</h4>
-								<span class="badge badge-primary">0%</span>
+								<span class="badge badge-primary">100%</span>
 							</div>
 						</div>
 					</div>
@@ -38,7 +38,7 @@
 							</span>
 							<div class="media-body">
 								<p class="mb-1">En cour</p>
-								<h4 class="mb-0">0</h4>
+								<h4 class="mb-0">{{ App\Models\Transaction::count() }}</h4>
 								<span class="badge badge-warning">0%</span>
 							</div>
 						</div>
@@ -74,7 +74,7 @@
 							</span>
 							<div class="media-body">
 								<p class="mb-1">Réussite</p>
-								<h4 class="mb-0">{{ App\Models\Transaction::count() }}</h4>
+								<h4 class="mb-0">0</h4>
 								<span class="badge badge-success">0%</span>
 							</div>
 						</div>
@@ -146,8 +146,8 @@
                                     </td>
 
                                     <td>
-                                        <div class="text-black">
-                                            <span class="me-2 oi-icon bgl-success">
+                                        {{-- <div class="text-black">
+                                            <span class="me-2 oi-icon bgl-warning">
                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <g clip-path="url(#clip0)">
                                                     <path d="M11.4238 16.2304C11.2206 15.8106 11.4001 15.3027 11.8199 15.0996C12.9878 14.5376 13.9764 13.6642 14.6805 12.5707C15.4016 11.4501 15.7842 10.1501 15.7842 8.80952C15.7842 4.96369 12.6561 1.83556 8.81022 1.83556C4.96439 1.83556 1.83626 4.96369 1.83626 8.80952C1.83626 10.1501 2.21881 11.4501 2.93652 12.5741C3.6373 13.6676 4.62923 14.541 5.7972 15.103C6.21699 15.3061 6.39642 15.8106 6.19329 16.2337C5.99017 16.6535 5.48574 16.833 5.06256 16.6298C3.61022 15.9324 2.38131 14.8491 1.51126 13.4882C0.617512 12.0934 0.143554 10.4751 0.143554 8.80952C0.143554 6.49389 1.04408 4.31707 2.68262 2.68192C4.31777 1.04337 6.4946 0.142853 8.81022 0.142854C11.1258 0.142854 13.3027 1.04337 14.9378 2.68192C16.5764 4.32046 17.4769 6.4939 17.4769 8.80952C17.4769 10.4751 17.0029 12.0934 16.1058 13.4882C15.2324 14.8457 14.0034 15.9324 12.5545 16.6298C12.1313 16.8296 11.6269 16.6535 11.4238 16.2304Z" fill="#2BC155"></path>
@@ -160,8 +160,10 @@
                                                     </defs>
                                                 </svg>
                                             </span>
-                                            Envoyer
-                                        </div>
+                                            En cour
+                                        </div> --}}
+
+                                        <button type="button" disabled class="btn btn-sm btn-warning">En cour </button>
                                     </td>
 
                                     <td>

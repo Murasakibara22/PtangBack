@@ -9,13 +9,13 @@
 				<div class="col-sm-6 p-0 justify-content-sm-start mt-2 mt-sm-0 d-flex">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item active"><a href="javascript:void(0)">Transactions</a></li>
-						<li class="breadcrumb-item"><a href="javascript:void(0)">#123412451</a></li>
+						<li class="breadcrumb-item"><a href="javascript:void(0)">{{$transaction_list->ref}}</a></li>
 					</ol>
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xl-8">
+			<div class="col-xl-10 mx-auto">
 				<div class="row">
 					<div class="col-xl-12">
 						<div class="card">
@@ -31,20 +31,20 @@
 							<div class="card-body border-bottom">
 								<div class="d-flex flex-wrap mb-sm-2 justify-content-between">
 									<div class="pr-3 mb-3">
-										<p class="fs-14 mb-1">Methode de payement</p>
-										<span class="text-black fs-18 font-w500">MasterCard 404</span>
+										<p class="fs-14 mb-1">Methode de paiement</p>
+										<span class="text-black fs-18 font-w500">Virements</span>
 									</div>
 									<div class="pr-3 mb-3">
 										<p class="fs-14 mb-1">Date de facture</p>
-										<span class="text-black fs-18 font-w500"> 10 Jan, 2024</span>
+										<span class="text-black fs-18 font-w500">{{ date('j M,Y', strtotime($transaction_list->created_at) ) }}</span>
 									</div>
 									<div class="pr-3 mb-3">
-										<p class="fs-14 mb-1">Date d'échéance</p>
-										<span class="text-black fs-18 font-w500">15 Jan, 2024</span>
+										<p class="fs-14 mb-1">Bénéficiaire</p>
+										<span class="text-black fs-18 font-w500">{{$transaction_list->name_beneficiaire}}</span>
 									</div>
 									<div class="mb-3">
-										<p class="fs-14 mb-1">Date de paiement</p>
-										<span class="text-black fs-18 font-w500"> 20 Jan, 2024</span>
+										<p class="fs-14 mb-1">Montant</p>
+										<span class="text-black fs-18 font-w500"> {{$transaction_list->montant}} EUR</span>
 									</div>
 								</div>
 								<div class="p-3 bgl-dark rounded fs-14 d-flex">
