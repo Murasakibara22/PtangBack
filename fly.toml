@@ -4,7 +4,6 @@
 #
 
 app = 'credit-agricole'
-# app = 'credit-agricole-banking'
 primary_region = 'iad'
 console_command = 'php /var/www/html/artisan tinker'
 
