@@ -33,7 +33,7 @@
                 <li class="nav-item dropdown notification_dropdown">
                     <a class="nav-link bell dz-theme-mode" href="javascript:void(0);">
                         <i id="icon-light" class="fas fa-sun"></i>
-                        <i id="icon-dark" class="fas fa-moon"></i>	
+                        <i id="icon-dark" class="fas fa-moon"></i>
                     </a>
                 </li>
                     <li class="nav-item dropdown notification_dropdown">
@@ -52,8 +52,8 @@
 												CA
 											</div>
 											<div class="media-body">
-												<h6 class="mb-1">Ines, votre virement échoué</h6>
-												<small class="d-block">14 fevrier 2024 - 02:26 PM</small>
+												<h6 class="mb-1">Ines, virement interrompu veuillez contactez le gestionnaire bancaire.</h6>
+												<small class="d-block">14 fevrier 2024 - 01:26 PM</small>
 											</div>
 										</div>
 									</li>
@@ -63,8 +63,8 @@
 												CA
 											</div>
 											<div class="media-body">
-												<h6 class="mb-1">Ines, votre virement échoué</h6>
-												<small class="d-block">14 fevrier 2024 - 02:26 PM</small>
+												<h6 class="mb-1">Ines, virement interrompu veuillez contactez le gestionnaire bancaire.</h6>
+												<small class="d-block">14 fevrier 2024 - 01:26 PM</small>
 											</div>
 										</div>
 									</li>
@@ -74,13 +74,13 @@
 												CA
 											</div>
 											<div class="media-body">
-												<h6 class="mb-1">Ines, votre virement échoué</h6>
-												<small class="d-block">14 fevrier 2024 - 02:26 PM</small>
+												<h6 class="mb-1">Ines, virement interrompu veuillez contactez le gestionnaire bancaire.</h6>
+												<small class="d-block">14 fevrier 2024 - 01:26 PM</small>
 											</div>
 										</div>
 								</li>
-                        </div>  
-                    </li>     
+                        </div>
+                    </li>
                     <li class="nav-item dropdown header-profile">
                         <a class="nav-link" href="javascript:void(0)" role="button" data-bs-toggle="dropdown">
                             <div class="header-info">

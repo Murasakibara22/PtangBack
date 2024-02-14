@@ -38,7 +38,7 @@
 							</span>
 							<div class="media-body">
 								<p class="mb-1">En cour</p>
-								<h4 class="mb-0">{{ App\Models\Transaction::count() }}</h4>
+								<h4 class="mb-0">0</h4>
 								<span class="badge badge-warning">0%</span>
 							</div>
 						</div>
@@ -54,7 +54,7 @@
 							</span>
 							<div class="media-body">
 								<p class="mb-1">Echouer</p>
-								<h4 class="mb-0">0</h4>
+								<h4 class="mb-0">{{ App\Models\Transaction::count() }}</h4>
 								<span class="badge badge-danger">0%</span>
 							</div>
 						</div>
@@ -163,7 +163,7 @@
                                             En cour
                                         </div> --}}
 
-                                        <button type="button" disabled class="btn btn-sm btn-warning">En cour </button>
+                                        <button type="button" disabled class="btn btn-sm btn-danger">Echouer </button>
                                     </td>
 
                                     <td>
