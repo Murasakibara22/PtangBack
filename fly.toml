@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for credit-agricole on 2024-02-09T17:15:49Z
+# fly.toml app configuration file generated for credit-agricole on 2024-02-15T15:36:30Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -29,6 +29,6 @@ console_command = 'php /var/www/html/artisan tinker'
   processes = ['app']
 
 [[vm]]
+  memory = '1gb'
   cpu_kind = 'shared'
   cpus = 1
-  memory_mb = 1024
