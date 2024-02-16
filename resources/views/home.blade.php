@@ -6,7 +6,7 @@
     <!-- row -->
     <div class="container-fluid">
         <div class="form-head mb-4">
-            <h2 class="text-black font-w600 mb-0">Mon Compte</h2>
+            <h2 class="text-danger font-w600 mb-0 text-uppercase">Compte suspendu</h2>
         </div>
         <div class="row">
             <div class="col-xl-6">

@@ -86,9 +86,9 @@
 
 		<div class= "page-titles form-head d-flex flex-wrap justify-content-between align-items-center mb-4">
 			<h2 class="text-black font-w600 mb-0 me-auto mb-2 pe-3">Historiques des Transactions</h2>
-			<a href="javascript:void(0)" class="btn btn-success btn-rounded me-3 " data-bs-toggle="modal" data-bs-target="#exampledownload">
+			<button type="button" disabled class="btn btn-dark btn-rounded me-3 " data-bs-toggle="modal" data-bs-target="#exampledownload">
 			<i class="las la-plus scale5 me-3"></i>
-			Effectuer une transaction</a>
+			Effectuer une transaction</button>
 			<div class="dropdown custom-dropdown mb-0">
 				<div class="btn btn-light btn-rounded" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 					<i class="las la-calendar-alt scale5 me-3"></i>
@@ -130,7 +130,7 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div>
-                                                <h6 class="fs-16 font-w600 mb-0 text-nowrap"><a href="https://mophy.dexignzone.com/codeigniter/demo/admin/transactions_details" class="text-black">{{$item_transac->name_beneficiaire}}</a></h6>
+                                                <h6 class="fs-16 font-w600 mb-0 text-nowrap"><a href="javascript:void(0);" class="text-black">{{$item_transac->name_beneficiaire}}</a></h6>
                                             </div>
                                         </div>
                                     </td>
