@@ -130,7 +130,7 @@
                                     <td>
                                         <div class="d-flex align-items-center">
                                             <div>
-                                                <h6 class="fs-16 font-w600 mb-0 text-nowrap"><a href="https://mophy.dexignzone.com/codeigniter/demo/admin/transactions_details" class="text-black">{{$item_transac->name_beneficiaire}}</a></h6>
+                                                <h6 class="fs-16 font-w600 mb-0 text-nowrap"><a href="javascript:void(0);" class="text-black">{{$item_transac->name_beneficiaire}}</a></h6>
                                             </div>
                                         </div>
                                     </td>
