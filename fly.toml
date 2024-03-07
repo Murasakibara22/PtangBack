@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for credit-agricole on 2024-02-15T15:36:30Z
+# fly.toml app configuration file generated for credit-agricole on 2024-03-07T00:37:12Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
 app = 'credit-agricole'
-primary_region = 'iad' 
+primary_region = 'iad'
 console_command = 'php /var/www/html/artisan tinker'
 
 [build]
