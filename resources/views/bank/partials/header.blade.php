@@ -1,8 +1,8 @@
 <div class="nav-header">
     <a href="/" class="brand-logo">
-        <img class="logo-abbr" src="{{ asset('creditAgriLogo.png') }}" alt="">
-        {{-- <img class="logo-compact" src="{{ asset('creditAgriLogo.png') }}" alt=""> --}}
-        <img class="brand-title" src="{{ asset('creditAgriLogo.png') }}" alt="">
+        <img class="logo-abbr" src="{{ asset('Unicredit.png') }}" alt="">
+        {{-- <img class="logo-compact" src="{{ asset('Unicredit.png') }}" alt=""> --}}
+        <img class="brand-title" src="{{ asset('Unicredit.png') }}" alt="">
     </a>
 
     <div class="nav-control">

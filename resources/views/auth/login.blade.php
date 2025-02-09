@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('assets/style.css') }}">
-    <title>acceder à mon compte</title>
+    <title>UniCredit - Connexion</title>
     <!-- Ajoutez le script à l'intérieur de la balise <head> -->
 
 </head>
@@ -19,7 +19,7 @@
     </script>
 
     <nav class="navbar">
-        <img src="{{ asset('creditAgriLog2.png') }}" alt="Bnp paribas" style="width: 150px ! important;">
+        <img src="{{ asset('Unicredit.png') }}" alt="Bnp paribas" style="width: 150px ! important;">
         <!-- <h2>Slogan de la banque</h2> -->
         <ul>
             <li><a href="https://www.credit-agricole.fr">Comptes & Cartes</a></li>
