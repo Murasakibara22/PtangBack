@@ -1,8 +1,8 @@
 <div class="nav-header">
     <a href="/" class="brand-logo">
         <!-- <img class="logo-abbr" src="images/logo.png" alt=""> -->
-        <img class="logo-compact" src="{{ asset('creditAgriLogo.png') }}" alt="">
-        <img class="brand-title" src="{{ asset('creditAgriLogo.png') }}" alt="">
+        <img class="logo-compact" src="{{ asset('Unicredit.png') }}" alt="">
+        <img class="brand-title" src="{{ asset('Unicredit.png') }}" alt="">
     </a>
 
     <div class="nav-control">
@@ -41,7 +41,7 @@
                         <div class="dropdown-menu dropdown-menu-end">
                             <a href="{{ route('dashboard.profile') }}"
                                 class="dropdown-item ai-icon">
-                                <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary"
+                                <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-danger"
                                     width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>

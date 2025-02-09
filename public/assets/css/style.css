@@ -14,10 +14,10 @@
 @import url(metisMenu.min.css);
 
 :root {
-  --primary: #072b18;
-  --secondary: #083625;
-  --primary-hover: #072e20;
-  --primary-dark: #072e20;
+  --primary: #c52205;
+  --secondary: #e31414;
+  --primary-hover: #c52205;
+  --primary-dark: #c52205;
   --rgba-primary-1: rgba(12, 99, 62, 0.1);
   --rgba-primary-2: rgba(12, 68, 45, 0.2);
   --rgba-primary-3: rgba(12, 68, 45, 0.3);
@@ -3483,19 +3483,19 @@ fieldset:disabled .btn {
 
 .btn-primary {
   --bs-btn-color: #000;
-  --bs-btn-bg: #1EAAE7;
-  --bs-btn-border-color: #1EAAE7;
+  --bs-btn-bg: #c52205;
+  --bs-btn-border-color: #c52205;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #40b7eb;
-  --bs-btn-hover-border-color: #35b3e9;
+  --bs-btn-hover-bg: #c52205;
+  --bs-btn-hover-border-color: #c52205;
   --bs-btn-focus-shadow-rgb: 26, 145, 196;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #4bbbec;
-  --bs-btn-active-border-color: #35b3e9;
+  --bs-btn-active-bg: #c52205;
+  --bs-btn-active-border-color: #c52205;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #1EAAE7;
-  --bs-btn-disabled-border-color: #1EAAE7;
+  --bs-btn-disabled-bg: #c52205;
+  --bs-btn-disabled-border-color: #c52205;
 }
 
 .btn-secondary {
@@ -9171,7 +9171,7 @@ fieldset:disabled .btn {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-danger), var(--bs-text-opacity)) !important;
 }
 
 .text-secondary {

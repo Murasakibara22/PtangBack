@@ -32,7 +32,7 @@
                                         <div class="col-sm-3 col-5">
                                             <h5 class="f-w-500">IBAN <span class="pull-end">:</span></h5>
                                         </div>
-                                        <div class="col-sm-9 col-7"><span>FR76 1027 8040 2600 0200 8130 287</span>
+                                        <div class="col-sm-9 col-7"><span>IT51 G020 0801 4010 0010 0432 887</span>
                                         </div>
                                     </div>
                                     <div class="row mb-2">

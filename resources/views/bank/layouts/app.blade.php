@@ -10,10 +10,10 @@
 	<meta name="robots" content="">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
-	<title>Credit Agricoles - Mon Compte </title>
+	<title>Unicredit - Mon Compte </title>
 	<!-- Favicon icon -->
 
-	<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('creditAgriLogo.png') }}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('Unicredit.png') }}">
 
 
 	<link href="{{ asset('assets/css/jqvmap.min.css') }}" rel="stylesheet" type="text/css">

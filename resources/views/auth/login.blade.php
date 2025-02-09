@@ -25,14 +25,14 @@
         <!-- <h2>Slogan de la banque</h2> -->
         <ul>
             <li><a href="https://www.credit-agricole.fr">Comptes & Cartes</a></li>
-            {{-- <li><a href="https://www.credit-agricole.fr/particulier/epargne/livret-epargne-logement/livret-a.html">Epargne</a></li> --}}
-            {{-- <li><a href="https://www.credit-agricole.fr/particulier/assurances/habitation/assurance-habitation.html">Assurance</a></li>
-            <li><a href="https://www.credit-agricole.fr/particulier/credit/immobilier/credit-immobilier-facilimmo.html">Credit</a></li> --}}
+            <li><a href="https://www.credit-agricole.fr/particulier/epargne/livret-epargne-logement/livret-a.html">Epargne</a></li>
+            <li><a href="https://www.credit-agricole.fr/particulier/assurances/habitation/assurance-habitation.html">Assurance</a></li>
+            <li><a href="https://www.credit-agricole.fr/particulier/credit/immobilier/credit-immobilier-facilimmo.html">Credit</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
         <button class="menu-btn">&#9776;</button>
     </nav>
- 
+
     <div class="login-container">
         <div class="left-section" >
 
@@ -58,13 +58,13 @@
                 </form>
                 <br>
                 <br>
-                <h3>Téléchargez l’application UniCredit.
+                <h3>Téléchargez l’application Ma Banque
 
                     Chacun d’entre vous gère différemment ses besoins bancaires.
-                    Seul ou accompagné, a Unicredit, vous aurez toujours le choix entre vous adresser à un conseiller ou utiliser l’application Ma Banque.</h3>
+                    Seul ou accompagné, au Crédit Agricole, vous aurez toujours le choix entre vous adresser à un conseiller ou utiliser l’application Ma Banque.</h3>
             </div>
         </div>
-        {{-- <div class="right-section">
+        <div class="right-section">
             <!-- Partie droite (couleur blanche) avec les consignes -->
             <div class="instructions-section">
                 <h3>Vos codes d'accès</h3>
@@ -93,7 +93,7 @@
                 <p>Vous pouvez également gérer vos comptes depuis votre mobile ou votre tablette via l'application Mes
                     comptes.</p>
             </div>
-        </div> --}}
+        </div>
     </div>
     <!-- Ajoutez la balise footer pour l'image en bas -->
     <footer>
