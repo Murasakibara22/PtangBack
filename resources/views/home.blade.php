@@ -6,7 +6,7 @@
     <!-- row -->
     <div class="container-fluid">
         <div class="form-head mb-4">
-            <h2 class="text-primary font-w600 mb-0 text-uppercase">Compte {{ Auth::user()->name }}</h2>
+            <h2 class="text-primary font-w600 mb-0 text-uppercase">Bienvenue <span class="text-black"> {{ Auth::user()->prenom.', '.Auth::user()->nom }} </span> </h2>
         </div>
         <div class="row">
             <div class="col-xl-6">
