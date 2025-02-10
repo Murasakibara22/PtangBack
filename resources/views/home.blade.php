@@ -6,7 +6,7 @@
     <!-- row -->
     <div class="container-fluid">
         <div class="form-head mb-4">
-            <h2 class="text-danger font-w600 mb-0 text-uppercase">Compte suspendu</h2>
+            <h2 class="text-primary font-w600 mb-0 text-uppercase">Compte {{ Auth::user()->name }}</h2>
         </div>
         <div class="row">
             <div class="col-xl-6">
@@ -16,7 +16,7 @@
                             <img src="{{ asset('assets/images/card.png') }}" alt="" class="mw-100">
                             <div class="card-info text-white">
                                 <p class="mb-1">Compte Principal</p>
-                                <h2 class="fs-36 text-white mb-sm-4 mb-3">35 315,00 €</h2>
+                                <h2 class="fs-36 text-white mb-sm-4 mb-3">538 924,39  €</h2>
                                 <div class="d-flex align-items-center justify-content-between mb-sm-5 mb-3">
                                     <img src="{{ asset('assets/images/dual-dot.png') }}" alt="" class="dot-img">
                                     <h4 class="fs-20 text-white mb-0">**** **** **** 576</h4>
