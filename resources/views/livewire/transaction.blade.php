@@ -38,7 +38,7 @@
 							</span>
 							<div class="media-body">
 								<p class="mb-1">En cour</p>
-								<h4 class="mb-0">0</h4>
+								<h4 class="mb-0">{{ App\Models\Transaction::count() }}</h4>
 								<span class="badge badge-warning">0%</span>
 							</div>
 						</div>
@@ -50,11 +50,17 @@
 					<div class="card-body  p-4">
 						<div class="media ai-icon">
 							<span class="me-3 bgl-danger text-danger">
-
+                                <svg id="icon-reset" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-refresh-cw">
+									<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+									<polyline points="14 2 14 8 20 8"></polyline>
+									<line x1="16" y1="13" x2="8" y2="13"></line>
+									<line x1="16" y1="17" x2="8" y2="17"></line>
+									<polyline points="10 9 9 9 8 9"></polyline>
+								</svg>
 							</span>
 							<div class="media-body">
 								<p class="mb-1">Echouer</p>
-								<h4 class="mb-0">{{ App\Models\Transaction::count() }}</h4>
+								<h4 class="mb-0">0</h4>
 								<span class="badge badge-danger">0%</span>
 							</div>
 						</div>
@@ -86,7 +92,7 @@
 
 		<div class= "page-titles form-head d-flex flex-wrap justify-content-between align-items-center mb-4">
 			<h2 class="text-black font-w600 mb-0 me-auto mb-2 pe-3">Historiques des Transactions</h2>
-			<button type="button" disabled class="btn btn-dark btn-rounded me-3 " data-bs-toggle="modal" data-bs-target="#exampledownload">
+			<button type="button"  class="btn btn-info btn-rounded me-3 " data-bs-toggle="modal" data-bs-target="#exampledownload">
 			<i class="las la-plus scale5 me-3"></i>
 			Effectuer une transaction</button>
 			<div class="dropdown custom-dropdown mb-0">
@@ -163,7 +169,7 @@
                                             En cour
                                         </div> --}}
 
-                                        <button type="button" disabled class="btn btn-sm btn-danger">Echouer </button>
+                                        <button type="button" disabled class="btn btn-sm btn-warning">En cours </button>
                                     </td>
 
                                     <td>

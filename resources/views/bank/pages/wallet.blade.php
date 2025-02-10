@@ -19,17 +19,17 @@
 									</svg>
 									<div class="me-auto">
 										<h5 class="fs-20 text-black font-w600">Compte Principal</h5>
-										<span class="text-num text-black font-w600">68.726,00 €</span>
+										<span class="text-num text-black font-w600">35 315,00 €</span>
 									</div>
 								</div>
 								<div class="me-3 mb-3">
 									<p class="fs-14 mb-1">VALIDATION</p>
-									<span class="text-black">08/29</span>
+									<span class="text-black">08/31</span>
 								</div>
 								<div class="me-3 mb-3">
-									<span class="text-black">Drechsler Ines</span>.</span>
+									<span class="text-black">Olivia Pecheresse</span>.</span>
 								</div>
-								<span class="fs-20 text-black font-w500 me-3 mb-3">**** **** **** 3456</span>
+								<span class="fs-20 text-black font-w500 me-3 mb-3">**** **** **** 576</span>
 							</div>
 							<div class="card-body">
 								<div class="progress mb-4" style="height:18px;">
@@ -46,7 +46,7 @@
 											</div>
 											<div class="media-body">
 												<h4 class="fs-15 text-black font-w600 mb-0">Factures</h4>
-												<span class="fs-14">0,00€</span>
+												<span class="fs-14">1 200,00€</span>
 											</div>
 										</div>
 									</div>
@@ -61,7 +61,7 @@
 												<span class="fs-14">0,00€</span>
 											</div>
 										</div>
-                                        
+
 									</div>
 									<div class="col-xl-3 mb-3 col-xxl-6 col-sm-6">
 										<div class="media bgl-info rounded p-2 align-items-center">
@@ -71,7 +71,7 @@
 											</div>
 											<div class="media-body">
 												<h4 class="fs-15 text-black font-w600 mb-0">Restaurant</h4>
-												<span class="fs-14">0,00€</span>
+												<span class="fs-14">250,00€</span>
 											</div>
 										</div>
 									</div>

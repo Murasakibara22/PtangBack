@@ -16,15 +16,15 @@
                             <img src="{{ asset('assets/images/card.png') }}" alt="" class="mw-100">
                             <div class="card-info text-white">
                                 <p class="mb-1">Compte Principal</p>
-                                <h2 class="fs-36 text-white mb-sm-4 mb-3">68.726,00 €</h2>
+                                <h2 class="fs-36 text-white mb-sm-4 mb-3">35 315,00 €</h2>
                                 <div class="d-flex align-items-center justify-content-between mb-sm-5 mb-3">
                                     <img src="{{ asset('assets/images/dual-dot.png') }}" alt="" class="dot-img">
-                                    <h4 class="fs-20 text-white mb-0">**** **** **** 3456</h4>
+                                    <h4 class="fs-20 text-white mb-0">**** **** **** 576</h4>
                                 </div>
                                 <div class="d-flex">
                                     <div class="me-5">
-                                        <p class="fs-14 mb-1 op6">Drechsler Ines</p>
-                                        <span>08/29</span>
+                                        <p class="fs-14 mb-1 op6">Olivia Pecheresse</p>
+                                        <span>08/31</span>
                                     </div>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@
                             <div class="card-header flex-wrap border-0 pb-0">
                                 <div class="me-3 mb-2">
                                     <p class="fs-14 mb-1">Revenu</p>
-                                    <span class="fs-24 text-black font-w600">0,00€</span>
+                                    <span class="fs-24 text-black font-w600">12 410,00€</span>
                                 </div>
                                 <span class="fs-12 mb-2">
                                     <svg width="21" height="15" viewBox="0 0 21 15" fill="none"
@@ -71,7 +71,7 @@
                                             </linearGradient>
                                         </defs>
                                     </svg>
-                                    0% (30 Jours)</span>
+                                    14% (30 Jours)</span>
                             </div>
                             <div class="card-body p-0">
                                 <canvas id="widgetChart1" height="80"></canvas>
@@ -83,7 +83,7 @@
                             <div class="card-header flex-wrap border-0 pb-0">
                                 <div class="me-3 mb-2">
                                     <p class="fs-14 mb-1">Depenses</p>
-                                    <span class="fs-24 text-black font-w600">0,00€</span>
+                                    <span class="fs-24 text-black font-w600">5 600,00€</span>
                                 </div>
                                 <span class="fs-12 mb-2">
                                     <svg width="21" height="15" viewBox="0 0 21 15" fill="none"
@@ -102,7 +102,7 @@
                                             </linearGradient>
                                         </defs>
                                     </svg>
-                                    0% (30 Jours)</span>
+                                    2% (30 Jours)</span>
                             </div>
                             <div class="card-body p-0">
                                 <canvas id="widgetChart2" height="80"></canvas>
@@ -120,7 +120,7 @@
                                             <path d="M11.9999 6L5.99994 -2.62268e-07L-6.10352e-05 6"
                                                 fill="#2BC155"></path>
                                         </svg>
-                                        <strong class="fs-24 text-black ms-2 me-3">0%</strong>Semaine
+                                        <strong class="fs-24 text-black ms-2 me-3">15%</strong>Semaine
                                         dernière</span>
                                 </div>
                                 <span class="fs-12">

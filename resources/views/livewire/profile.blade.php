@@ -40,14 +40,14 @@
                                             <h5 class="f-w-500">Date de naissance <span class="pull-end">:</span>
                                             </h5>
                                         </div>
-                                        <div class="col-sm-9 col-7"><span>24.02.1963</span>
+                                        <div class="col-sm-9 col-7"><span>..........</span>
                                         </div>
                                     </div>
                                     <div class="row mb-2">
                                         <div class="col-sm-3 col-5">
                                             <h5 class="f-w-500">Adresse <span class="pull-end">:</span></h5>
                                         </div>
-                                        <div class="col-sm-9 col-7"><span> {{auth()->user()->adresse  }}</span>
+                                        <div class="col-sm-9 col-7"><span>..........</span>
                                         </div>
                                     </div>
                                     <div class="row mb-2">
