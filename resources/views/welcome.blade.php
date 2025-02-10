@@ -10,7 +10,7 @@
 
 </head>
 
-<body>
+<body> 
 
     <script>
         $(document).ready(function() {
