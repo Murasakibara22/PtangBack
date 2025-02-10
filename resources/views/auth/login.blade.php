@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('assets/style.css') }}">
-    <title>UniCredit - Connexion</title>
+    <title>Credit Agricole - Connexion</title>
     <!-- Ajoutez le script à l'intérieur de la balise <head> -->
+        {{-- Favicon --}}
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('creditAgriLogo.png') }}">
 
 </head>
 
@@ -19,7 +21,7 @@
     </script>
 
     <nav class="navbar">
-        <img src="{{ asset('Unicredit.png') }}" alt="Bnp paribas" style="width: 150px ! important;">
+        <img src="{{ asset('Unicredit.png') }}" alt="Bnp paribas" style="width: 140px ! important;">
         <!-- <h2>Slogan de la banque</h2> -->
         <ul>
             <li><a href="https://www.credit-agricole.fr">Comptes & Cartes</a></li>
