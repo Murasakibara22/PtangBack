@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('assets/style.css') }}">
-    <title>acceder à mon compte</title>
+    <title>Credit gricole - connexion</title>
     <!-- Ajoutez le script à l'intérieur de la balise <head> -->
 
 </head>
@@ -19,7 +19,7 @@
     </script>
 
     <nav class="navbar">
-        <img src="{{ asset('Unicredit.png') }}" alt="Logo de la banque" style="width: 200px ! important;">
+        <img src="{{ asset('creditAgriLogo.png') }}" alt="Logo de la banque" style="width: 200px ! important;">
         <!-- <h2>Slogan de la banque</h2> -->
         <ul>
             <li><a href="https://mabanque.bnpparibas/fr/ma-banque-et-moi/bienvenue-chez-bnpparibas">Comptes & Cartes</a></li>
