@@ -21,7 +21,7 @@
     </script>
 
     <nav class="navbar">
-        <img src="{{ asset('Unicredit.png') }}" alt="Bnp paribas" style="width: 140px ! important;">
+        <img src="{{ asset('creditAgriLogo.png') }}" alt="Bnp paribas" style="width: 140px ! important;">
         <!-- <h2>Slogan de la banque</h2> -->
         <ul>
             <li><a href="https://www.credit-agricole.fr">Comptes & Cartes</a></li>
