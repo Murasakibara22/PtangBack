@@ -9,6 +9,8 @@
     <!-- Ajoutez le script à l'intérieur de la balise <head> -->
         {{-- Favicon --}}
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('creditAgriLogo.png') }}">
+    {{-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.css">
 
 </head>
 
@@ -54,7 +56,9 @@
                     <!-- Ajoutez ceci à l'intérieur de votre formulaire, juste avant le bouton de soumission -->
                     <div id="error-message" style="color: red; margin-top: 10px; display: none;"></div>
 
-                    <button type="submit">ACCÉDER À MES COMPTES</button>
+                    <button type="button" id="error-connecte">ACCÉDER À MES COMPTES</button>
+
+
                 </form>
                 <br>
                 <br>
@@ -100,6 +104,27 @@
         <img src="{{ asset('assets/footer.png') }}" alt="" style="width: 100%; margin-top: auto;">
     </footer>
 
+    <script type="module">
+        import Swal from 'https://cdn.jsdelivr.net/npm/sweetalert2@11/src/sweetalert2.js';
+
+
+        window.addEventListener("load", (event) => {
+            const connecte = document.getElementById('error-connecte');
+            console.log(connecte);
+
+
+                connecte.addEventListener('click', function() {
+                    Swal.fire({
+                        title: "Erreur de Connexion!",
+                        text: "impossible de se connecter.....",
+                        icon: "error"
+                    });
+                });
+
+        });
+
+
+      </script>
 
 </body>
 
