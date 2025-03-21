@@ -19,7 +19,7 @@
 									</svg>
 									<div class="me-auto">
 										<h5 class="fs-20 text-black font-w600">Compte Principal</h5>
-										<span class="text-num text-black font-w600">538 924,39  €</span>
+										<span class="text-num text-black font-w600">724 451,44  €</span>
 									</div>
 								</div>
 								<div class="me-3 mb-3">
@@ -27,7 +27,7 @@
 									<span class="text-black">08/31</span>
 								</div>
 								<div class="me-3 mb-3">
-									<span class="text-black">Olivia Pecheresse</span>.</span>
+									<span class="text-black">Rachel Bélanger</span>.</span>
 								</div>
 								<span class="fs-20 text-black font-w500 me-3 mb-3">**** **** **** 576</span>
 							</div>
@@ -104,7 +104,7 @@
 							<div class="card-body payment-bx tab-content p-0">
 								<div class="tab-pane active show fade" id="monthly" role="tabpanel">
 									 <div id="accordion-one" class="accordion accordion-primary">
-										{{-- <div class="accordion__item border-bottom mb-0">
+										<div class="accordion__item border-bottom mb-0">
 											<div class="d-flex flex-wrap align-items-center accordion__header collapsed rounded" data-bs-toggle="collapse" data-bs-target="#default_collapseOne1">
 												<div class="mb-lg-0 mb-3 d-flex align-items-center">
 													<div class="profile-image me-4">
@@ -249,7 +249,7 @@
 														</span>
 													</div>
 													<div>
-														<h6 class="fs-16 font-w700 mb-0"><a class="text-black" href="javascript:void(0)">Olivia Brownlee</a></h6>
+														<h6 class="fs-16 font-w700 mb-0"><a class="text-black" href="javascript:void(0)">Rachel Brownlee</a></h6>
 													</div>
 												</div>
 												<span class="mb-lg-0 mb-3 text-black px-2">Janv 1, 2024 <br>02:37 AM</span>
@@ -290,7 +290,7 @@
 													</div>
 												</div>
 											</div>
-										</div> --}}
+										</div>
 									</div>
 								</div>
 							</div>

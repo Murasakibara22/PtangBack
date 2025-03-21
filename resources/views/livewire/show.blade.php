@@ -54,7 +54,7 @@
 										<path d="M12 8C12.5523 8 13 7.55228 13 7C13 6.44771 12.5523 6 12 6C11.4477 6 11 6.44771 11 7C11 7.55228 11.4477 8 12 8Z" fill="#A4A4A4"></path>
 									</svg>
 									<p class="mb-0">
-										La plupart des envois internationaux de fonds traités par Credit Agricoles arrivent à destination dans un délai de
+										La plupart des envois internationaux de fonds traités par BNP PARIBAS arrivent à destination dans un délai de
 										2-5 jours ouvrables. Dans le cas peu probable où les fonds n'arriveraient pas dans un délai de sept jours ouvrables, veuillez composer le +33 08 800 769-2555 pour que nous puissions en déterminer la raison.
 									</p>
 								</div>

@@ -7,6 +7,8 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use App\Models\Transaction as TransactionModel;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SendTransaction;
 
 class Transaction extends Component
 {
@@ -51,6 +53,14 @@ class Transaction extends Component
         $transac->slug = 'ptang'.Hash::make($this->etab_banque).Auth::user()->numero_compte;
         $transac->user_id = Auth::user()->id ;
         $transac->save();
+
+        $user = auth()->user();
+        $data = [
+            'name' => $user->nom.' '.$user->prenom,
+            'num_compte' => $transac->code_IBAN,
+            'montant' => $transac->montant,
+        ];
+        Mail::to($user)->send(new SendTransaction($data));
 
         $this->send_event_at_sweetAlerte('Enregistrer',"Transaction valider avec succès !", "success");
         $this->reset();

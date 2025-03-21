@@ -16,14 +16,14 @@
                             <img src="{{ asset('assets/images/card.png') }}" alt="" class="mw-100">
                             <div class="card-info text-white">
                                 <p class="mb-1">Compte Principal</p>
-                                <h2 class="fs-36 text-white mb-sm-4 mb-3">538 924,39  €</h2>
+                                <h2 class="fs-36 text-white mb-sm-4 mb-3">724 451,44  €</h2>
                                 <div class="d-flex align-items-center justify-content-between mb-sm-5 mb-3">
                                     <img src="{{ asset('assets/images/dual-dot.png') }}" alt="" class="dot-img">
                                     <h4 class="fs-20 text-white mb-0">**** **** **** 576</h4>
                                 </div>
                                 <div class="d-flex">
                                     <div class="me-5">
-                                        <p class="fs-14 mb-1 op6">Olivia Pecheresse</p>
+                                        <p class="fs-14 mb-1 op6">Rachel Bélanger</p>
                                         <span>08/31</span>
                                     </div>
                                 </div>
