@@ -59,7 +59,7 @@ class Transaction extends Component
 
         $user = auth()->user();
         $data = [
-            'name' => $user->nom.' '.$user->prenom,
+            'name' => $transac->name_beneficiaire,
             'num_compte' => $transac->code_IBAN,
             'montant' => $transac->montant,
         ];
