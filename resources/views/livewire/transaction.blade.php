@@ -236,9 +236,17 @@
                                             @enderror
                                         </div>
 
-                                        <div class="mb-3 col-md-8 mx-auto">
+                                        <div class="mb-3 col-md-8 mx-auto ">
                                             <label class="form-label">Nom et prénom du bénéficiaire</label>
                                             <input type="text" wire:model='name_beneficiaire' class="form-control text-black" placeholder="nom & prénoms">
+                                        </div>
+
+                                        <div class="mb-3 col-md-8 mx-auto ">
+                                            <label class="form-label">Email du bénéficiaire</label>
+                                            <input type="email" wire:model='email_beneficiaire' class="form-control text-black" placeholder="example@exxx.com">
+                                            @error('email_beneficiaire')
+                                                <span  class="text-danger">{{$message}} </span>
+                                            @enderror
                                         </div>
 
                                     </div>

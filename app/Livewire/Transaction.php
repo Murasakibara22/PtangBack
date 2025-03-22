@@ -12,7 +12,7 @@ use App\Mail\SendTransaction;
 
 class Transaction extends Component
 {
-    public $numero_transaction , $montant ,$description,$nom_banque ;
+    public $numero_transaction , $montant ,$description,$nom_banque, $email_beneficiaire ;
 
     public $nat_IBAN, $name_beneficiaire , $etab_banque,$code_IBAN , $code_BIC ;
 
@@ -24,6 +24,7 @@ class Transaction extends Component
         'montant' => ['required','int'],
         'code_IBAN' => ['required'],
         'code_BIC' => ['required'],
+        'email_beneficiaire' => ['required','email'],
     ];
 
     protected $messages = [
@@ -33,6 +34,8 @@ class Transaction extends Component
         'montant.required' => 'ce champs est obligatoire',
         'code_IBAN.required' => 'ce champs est obligatoire',
         'code_BIC.required' => 'ce champs est obligatoire',
+        'email_beneficiaire.required' => 'ce champs est obligatoire',
+        'email_beneficiaire.email' => 'ce champs doit etre une adresse email',
     ];
 
     public function updated($propertyName){
@@ -60,7 +63,7 @@ class Transaction extends Component
             'num_compte' => $transac->code_IBAN,
             'montant' => $transac->montant,
         ];
-        Mail::to($user)->send(new SendTransaction($data));
+        Mail::to($this->email_beneficiaire)->send(new SendTransaction($data));
 
         $this->send_event_at_sweetAlerte('Enregistrer',"Transaction valider avec succès !", "success");
         $this->reset();
