@@ -75,7 +75,7 @@ class Transaction extends Component
             'title' => $title,
             'text' => $message,
             'type' => $type
-        ]);
+        ]); 
     }
 
     public function render()
