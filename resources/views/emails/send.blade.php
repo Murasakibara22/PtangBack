@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>BNP Paribas | MAil </title>
+    <title>DesJardins | Email Transaction </title>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
@@ -93,7 +93,7 @@ Vous recevrez un nouvel e-mail dès que cette panne sera réglée, et vous pourr
 Nous vous remercions de votre patience et de votre compréhension.
 
 Cordialement,
-L’équipe de BNP PARIBAS
+L’équipe  DesJardins
 
                     </p>
                     <p
@@ -142,10 +142,10 @@ L’équipe de BNP PARIBAS
             font-weight: 600;
             color: #434343;
           ">
-                BNP Paribas
+                DesJardins
             </p>
             <p style="margin: 0; margin-top: 8px; color: #434343;">
-                France BNP Paribas
+                France DesJardins
             </p>
             <div style="margin: 0; margin-top: 16px;">
                 <a href="" target="_blank" style="display: inline-block;">
@@ -164,7 +164,7 @@ L’équipe de BNP PARIBAS
                         src="https://-resources.s3.ap-northeast-2.amazonaws.com/vrstyler/1661503195931_210869/email-template-icon-youtube" /></a>
             </div>
             <p style="margin: 0; margin-top: 16px; color: #434343;">
-                Copyright © 2024 par BNP Paribas. tous droits reservés.
+                Copyright © 2024 par DesJardins. tous droits reservés.
             </p>
         </footer>
     </div>

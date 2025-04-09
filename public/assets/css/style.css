@@ -19165,7 +19165,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-sidebar-style="full"][data-layout="vertical"] .deznav .metismenu>li.mm-active>a i {
   color: #fff;
-  background: var(--primary);
+  background: #1f8012;
 }
 
 [data-sidebar-style="full"][data-layout="vertical"] .deznav .metismenu>li .has-arrow:after {
@@ -36043,8 +36043,8 @@ button:focus {
 }
 
 .btn-primary {
-  border-color: var(--primary);
-  background-color: var(--primary);
+    border-color: #65e154;
+    background-color: #3cb350;
 }
 
 .btn-primary:active,

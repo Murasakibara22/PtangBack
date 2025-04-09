@@ -1,8 +1,8 @@
 <div class="nav-header">
     <a href="/" class="brand-logo">
-        <!-- <img class="logo-abbr" src="images/logo.png" alt=""> -->
-        <img class="logo-compact" src="{{ asset('logo1.webp') }}" alt="">
-        <img class="brand-title" src="{{ asset('logo1.webp') }}" alt="">
+         <img class="logo-abbr" src="{{ asset('logojardins.svg') }}" alt="">
+        <img class="logo-compact" src="{{ asset('logojardins.svg') }}" alt="">
+        <img class="brand-title" src="{{ asset('logojardins.svg') }}" alt="">
     </a>
 
     <div class="nav-control">

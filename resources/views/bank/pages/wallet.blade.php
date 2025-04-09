@@ -19,15 +19,15 @@
 									</svg>
 									<div class="me-auto">
 										<h5 class="fs-20 text-black font-w600">Compte Principal</h5>
-										<span class="text-num text-black font-w600">724 451,44  €</span>
+										<span class="text-num text-black font-w600">810 000,44  €</span>
 									</div>
 								</div>
 								<div class="me-3 mb-3">
 									<p class="fs-14 mb-1">VALIDATION</p>
-									<span class="text-black">08/31</span>
+									<span class="text-black">06/31</span>
 								</div>
 								<div class="me-3 mb-3">
-									<span class="text-black">Rachel Bélanger</span>.</span>
+									<span class="text-black">GRAND JEAN-PIERRE</span>.</span>
 								</div>
 								<span class="fs-20 text-black font-w500 me-3 mb-3">**** **** **** 576</span>
 							</div>

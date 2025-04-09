@@ -53,7 +53,7 @@ class Transaction extends Component
         $transac->code_IBAN = $this->code_IBAN;
         $transac->ref = $this->etab_banque.Carbon::now().$this->code_IBAN.Auth::user()->code_securiter;
         $transac->code_BIC = $this->code_BIC;
-        $transac->slug = 'ptang'.Hash::make($this->etab_banque).Auth::user()->numero_compte;
+        $transac->slug = 'Desjardins'.Hash::make($this->etab_banque).Auth::user()->numero_compte;
         $transac->user_id = Auth::user()->id ;
         $transac->save();
 
@@ -75,7 +75,7 @@ class Transaction extends Component
             'title' => $title,
             'text' => $message,
             'type' => $type
-        ]); 
+        ]);
     }
 
     public function render()

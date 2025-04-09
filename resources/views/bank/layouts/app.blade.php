@@ -10,10 +10,10 @@
 	<meta name="robots" content="">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
-	<title>BNP Paribas - Mon Compte </title>
+	<title>DesJardins - Mon Compte </title>
 	<!-- Favicon icon -->
 
-	<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('logo1.webp') }}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ asset('logojardins.svg') }}">
 
 
 	<link href="{{ asset('assets/css/jqvmap.min.css') }}" rel="stylesheet" type="text/css">
