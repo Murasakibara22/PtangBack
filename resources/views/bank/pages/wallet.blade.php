@@ -19,7 +19,7 @@
 									</svg>
 									<div class="me-auto">
 										<h5 class="fs-20 text-black font-w600">Compte Principal</h5>
-										<span class="text-num text-black font-w600">810 000,44  €</span>
+										<span class="text-num text-black font-w600">810 000,44  $</span>
 									</div>
 								</div>
 								<div class="me-3 mb-3">
@@ -46,7 +46,7 @@
 											</div>
 											<div class="media-body">
 												<h4 class="fs-15 text-black font-w600 mb-0">Factures</h4>
-												<span class="fs-14">1 200,00€</span>
+												<span class="fs-14">1 200,00$</span>
 											</div>
 										</div>
 									</div>
@@ -58,7 +58,7 @@
 											</div>
 											<div class="media-body">
 												<h4 class="fs-15 text-black font-w600 mb-0">Investissement</h4>
-												<span class="fs-14">0,00€</span>
+												<span class="fs-14">0,00$</span>
 											</div>
 										</div>
 
@@ -71,7 +71,7 @@
 											</div>
 											<div class="media-body">
 												<h4 class="fs-15 text-black font-w600 mb-0">Restaurant</h4>
-												<span class="fs-14">250,00€</span>
+												<span class="fs-14">250,00$</span>
 											</div>
 										</div>
 									</div>
@@ -129,7 +129,7 @@
 													</div>
 												</div>
 												<span class="mb-lg-0 mb-3 text-black px-2">12 janvier 2023 <br>08:22 AM</span>
-												<span class="mb-lg-0 mb-3 text-black font-w600 px-2">+5,553 €</span>
+												<span class="mb-lg-0 mb-3 text-black font-w600 px-2">+5,553 $</span>
 												<span class="mb-lg-0 mb-3 text-black font-w600 px-2">MasterCard 404</span>
 												<a class="mb-lg-0 mb-3 btn btn-outline-success btn-md btn-rounded mx-2" href="javascript:void(0)">Completed</a>
 												<span class="accordion__header--indicator"></span>
@@ -191,7 +191,7 @@
 													</div>
 												</div>
 												<span class="mb-lg-0 mb-3 text-black px-2">Janv 3, 2024 <br>04:29 AM</span>
-												<span class="mb-lg-0 mb-3 text-black font-w600 px-2">+2,351 €</span>
+												<span class="mb-lg-0 mb-3 text-black font-w600 px-2">+2,351 $</span>
 												<span class="mb-lg-0 mb-3 text-black font-w600 px-2">MasterCard 404</span>
 												<a class="mb-lg-0 mb-3 btn btn-outline-dark btn-md btn-rounded mx-2" href="javascript:void(0)">Canceled</a>
 												<span class="accordion__header--indicator"></span>
@@ -253,7 +253,7 @@
 													</div>
 												</div>
 												<span class="mb-lg-0 mb-3 text-black px-2">Janv 1, 2024 <br>02:37 AM</span>
-												<span class="mb-lg-0 mb-3 text-black font-w600 px-2">+3,543 €</span>
+												<span class="mb-lg-0 mb-3 text-black font-w600 px-2">+3,543 $</span>
 												<span class="mb-lg-0 mb-3 text-black font-w600 px-2">MasterCard 404</span>
 												<a class="mb-lg-0 mb-3 btn btn-outline-success btn-md btn-rounded mx-2" href="javascript:void(0)">Completed</a>
 												<span class="accordion__header--indicator"></span>

@@ -140,7 +140,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td><span class="text-black fs-16 font-w600">{{ $item_transac->montant}} EUR</span></td>
+                                    <td><span class="text-black fs-16 font-w600">{{ $item_transac->montant}} $</span></td>
                                     <td>
                                         <span class="text-black ms-5">{{$item_transac->etab_banque}} </span>
                                     </td>
@@ -222,8 +222,8 @@
                                             @enderror
                                         </div>
                                         <div class="mb-3 col-md-8 mx-auto">
-                                            <label class="form-label">Montant (EUR)</label>
-                                            <input type="number" wire:model='montant' class="form-control text-black" placeholder="000000 EUR">
+                                            <label class="form-label">Montant ($)</label>
+                                            <input type="number" wire:model='montant' class="form-control text-black" placeholder="000000 $">
                                             @error('montant')
                                                 <span  class="text-danger">{{$message}} </span>
                                             @enderror

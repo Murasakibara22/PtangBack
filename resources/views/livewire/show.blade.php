@@ -44,7 +44,7 @@
 									</div>
 									<div class="mb-3">
 										<p class="fs-14 mb-1">Montant</p>
-										<span class="text-black fs-18 font-w500"> {{$transaction_list->montant}} EUR</span>
+										<span class="text-black fs-18 font-w500"> {{$transaction_list->montant}} $</span>
 									</div>
 								</div>
 								<div class="p-3 bgl-dark rounded fs-14 d-flex">
