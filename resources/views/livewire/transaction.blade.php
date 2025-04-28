@@ -169,7 +169,7 @@
                                             En cour
                                         </div> --}}
 
-                                        <button type="button" disabled class="btn btn-sm btn-warning">En cours</button>
+                                        <button type="button" disabled class="btn btn-sm btn-success">Envoyé</button>
                                     </td>
 
                                     <td>

@@ -32,30 +32,44 @@
                                         <div class="col-sm-3 col-5">
                                             <h5 class="f-w-500">IBAN <span class="pull-end">:</span></h5>
                                         </div>
-                                        <div class="col-sm-9 col-7"><span>FR76 1027 8040 2600 0200 8130 287</span>
+                                        <div class="col-sm-9 col-7"><span>FR76 1027 8040 2600 0200 </span>
                                         </div>
                                     </div>
                                     <div class="row mb-2">
                                         <div class="col-sm-3 col-5">
-                                            <h5 class="f-w-500">Date de naissance <span class="pull-end">:</span>
+                                            <h5 class="f-w-500">Date<span class="pull-end">:</span>
                                             </h5>
                                         </div>
-                                        <div class="col-sm-9 col-7"><span>1959-12-30</span>
+                                        <div class="col-sm-9 col-7"><span>1996-10-30</span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-sm-3 col-5">
+                                            <h5 class="f-w-500">Pays <span class="pull-end">:</span></h5>
+                                        </div>
+                                        <div class="col-sm-9 col-7"><span>France</span>
                                         </div>
                                     </div>
                                     <div class="row mb-2">
                                         <div class="col-sm-3 col-5">
                                             <h5 class="f-w-500">Adresse <span class="pull-end">:</span></h5>
                                         </div>
-                                        <div class="col-sm-9 col-7"><span>6912 21eme Avenue MONTREAL
+                                        <div class="col-sm-9 col-7"><span>6912 21eme Avenue France
                                             (QC) H1X 2G8</span>
                                         </div>
                                     </div>
                                     <div class="row mb-2">
                                         <div class="col-sm-3 col-5">
-                                            <h5 class="f-w-500">Telephone <span class="pull-end">:</span></h5>
+                                            <h5 class="f-w-500">Ville <span class="pull-end">:</span></h5>
                                         </div>
-                                        <div class="col-sm-9 col-7"><span>+{{auth()->user()->phone}}</span>
+                                        <div class="col-sm-9 col-7"><span>Amiens    </span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-sm-3 col-5">
+                                            <h5 class="f-w-500">Gestionnaire <span class="pull-end">:</span></h5>
+                                        </div>
+                                        <div class="col-sm-9 col-7"><span>MR BLANOT GERARD</span>
                                         </div>
                                     </div>
                                 </div>

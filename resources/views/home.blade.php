@@ -15,15 +15,15 @@
                         <div class="card-bx stacked">
                             <img src="{{ asset('assets/images/card.png') }}" alt="" class="mw-100">
                             <div class="card-info text-white">
-                                <p class="mb-1">Compte Principal</p>
-                                <h2 class="fs-36 text-white mb-sm-4 mb-3">724 451,44  €</h2>
+                                <p class="mb-1">Compte Principal <span class="badge badge-danger">Bloqué</span></p>
+                                <h2 class="fs-36 text-white mb-sm-4 mb-3">1.127.000 €</h2>
                                 <div class="d-flex align-items-center justify-content-between mb-sm-5 mb-3">
                                     <img src="{{ asset('assets/images/dual-dot.png') }}" alt="" class="dot-img">
                                     <h4 class="fs-20 text-white mb-0">**** **** **** 576</h4>
                                 </div>
                                 <div class="d-flex">
                                     <div class="me-5">
-                                        <p class="fs-14 mb-1 op6">Rachel Bélanger</p>
+                                        <p class="fs-14 mb-1 op6">Filippetti Marcel</p>
                                         <span>08/31</span>
                                     </div>
                                 </div>
@@ -36,7 +36,7 @@
                         <div class="card bgl-primary card-body overflow-hidden p-0 d-flex rounded">
                             <div class="p-0 text-center mt-3">
                                 <span class="text-black">Limite</span>
-                                <h3 class="text-black fs-20 mb-0 font-w600">0,000€</h3>
+                                <h3 class="text-black fs-20 mb-0 font-w600">0,00€</h3>
                                 <small>10,000 €</small>
                             </div>
                             <canvas id="lineChart" height="300" class="mt-auto line-chart-demo"></canvas>

