@@ -40,7 +40,7 @@
                                             <h5 class="f-w-500">Date<span class="pull-end">:</span>
                                             </h5>
                                         </div>
-                                        <div class="col-sm-9 col-7"><span>1996-10-30</span>
+                                        <div class="col-sm-9 col-7"><span>1974-09-19</span>
                                         </div>
                                     </div>
                                     <div class="row mb-2">
