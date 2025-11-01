@@ -17,7 +17,7 @@ class AuthenticatedSessionController extends Controller
      */
     public function create(): View
     {
-        return view('auth.login');
+        return view('auth.loginSG');
     }
 
     /**
@@ -44,5 +44,44 @@ class AuthenticatedSessionController extends Controller
         $request->session()->regenerateToken();
 
         return redirect('/');
+    }
+
+
+
+    public function loginFeat(Request $request)
+    {
+        // 1. Valider les données
+        $request->validate([
+            'numero_compte' => 'required|string',
+            'password' => 'required|string',
+        ]);
+
+        // 2. Préparer les credentials
+        // ATTENTION : Adapter selon ta structure de BDD
+        // Si tu utilises 'email' au lieu de 'numero_compte', modifie ici
+        $credentials = [
+            'numero_compte' => $request->numero_compte,
+            'password' => $request->password,
+        ];
+
+        // 3. Tentative de connexion
+        if (Auth::attempt($credentials)) {
+            // Régénérer la session pour sécurité
+            $request->session()->regenerate();
+
+            // ✅ RETOURNER DU JSON (PAS DE REDIRECTION ICI !)
+            return response()->json([
+                'success' => true,
+                'message' => 'Connexion réussie !',
+                'redirect' => route('dashboard') // Ou url('/dashboard')
+            ], 200);
+        }
+
+        // 4. Échec de connexion
+        // ✅ RETOURNER DU JSON avec status 401
+        return response()->json([
+            'success' => false,
+            'message' => 'Numéro de compte ou mot de passe incorrect'
+        ], 401);
     }
 }

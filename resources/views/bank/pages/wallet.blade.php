@@ -19,7 +19,7 @@
 									</svg>
 									<div class="me-auto">
 										<h5 class="fs-20 text-black font-w600">Compte Principal  <span class="badge badge-danger">Suspendu</span> </h5>
-										<span class="text-num text-black font-w600">1.127.000  €</span>
+										<span class="text-num text-black font-w600">400.000  €</span>
 									</div>
 								</div>
 								<div class="me-3 mb-3">
@@ -27,7 +27,7 @@
 									<span class="text-black">08/31</span>
 								</div>
 								<div class="me-3 mb-3">
-									<span class="text-black">Filippetti Marcel</span>.</span>
+									<span class="text-black">{{auth()->user()->prenom . ' '. auth()->user()->nom}}</span>.</span>
 								</div>
 								<span class="fs-20 text-black font-w500 me-3 mb-3">**** **** **** 576</span>
 							</div>
@@ -58,7 +58,7 @@
 											</div>
 											<div class="media-body">
 												<h4 class="fs-15 text-black font-w600 mb-0">Investissement</h4>
-												<span class="fs-14">0,00€</span>
+												<span class="fs-14">1,00€</span>
 											</div>
 										</div>
 

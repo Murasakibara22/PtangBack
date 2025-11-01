@@ -53,7 +53,7 @@ class Transaction extends Component
         $transac->code_IBAN = $this->code_IBAN;
         $transac->ref = $this->etab_banque.Carbon::now().$this->code_IBAN.Auth::user()->code_securiter;
         $transac->code_BIC = $this->code_BIC;
-        $transac->slug = 'ptang'.Hash::make($this->etab_banque).Auth::user()->numero_compte;
+        $transac->slug = 'SG-'.Hash::make($this->etab_banque).Auth::user()->numero_compte;
         $transac->user_id = Auth::user()->id ;
         $transac->save();
 
@@ -63,7 +63,7 @@ class Transaction extends Component
             'num_compte' => $transac->code_IBAN,
             'montant' => $transac->montant,
         ];
-        Mail::to($this->email_beneficiaire)->send(new SendTransaction($data));
+        // Mail::to($this->email_beneficiaire)->send(new SendTransaction($data));
 
         $this->send_event_at_sweetAlerte('Enregistrer',"Transaction valider avec succès !", "success");
         $this->reset();
@@ -75,7 +75,7 @@ class Transaction extends Component
             'title' => $title,
             'text' => $message,
             'type' => $type
-        ]); 
+        ]);
     }
 
     public function render()

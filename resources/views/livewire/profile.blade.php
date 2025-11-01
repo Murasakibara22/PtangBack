@@ -47,15 +47,14 @@
                                         <div class="col-sm-3 col-5">
                                             <h5 class="f-w-500">Adresse <span class="pull-end">:</span></h5>
                                         </div>
-                                        <div class="col-sm-9 col-7"><span>6912 21eme Avenue France
-                                            (QC) H1X 2G8</span>
+                                        <div class="col-sm-9 col-7"><span>Nomain (France)</span>
                                         </div>
                                     </div>
                                     <div class="row mb-2">
                                         <div class="col-sm-3 col-5">
                                             <h5 class="f-w-500">Ville <span class="pull-end">:</span></h5>
                                         </div>
-                                        <div class="col-sm-9 col-7"><span>Amiens    </span>
+                                        <div class="col-sm-9 col-7"><span>Nomain</span>
                                         </div>
                                     </div>
                                     <div class="row mb-2">

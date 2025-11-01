@@ -21,10 +21,17 @@ class BankingController extends Controller
 
         if (Auth::attempt($credentials, $request->filled('remember'))) {
             // Authentification réussie
-            return redirect(RouteServiceProvider::HOME);
+             return response()->json([
+                'success' => true,
+                'message' => 'Connexion réussie !',
+                'redirect' => route('dashboard.ptang') // Ou url('/dashboard')
+            ], 200);
         }
 
-        return redirect()->back();
+        return response()->json([
+            'success' => false,
+            'message' => 'Numéro de compte ou mot de passe incorrect'
+        ], 401);
     }
 
     public function profile()  {
