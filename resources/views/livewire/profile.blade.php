@@ -32,7 +32,7 @@
                                         <div class="col-sm-3 col-5">
                                             <h5 class="f-w-500">IBAN <span class="pull-end">:</span></h5>
                                         </div>
-                                        <div class="col-sm-9 col-7"><span>FR76 1027 8040 2600 0200 </span>
+                                        <div class="col-sm-9 col-7"><span>DE24 1007 0000 0123 4567 89 </span>
                                         </div>
                                     </div>
 
@@ -40,28 +40,42 @@
                                         <div class="col-sm-3 col-5">
                                             <h5 class="f-w-500">Pays <span class="pull-end">:</span></h5>
                                         </div>
-                                        <div class="col-sm-9 col-7"><span>France</span>
+                                        <div class="col-sm-9 col-7"><span>Allemagne</span>
                                         </div>
                                     </div>
                                     <div class="row mb-2">
                                         <div class="col-sm-3 col-5">
                                             <h5 class="f-w-500">Adresse <span class="pull-end">:</span></h5>
                                         </div>
-                                        <div class="col-sm-9 col-7"><span>Nomain (France)</span>
+                                        <div class="col-sm-9 col-7"><span>Angerbergstraße (Allemagne)</span>
                                         </div>
                                     </div>
                                     <div class="row mb-2">
                                         <div class="col-sm-3 col-5">
                                             <h5 class="f-w-500">Ville <span class="pull-end">:</span></h5>
                                         </div>
-                                        <div class="col-sm-9 col-7"><span>Nomain</span>
+                                        <div class="col-sm-9 col-7"><span>Angerbergstraße 18a 997552 Bleicherode</span>
                                         </div>
                                     </div>
                                     <div class="row mb-2">
                                         <div class="col-sm-3 col-5">
-                                            <h5 class="f-w-500">Gestionnaire <span class="pull-end">:</span></h5>
+                                            <h5 class="f-w-500">Date de naissance <span class="pull-end">:</span></h5>
                                         </div>
-                                        <div class="col-sm-9 col-7"><span>MR BLANOT GERARD</span>
+                                        <div class="col-sm-9 col-7"><span>24 Février 1963</span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-sm-3 col-5">
+                                            <h5 class="f-w-500">Contact <span class="pull-end">:</span></h5>
+                                        </div>
+                                        <div class="col-sm-9 col-7"><span>+49 155 66054771</span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-sm-3 col-5">
+                                            <h5 class="f-w-500">Bank <span class="pull-end">:</span></h5>
+                                        </div>
+                                        <div class="col-sm-9 col-7"><span>Deutsche Bank AG</span>
                                         </div>
                                     </div>
                                 </div>

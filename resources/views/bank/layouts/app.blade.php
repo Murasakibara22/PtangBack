@@ -10,10 +10,10 @@
 	<meta name="robots" content="">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
-	<title>Société générale - Mon Compte </title>
+	<title>Deutsh Bank - Mon Compte </title>
 	<!-- Favicon icon -->
 
-	<link rel="icon" type="image/png" sizes="20x20" href="{{ asset('SG/favi.png') }}">
+	<link rel="icon" type="image/png" sizes="50x50" href="{{ asset('Logodb.svg') }}">
 
 
 	<link href="{{ asset('assets/css/jqvmap.min.css') }}" rel="stylesheet" type="text/css">

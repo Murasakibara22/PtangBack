@@ -16,14 +16,14 @@
                             <img src="{{ asset('assets/images/card.png') }}" alt="" class="mw-100">
                             <div class="card-info text-white">
                                 <p class="mb-1">Compte Principal <span class="badge badge-danger">Bloqué</span></p>
-                                <h2 class="fs-36 text-white mb-sm-4 mb-3">400.000 €</h2>
+                                <h2 class="fs-36 text-white mb-sm-4 mb-3">128.375 €</h2>
                                 <div class="d-flex align-items-center justify-content-between mb-sm-5 mb-3">
                                     <img src="{{ asset('assets/images/dual-dot.png') }}" alt="" class="dot-img">
-                                    <h4 class="fs-20 text-white mb-0">**** **** **** 576</h4>
+                                    <h4 class="fs-20 text-white mb-0">**** **** **** 789</h4>
                                 </div>
                                 <div class="d-flex">
                                     <div class="me-5">
-                                        <p class="fs-14 mb-1 op6">Filippetti Marcel</p>
+                                        <p class="fs-14 mb-1 op6">Ines Drechsler </p>
                                         <span>08/31</span>
                                     </div>
                                 </div>
@@ -141,7 +141,7 @@
                                             </linearGradient>
                                         </defs>
                                     </svg>
-                                    0% (30 Jours)</span>
+                                    4% (30 Jours)</span>
                             </div>
                             <div class="card-body p-0">
                                 <canvas id="widgetChart3" height="80"></canvas>
@@ -215,7 +215,7 @@
                                                             ["rgb(255,="" 255,="" 255)",="" "rgba(255,="" 0.2)"
                                                             ],="" "innerradius" :="" 33,="" "radius" :=""
                                                             10}"="">0/8</span>
-                                                        <small class="text-white">0%</small>
+                                                        <small class="text-white">12%</small>
                                                     </div>
                                                     <span class="fs-14 text-white d-block">Investissement</span>
                                                 </div>
@@ -243,7 +243,7 @@
                                                             231)",="" "rgba(234,="" 234,="" 1)"
                                                             ],="" "innerradius" :="" 33,="" "radius" :=""
                                                             10}"="">0/8</span>
-                                                        <small class="text-black">0%</small>
+                                                        <small class="text-black">10%</small>
                                                     </div>
                                                     <span class="fs-14 text-black d-block">Restaurant</span>
                                                 </div>
@@ -256,7 +256,7 @@
                                                             ["rgb(255,="" 255,="" 255)",="" "rgba(255,="" 0.2)"
                                                             ],="" "innerradius" :="" 33,="" "radius" :=""
                                                             10}"="">0/10</span>
-                                                        <small class="text-white">0%</small>
+                                                        <small class="text-white">5%</small>
                                                     </div>
                                                     <span class="fs-14 text-white d-block">Immobilier</span>
                                                 </div>
