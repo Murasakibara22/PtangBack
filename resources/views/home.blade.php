@@ -16,7 +16,7 @@
                             <img src="{{ asset('assets/images/card.png') }}" alt="" class="mw-100">
                             <div class="card-info text-white">
                                 <p class="mb-1">Compte Principal <span class="badge badge-danger">Bloqué</span></p>
-                                <h2 class="fs-36 text-white mb-sm-4 mb-3">128.375 €</h2>
+                                <h2 class="fs-36 text-white mb-sm-4 mb-3">000.000 €</h2>
                                 <div class="d-flex align-items-center justify-content-between mb-sm-5 mb-3">
                                     <img src="{{ asset('assets/images/dual-dot.png') }}" alt="" class="dot-img">
                                     <h4 class="fs-20 text-white mb-0">**** **** **** 789</h4>

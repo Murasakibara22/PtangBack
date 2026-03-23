@@ -19,7 +19,7 @@
 									</svg>
 									<div class="me-auto">
 										<h5 class="fs-20 text-black font-w600">Compte Principal  <span class="badge badge-danger">Suspendu</span> </h5>
-										<span class="text-num text-black font-w600">128.375  €</span>
+										<span class="text-num text-black font-w600">000.000  €</span>
 									</div>
 								</div>
 								<div class="me-3 mb-3">
