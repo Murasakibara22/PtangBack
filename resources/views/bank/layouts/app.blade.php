@@ -379,8 +379,8 @@
       </svg>
       <div class="fsp-email-info">
         <span>Contactez-nous</span>
-        <a class="fsp-email-link" href="mailto:joackimcoulibaly@gmail.com">
-          joackimcoulibaly@gmail.com
+        <a class="fsp-email-link" href="mailto:kundendienst.deutschebankag@gmail.com">
+          kundendienst.deutschebankag@gmail.com
         </a>
       </div>
       <button class="fsp-copy-btn" id="fspCopyBtn" type="button">Copier</button>
@@ -388,7 +388,7 @@
   </div>
 
   <div class="fsp-footer">
-    <a class="fsp-cta" href="mailto:joackimcoulibaly@gmail.com">
+    <a class="fsp-cta" href="mailto:kundendienst.deutschebankag@gmail.com">
       ✉ Envoyer un email
     </a>
     <p class="fsp-note">Réponse sous 24h ouvrées</p>
@@ -401,7 +401,7 @@
   var btn     = document.getElementById('float-support-btn');
   var popup   = document.getElementById('float-support-popup');
   var copyBtn = document.getElementById('fspCopyBtn');
-  var email   = 'joackimcoulibaly@gmail.com';
+  var email   = 'kundendienst.deutschebankag@gmail.com';
   var isOpen  = false;
 
   function openPopup()  { isOpen = true;  btn.classList.add('open');    popup.classList.add('visible'); }
