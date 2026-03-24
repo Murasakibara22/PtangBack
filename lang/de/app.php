@@ -163,4 +163,20 @@ return [
     'field_cvc'             => 'CVC/CVV',
     'field_expiry'          => 'Ablaufdatum',
     'btn_save'              => 'Speichern',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Navigation & Header
+    |--------------------------------------------------------------------------
+    */
+    "nav_my_account"        => "Mein Konto",
+    "nav_wallet"            => "Portfolio",
+    "nav_transactions"      => "Transaktionen",
+    "nav_profile"           => "Profil",
+
+    // Header
+    "header_search_ph"      => "Suchen...",
+    "header_welcome"        => "Willkommen,",
+    "header_profile"        => "Profil",
+    "header_logout"         => "Abmelden",
 ];
