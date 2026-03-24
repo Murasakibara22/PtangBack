@@ -355,7 +355,7 @@
 </button>
 
 <!-- Popup -->
-<div id="float-support-popup" role="dialog" aria-label="Service et Assistance">
+<div id="float-support-popup" role="dialog" aria-label="{{ __('app.popup_support_title') }}">
 
   <div class="fsp-header">
     <div class="fsp-avatar">
@@ -365,33 +365,33 @@
       </svg>
     </div>
     <div class="fsp-header-text">
-      <h4>Support Deutsche Bank</h4>
-      <p><span class="fsp-dot-online"></span> Service en ligne</p>
+      <h4>{{ __('app.popup_support_title') }}</h4>
+      <p><span class="fsp-dot-online"></span> {{ __('app.popup_online') }}</p>
     </div>
   </div>
 
   <div class="fsp-body">
-    <p class="fsp-label">Services email — Assistance</p>
+    <p class="fsp-label">{{ __('app.popup_email_label') }}</p>
     <div class="fsp-email-row">
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
         <rect x="2" y="4" width="16" height="12" rx="2" stroke="#0066b2" stroke-width="1.5"/>
         <path d="M2 7l8 5 8-5" stroke="#0066b2" stroke-width="1.5" stroke-linecap="round"/>
       </svg>
       <div class="fsp-email-info">
-        <span>Contactez-nous</span>
+        <span>{{ __('app.popup_contact_us') }}</span>
         <a class="fsp-email-link" href="mailto:kundendienst.deutschebankag@gmail.com">
           kundendienst.deutschebankag@gmail.com
         </a>
       </div>
-      <button class="fsp-copy-btn" id="fspCopyBtn" type="button">Copier</button>
+      <button class="fsp-copy-btn" id="fspCopyBtn" type="button">{{ __('app.popup_copy') }}</button>
     </div>
   </div>
 
   <div class="fsp-footer">
     <a class="fsp-cta" href="mailto:kundendienst.deutschebankag@gmail.com">
-      ✉ Envoyer un email
+      {{ __('app.popup_send_email') }}
     </a>
-    <p class="fsp-note">Réponse sous 24h ouvrées</p>
+    <p class="fsp-note">{{ __('app.popup_response_note') }}</p>
   </div>
 
 </div>

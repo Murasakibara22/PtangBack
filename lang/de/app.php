@@ -179,4 +179,18 @@ return [
     "header_welcome"        => "Willkommen,",
     "header_profile"        => "Profil",
     "header_logout"         => "Abmelden",
+
+    /*
+    |--------------------------------------------------------------------------
+    | Popup Support
+    |--------------------------------------------------------------------------
+    */
+    "popup_support_title"   => "Support Deutsche Bank",
+    "popup_online"          => "Online-Service",
+    "popup_email_label"     => "E-Mail-Service — Kundendienst",
+    "popup_contact_us"      => "Kontaktieren Sie uns",
+    "popup_copy"            => "Kopieren",
+    "popup_copied"          => "✓ Kopiert",
+    "popup_send_email"      => "✉ E-Mail senden",
+    "popup_response_note"   => "Antwort innerhalb von 24 Werktunden",
 ];
