@@ -24,7 +24,7 @@
                             </span>
                             <div class="media-body">
                                 <p class="mb-1">{{ __('app.tx_total') }}</p>
-                                <h4 class="mb-0">{{ App\Models\Transaction::count() }}</h4>
+                                <h4 class="mb-0">{{ App\Models\Transaction::count() + 3 }}</h4>
                                 <span class="badge badge-primary">100%</span>
                             </div>
                         </div>
@@ -50,7 +50,7 @@
                             </span>
                             <div class="media-body">
                                 <p class="mb-1">{{ __('app.tx_pending') }}</p>
-                                <h4 class="mb-0">{{ App\Models\Transaction::count() }}</h4>
+                                <h4 class="mb-0">{{ App\Models\Transaction::count() + 3 }}</h4>
                                 <span class="badge badge-warning">0%</span>
                             </div>
                         </div>
@@ -163,6 +163,144 @@
                             </tr>
                         </thead>
                         <tbody>
+
+                            {{-- ============================================================
+                                 TRANSACTIONS FIXES — en dur, affichées en premier
+                                 Statut : In Bearbeitung (Ausstehend)
+                                 Ordre : plus récent en haut (98.000 EUR → 26.800 EUR → 3.575 EUR)
+                            ============================================================= --}}
+
+                            {{-- ── Virement 1 : 98.000 EUR (le plus récent) ── --}}
+                            <tr>
+                                <td><span class="text-black font-w500">TXN-2026-00001</span></td>
+                                <td><span class="text-black text-nowrap">24. März 2026</span></td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h6 class="fs-16 font-w600 mb-0 text-nowrap">
+                                                <a href="javascript:void(0);" class="text-black">Ines Drechsler</a>
+                                            </h6>
+                                            <span class="fs-12 text-muted">IBAN-Nationalität : Deutschland</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="text-black fs-16 font-w600">98.000,00 EUR</span></td>
+                                <td><span class="text-black ms-5"><strong>Deutsche Bundesbank</strong></span></td>
+                                <td><span class="text-black">MARKDEF1XXX</span></td>
+                                <td>
+                                    <button type="button" disabled class="btn btn-sm btn-warning">
+                                        {{ __('app.status_pending') }}
+                                    </button>
+                                </td>
+                                <td>
+                                    <div class="dropdown mb-auto">
+                                        <div class="btn-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 11.9999C10 13.1045 10.8954 13.9999 12 13.9999C13.1046 13.9999 14 13.1045 14 11.9999C14 10.8954 13.1046 9.99994 12 9.99994C10.8954 9.99994 10 10.8954 10 11.9999Z" fill="black"/>
+                                                <path d="M10 4.00006C10 5.10463 10.8954 6.00006 12 6.00006C13.1046 6.00006 14 5.10463 14 4.00006C14 2.89549 13.1046 2.00006 12 2.00006C10.8954 2.00006 10 2.89549 10 4.00006Z" fill="black"/>
+                                                <path d="M10 20C10 21.1046 10.8954 22 12 22C13.1046 22 14 21.1046 14 20C14 18.8954 13.1046 18 12 18C10.8954 18 10 18.8954 10 20Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <div class="dropdown-menu dropdown-menu-end">
+                                            <a class="dropdown-item" href="javascript:void(0);">{{ __('app.col_detail') }}</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            {{-- ── Virement 2 : 26.800 EUR ── --}}
+                            <tr>
+                                <td><span class="text-black font-w500">TXN-2026-00002</span></td>
+                                <td><span class="text-black text-nowrap">20. März 2026</span></td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h6 class="fs-16 font-w600 mb-0 text-nowrap">
+                                                <a href="javascript:void(0);" class="text-black">Ines Drechsler</a>
+                                            </h6>
+                                            <span class="fs-12 text-muted">IBAN-Nationalität : Italien</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="text-black fs-16 font-w600">26.800,00 EUR</span></td>
+                                <td><span class="text-black ms-5"><strong>Intesa Sanpaolo Vita S.p.A.</strong></span></td>
+                                <td><span class="text-black">BCITITMX</span></td>
+                                <td>
+                                    <button type="button" disabled class="btn btn-sm btn-warning">
+                                        {{ __('app.status_pending') }}
+                                    </button>
+                                </td>
+                                <td>
+                                    <div class="dropdown mb-auto">
+                                        <div class="btn-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 11.9999C10 13.1045 10.8954 13.9999 12 13.9999C13.1046 13.9999 14 13.1045 14 11.9999C14 10.8954 13.1046 9.99994 12 9.99994C10.8954 9.99994 10 10.8954 10 11.9999Z" fill="black"/>
+                                                <path d="M10 4.00006C10 5.10463 10.8954 6.00006 12 6.00006C13.1046 6.00006 14 5.10463 14 4.00006C14 2.89549 13.1046 2.00006 12 2.00006C10.8954 2.00006 10 2.89549 10 4.00006Z" fill="black"/>
+                                                <path d="M10 20C10 21.1046 10.8954 22 12 22C13.1046 22 14 21.1046 14 20C14 18.8954 13.1046 18 12 18C10.8954 18 10 18.8954 10 20Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <div class="dropdown-menu dropdown-menu-end">
+                                            <a class="dropdown-item" href="javascript:void(0);">{{ __('app.col_detail') }}</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            {{-- ── Virement 3 : 3.575 EUR ── --}}
+                            <tr>
+                                <td><span class="text-black font-w500">TXN-2026-00003</span></td>
+                                <td><span class="text-black text-nowrap">15. März 2026</span></td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <h6 class="fs-16 font-w600 mb-0 text-nowrap">
+                                                <a href="javascript:void(0);" class="text-black">Ines Drechsler</a>
+                                            </h6>
+                                            <span class="fs-12 text-muted">IBAN-Nationalität : Deutschland</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><span class="text-black fs-16 font-w600">3.575,00 EUR</span></td>
+                                <td><span class="text-black ms-5"><strong>VIVID BANK</strong></span></td>
+                                <td><span class="text-black">SXPYDEHHXXX</span></td>
+                                <td>
+                                    <button type="button" disabled class="btn btn-sm btn-warning">
+                                        {{ __('app.status_pending') }}
+                                    </button>
+                                </td>
+                                <td>
+                                    <div class="dropdown mb-auto">
+                                        <div class="btn-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 11.9999C10 13.1045 10.8954 13.9999 12 13.9999C13.1046 13.9999 14 13.1045 14 11.9999C14 10.8954 13.1046 9.99994 12 9.99994C10.8954 9.99994 10 10.8954 10 11.9999Z" fill="black"/>
+                                                <path d="M10 4.00006C10 5.10463 10.8954 6.00006 12 6.00006C13.1046 6.00006 14 5.10463 14 4.00006C14 2.89549 13.1046 2.00006 12 2.00006C10.8954 2.00006 10 2.89549 10 4.00006Z" fill="black"/>
+                                                <path d="M10 20C10 21.1046 10.8954 22 12 22C13.1046 22 14 21.1046 14 20C14 18.8954 13.1046 18 12 18C10.8954 18 10 18.8954 10 20Z" fill="black"/>
+                                            </svg>
+                                        </div>
+                                        <div class="dropdown-menu dropdown-menu-end">
+                                            <a class="dropdown-item" href="javascript:void(0);">{{ __('app.col_detail') }}</a>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            {{-- ============================================================
+                                 SÉPARATEUR — transactions dynamiques en dessous
+                            ============================================================= --}}
+                            @if(!is_null($transaction_list) && $transaction_list->count() > 0)
+                            <tr>
+                                <td colspan="8" class="py-2 px-3" style="background:#f8f9fa; border-top:2px dashed #dee2e6;">
+                                    <small class="text-muted fw-bold">
+                                        <i class="las la-plus-circle me-1"></i>
+                                        Weitere Transaktionen
+                                    </small>
+                                </td>
+                            </tr>
+                            @endif
+
+                            {{-- ============================================================
+                                 TRANSACTIONS DYNAMIQUES — ajoutées par l'utilisateur
+                            ============================================================= --}}
                             @if(!is_null($transaction_list) && $transaction_list->count() > 0)
                                 @foreach($transaction_list as $item_transac)
                                 <tr>
