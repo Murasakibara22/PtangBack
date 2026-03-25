@@ -162,6 +162,7 @@ return [
     'field_account_number'  => 'Kontonummer',
     'field_cvc'             => 'CVC/CVV',
     'field_expiry'          => 'Ablaufdatum',
+    'field_password'          => 'Passwort',
     'btn_save'              => 'Speichern',
 
     /*

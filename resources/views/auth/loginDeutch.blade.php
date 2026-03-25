@@ -382,6 +382,9 @@ body{
         <img style="width: 100%;" src="https://www.deutsche-bank.de/dam/deutschebank/de/shared/trxm/vorteilswelt/Samsung_Wallet_ Promo_1200x750_DB_ohne_Logo_ohne_Energielabel.jpg" alt=""/>
       </div>
 
+
+
+
       <div class="promo-body">
         <h2 class="promo-title">Spezial-Angebot für das neue Galaxy S26</h2>
         <p class="promo-desc">Sichern Sie sich auf das neue Smartphone von Samsung Ihren Preisvorteil und freuen Sie sich auf das erste Privacy-Display in einem Smartphone (Ultra-Modell).</p>

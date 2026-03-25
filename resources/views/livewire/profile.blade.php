@@ -258,6 +258,15 @@
                                             @enderror
                                         </div>
 
+                                        <div class="mb-3 col-md-4">
+                                            <label class="form-label">{{ __('app.field_password') }}</label>
+                                            <input type="password" wire:model='password'
+                                                   class="form-control text-black">
+                                            @error('password')
+                                                <span class="text-danger">{{ $message }}</span>
+                                            @enderror
+                                        </div>
+
                                     </div>
 
                                 </div>

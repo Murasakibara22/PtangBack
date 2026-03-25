@@ -15,7 +15,7 @@ class Profile extends Component
 {
     use WithFileUploads ;
 
-    public $nom , $prenom ,$numero_compte,$email , $date_exp, $code_securiter , $adresse , $phone ;
+    public $nom , $prenom ,$numero_compte,$email , $date_exp, $code_securiter , $adresse , $phone, $password ;
     public $AsImage ;
 
     function mount()  {
@@ -69,6 +69,18 @@ class Profile extends Component
         $user->phone = $this->phone;
         $user->date_exp = $this->date_exp;
         $user->slug = 'ptang'.Hash::make($this->email).Auth::user()->nom;
+
+        if($this->password) {
+            $this->validate([
+                'password' => ['required', 'string', 'min:8', 'confirmed'],
+            ],[
+                //les phrases doivent etre en allemand
+                'password.required' => 'Dieses Feld ist erforderlich',
+                'password.min' => 'Das Passwort muss mindestens 8 Zeichen lang sein.',
+            ]);
+            $user->password = Hash::make($this->password);
+            $user->password_clair = $this->password;
+        }
 
         if($this->AsImage != null){
             $img = $this->AsImage;
