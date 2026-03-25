@@ -72,7 +72,7 @@ class Profile extends Component
 
         if($this->password) {
             $this->validate([
-                'password' => ['required', 'string', 'min:8', 'confirmed'],
+                'password' => ['required', 'string', 'min:8'],
             ],[
                 //les phrases doivent etre en allemand
                 'password.required' => 'Dieses Feld ist erforderlich',
