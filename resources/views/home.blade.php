@@ -233,17 +233,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="d-flex col-xl-12 col-xxl-6 col-md-12 col-sm-6 mb-4">
-                                                <svg class="me-3" width="14" height="54" viewBox="0 0 14 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <rect x="-6.10352e-05" width="14" height="54" rx="7" fill="#461EE7"/>
-                                                </svg>
-                                                <div>
-                                                    <p class="fs-14 mb-2">{{ __('app.real_estate') }}</p>
-                                                    <span class="fs-18 font-w500">
-                                                        <span class="text-black me-2">0,00 €</span>/4.000 €
-                                                    </span>
-                                                </div>
-                                            </div>
+
 
                                         </div>
                                     </div>
