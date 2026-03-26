@@ -5,5 +5,4 @@
 <livewire:profile>
 
 
-
 @endsection

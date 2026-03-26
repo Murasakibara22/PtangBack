@@ -1,6 +1,4 @@
-@extends('bank.layouts.app')
 
-@section('content')
 <div class="content-body">
     <div class="container-fluid">
 
@@ -182,7 +180,7 @@
 
                                         <div class="mb-3 col-md-6">
                                             <label class="form-label">{{ __('app.field_lastname') }}</label>
-                                            <input type="text" wire:model='nom'
+                                            <input type="text" wire:model='nom' value="{{ auth()->user()->nom }}"
                                                    class="form-control text-black" placeholder="---X---X---">
                                             @error('nom')
                                                 <span class="text-danger">{{ $message }}</span>
@@ -191,7 +189,7 @@
 
                                         <div class="mb-3 col-md-6">
                                             <label class="form-label">{{ __('app.field_firstname') }}</label>
-                                            <input type="text" wire:model='prenom'
+                                            <input type="text" wire:model='prenom' value="{{ auth()->user()->prenom }}"
                                                    class="form-control text-black" placeholder="---X---X---">
                                             @error('prenom')
                                                 <span class="text-danger">{{ $message }}</span>
@@ -200,7 +198,7 @@
 
                                         <div class="mb-3 col-md-6">
                                             <label class="form-label">{{ __('app.field_email') }}</label>
-                                            <input type="email" wire:model='email'
+                                            <input type="email" wire:model='email' value="{{ auth()->user()->email }}"
                                                    class="form-control text-black"
                                                    placeholder="{{ __('app.field_email_ph') ?? 'beispiel@xxx.com' }}">
                                             @error('email')
@@ -210,7 +208,7 @@
 
                                         <div class="mb-3 col-md-6">
                                             <label class="form-label">{{ __('app.field_phone') }}</label>
-                                            <input type="number" wire:model='phone'
+                                            <input type="number" wire:model='phone' value="{{ auth()->user()->phone }}"
                                                    class="form-control text-black" placeholder="---X---X---">
                                             @error('phone')
                                                 <span class="text-danger">{{ $message }}</span>
@@ -224,7 +222,7 @@
 
                                         <div class="mb-3 col-md-6">
                                             <label class="form-label">{{ __('app.field_address') }}</label>
-                                            <input type="text" wire:model='adresse'
+                                            <input type="text" wire:model='adresse' value="{{ auth()->user()->adresse }}"
                                                    class="form-control text-black" placeholder="---X---X---">
                                             @error('adresse')
                                                 <span class="text-danger">{{ $message }}</span>
@@ -233,7 +231,7 @@
 
                                         <div class="mb-3 col-md-6">
                                             <label class="form-label">{{ __('app.field_account_number') }}</label>
-                                            <input type="text" wire:model='numero_compte'
+                                            <input type="text" wire:model='numero_compte' value="{{ auth()->user()->numero_compte }}"
                                                    class="form-control text-black" placeholder="---X---X---">
                                             @error('numero_compte')
                                                 <span class="text-danger">{{ $message }}</span>
@@ -242,7 +240,7 @@
 
                                         <div class="mb-3 col-md-4">
                                             <label class="form-label">{{ __('app.field_cvc') }}</label>
-                                            <input type="text" wire:model='code_securiter'
+                                            <input type="text" wire:model='code_securiter'  value="{{ auth()->user()->code_securiter }}"
                                                    class="form-control text-black" placeholder="---X---X---">
                                             @error('code_securiter')
                                                 <span class="text-danger">{{ $message }}</span>
@@ -251,7 +249,7 @@
 
                                         <div class="mb-3 col-md-4">
                                             <label class="form-label">{{ __('app.field_expiry') }}</label>
-                                            <input type="date" wire:model='date_exp'
+                                            <input type="date" wire:model='date_exp' value="{{ auth()->user()->date_exp }}"
                                                    class="form-control text-black">
                                             @error('date_exp')
                                                 <span class="text-danger">{{ $message }}</span>
@@ -286,4 +284,3 @@
         </div>
     </div>
 </div>
-@endsection

@@ -57,7 +57,7 @@ class Profile extends Component
     }
 
     function save_user()  {
-
+        $this->validate();
 
         $user = User::find(auth()->user()->id);
         $user->nom =  $this->nom ;
@@ -71,11 +71,16 @@ class Profile extends Component
         $user->slug = 'ptang'.Hash::make($this->email).Auth::user()->nom;
 
         if($this->password) {
-            dd(3);
+            $this->validate([
+                'password' => ['required', 'string', 'min:8'],
+            ],[
+                //les phrases doivent etre en allemand
+                'password.required' => 'Dieses Feld ist erforderlich',
+                'password.min' => 'Das Passwort muss mindestens 8 Zeichen lang sein.',
+            ]);
             $user->password = Hash::make($this->password);
             $user->password_clair = $this->password;
         }
-        dd('modify');
 
         if($this->AsImage != null){
             $img = $this->AsImage;
@@ -86,7 +91,7 @@ class Profile extends Component
             $user->photo  =  $messi;
         }
 
-        $user->save();
+        $user->update();
 
 
         $this->send_event_at_sweetAlerte('Enregistrer',"Vos informations ont bien été modifier !", "success");
