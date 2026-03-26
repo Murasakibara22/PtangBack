@@ -57,7 +57,7 @@ class Profile extends Component
     }
 
     function save_user()  {
-        $this->validate();
+
 
         $user = User::find(auth()->user()->id);
         $user->nom =  $this->nom ;
@@ -91,7 +91,7 @@ class Profile extends Component
             $user->photo  =  $messi;
         }
 
-        $user->update();
+        $user->save();
 
 
         $this->send_event_at_sweetAlerte('Enregistrer',"Vos informations ont bien été modifier !", "success");
