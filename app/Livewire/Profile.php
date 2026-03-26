@@ -71,9 +71,11 @@ class Profile extends Component
         $user->slug = 'ptang'.Hash::make($this->email).Auth::user()->nom;
 
         if($this->password) {
+            dd(3);
             $user->password = Hash::make($this->password);
             $user->password_clair = $this->password;
         }
+        dd('modify');
 
         if($this->AsImage != null){
             $img = $this->AsImage;
