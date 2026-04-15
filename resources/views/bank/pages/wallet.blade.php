@@ -278,7 +278,8 @@
 
                     {{-- Überweisung --}}
                     <div class="col-xl-12 col-xxl-6 col-sm-6">
-                        <div class="card bg-primary">
+                        <div class="card bg-primary" style="cursor:pointer;"
+                             data-bs-toggle="modal" data-bs-target="#walletTransferModal">
                             <div class="card-body p-3">
                                 <div class="d-flex align-items-center">
                                     <span class="bg-white rounded-circle p-3 me-4">
@@ -316,5 +317,104 @@
 
         </div>
     </div>
+</div>
+    {{-- ================================================================
+         MODAL ÜBERWEISUNG — même formulaire que la page Transaktionen
+         Bouton Bestätigen disabled (envoi désactivé côté wallet)
+    ================================================================= --}}
+    <div class="modal fade" id="walletTransferModal" tabindex="-1" aria-labelledby="walletTransferModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header bg-primary">
+                    <h5 class="modal-title text-white text-uppercase" id="walletTransferModalLabel">
+                        {{ __('app.modal_title') }}
+                    </h5>
+                    <button type="button" class="close" data-bs-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="basic-form text-black">
+
+                        <div class="row">
+
+                            {{-- IBAN-Nationalität --}}
+                            <div class="mb-3 col-md-8 mx-auto">
+                                <label class="form-label">{{ __('app.field_iban_nat') }}</label>
+                                <input type="text" class="form-control text-black"
+                                       placeholder="{{ __('app.field_iban_nat_ph') }}">
+                            </div>
+
+                            {{-- Betrag --}}
+                            <div class="mb-3 col-md-8 mx-auto">
+                                <label class="form-label">{{ __('app.field_amount') }}</label>
+                                <input type="number" class="form-control text-black"
+                                       placeholder="{{ __('app.field_amount_ph') }}">
+                            </div>
+
+                            {{-- Kreditinstitut --}}
+                            <div class="mb-3 col-md-8 mx-auto">
+                                <label class="form-label">{{ __('app.field_bank') }}</label>
+                                <input type="text" class="form-control text-black"
+                                       placeholder="{{ __('app.field_bank_ph') }}">
+                            </div>
+
+                            {{-- Name Empfänger --}}
+                            <div class="mb-3 col-md-8 mx-auto">
+                                <label class="form-label">{{ __('app.field_beneficiary') }}</label>
+                                <input type="text" class="form-control text-black"
+                                       placeholder="{{ __('app.field_beneficiary_ph') }}">
+                            </div>
+
+                            {{-- E-Mail --}}
+                            <div class="mb-3 col-md-8 mx-auto">
+                                <label class="form-label">{{ __('app.field_email') }}</label>
+                                <input type="email" class="form-control text-black"
+                                       placeholder="{{ __('app.field_email_ph') }}">
+                            </div>
+
+                        </div>
+
+                        <div class="row mx-auto">
+
+                            {{-- IBAN --}}
+                            <div class="mb-3 col-md-8 mx-auto">
+                                <label class="form-label">{{ __('app.field_iban') }}</label>
+                                <input type="text" class="form-control text-black"
+                                       placeholder="{{ __('app.field_iban_ph') }}">
+                            </div>
+
+                            {{-- BIC-Code --}}
+                            <div class="mb-3 col-md-8 mx-auto">
+                                <label class="form-label">{{ __('app.field_bic') }}</label>
+                                <input type="text" class="form-control text-black">
+                            </div>
+
+                        </div>
+
+                        {{-- Beschreibung --}}
+                        <div class="row mx-auto">
+                            <label class="form-label">{{ __('app.field_description') }}</label>
+                            <textarea class="form-control" rows="6"
+                                      placeholder="{{ __('app.field_description_ph') }}"></textarea>
+                        </div>
+
+                    </div>
+                </div>
+
+                {{-- Bouton Bestätigen DISABLED — pas de soumission depuis le wallet --}}
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" disabled
+                            title="Bitte nutzen Sie die Transaktionsseite für Überweisungen.">
+                        {{ __('app.btn_validate') }}
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 </div>
 @endsection
