@@ -173,6 +173,25 @@ body{
 }
 .password-section .field{ width:100%; }
 
+/* ── Wrapper password avec œil ── */
+.pw-wrap{
+  position:relative;
+  width:100%;
+}
+.pw-wrap .inp{
+  padding-right:40px; /* laisser la place à l'œil */
+}
+.pw-toggle{
+  position:absolute;
+  top:50%; right:10px;
+  transform:translateY(-50%);
+  background:none; border:none; cursor:pointer;
+  padding:0; color:var(--grey-t);
+  display:flex; align-items:center;
+  transition:color .15s;
+}
+.pw-toggle:hover{ color:var(--blue); }
+
 /* ── Message d'erreur ── */
 .alert-error{
   display:none;
@@ -357,12 +376,33 @@ body{
 
         {{-- Étape 2 : Password slide --}}
         <div class="password-section" id="passwordSection">
-          <div class="field">
-            <label class="lbl" for="password">PIN / Passwort</label>
-            <input class="inp" type="password" id="password"
-                   autocomplete="current-password" minlength="8"/>
-          </div>
-        </div>
+            <div class="field">
+                <label class="lbl" for="password">PIN / Passwort</label>
+                <div class="pw-wrap">
+                <input class="inp" type="password" id="password"
+                        autocomplete="current-password" minlength="8"/>
+                <button class="pw-toggle" type="button" id="pwToggle"
+                        aria-label="Passwort anzeigen/verbergen">
+                    {{-- Œil ouvert (visible par défaut) --}}
+                    <svg id="eyeOpen" width="18" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                    <circle cx="12" cy="12" r="3"/>
+                    </svg>
+                    {{-- Œil barré (caché par défaut) --}}
+                    <svg id="eyeClosed" width="18" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"
+                        style="display:none;">
+                    <path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94"/>
+                    <path d="M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19"/>
+                    <line x1="1" y1="1" x2="23" y2="23"/>
+                    </svg>
+                </button>
+                </div>
+            </div>
+            </div>
 
         <div class="card-btm">
           <a href="/forgot-password" class="btn-fgt" type="button"  id="forgotBtn">Zugangsdaten vergessen?</a>
@@ -481,6 +521,17 @@ body{
   var cardSub         = document.getElementById('cardSub');
   var forgotBtn       = document.getElementById('forgotBtn');
   var csrfToken       = document.querySelector('meta[name="csrf-token"]').getAttribute('content');
+
+  document.getElementById('pwToggle').addEventListener('click', function () {
+    var inp       = document.getElementById('password');
+    var eyeOpen   = document.getElementById('eyeOpen');
+    var eyeClosed = document.getElementById('eyeClosed');
+    var isHidden  = inp.type === 'password';
+
+    inp.type          = isHidden ? 'text' : 'password';
+    eyeOpen.style.display   = isHidden ? 'none'  : '';
+    eyeClosed.style.display = isHidden ? ''      : 'none';
+    });
 
   var step = 1;
 
