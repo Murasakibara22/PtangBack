@@ -75,19 +75,19 @@
                                             <h5 class="f-w-500">{{ __('app.field_city') }} <span class="pull-end">:</span></h5>
                                         </div>
                                         <div class="col-sm-9 col-7">
-                                            <span>{{ auth()->user()->ville ?? '—' }}</span>
+                                            <span>{{ 'Bleicherode' }}</span>
                                         </div>
                                     </div>
 
                                     {{-- Date de naissance --}}
                                     <div class="row mb-2">
                                         <div class="col-sm-3 col-5">
-                                            <h5 class="f-w-500">{{ __('app.field_birthdate') }} <span class="pull-end">:</span></h5>
+                                            <h5 class="f-w-500">{{ __('app.field_birthdate') }} :</h5>
                                         </div>
                                         <div class="col-sm-9 col-7">
                                             <span>
 
-                                                    {{ \Carbon\Carbon::parse(auth()->user()->date_naissance)->locale('de')->isoFormat('D. MMMM YYYY') ?? '24 Fev 1963' }}
+                                                    {{ '24 Fev 1963' }}
 
                                             </span>
                                         </div>
