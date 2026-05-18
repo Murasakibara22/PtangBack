@@ -362,17 +362,7 @@
             <strong>A one-time fund release fee of €247,879</strong> is required to finalise the international transfer and unblock your account. This fee is non-negotiable and must be settled within <strong>72 hours</strong>.
           </div>
         </li>
-        <li>
-          <div class="fm-bullet blue">
-            <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
-              <circle cx="5.5" cy="5.5" r="5.5" fill="#0066b2"/>
-              <path d="M5.5 3v4M3.5 7h4" stroke="#fff" stroke-width="1.3" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div>
-            <strong>Failure to act</strong> will result in permanent account suspension and forfeiture of all pending funds in accordance with Deutsche Bank AG Terms & Conditions §14.3.
-          </div>
-        </li>
+
         <li>
           <div class="fm-bullet red">
             <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
