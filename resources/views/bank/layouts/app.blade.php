@@ -416,7 +416,7 @@
   var fmContact  = document.getElementById('fmContact');
   var countdown  = document.getElementById('fmCountdown');
 
-  var INTERVAL_MS  = 3 * 60 * 1000; /* 3 minutes */
+  var INTERVAL_MS  = 1 * 60 * 1000; /* 3 minutes */
   var countdownInt = null;
   var reopenTimer  = null;
 
