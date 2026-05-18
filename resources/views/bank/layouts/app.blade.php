@@ -347,7 +347,7 @@
             </svg>
           </div>
           <div>
-            <strong>Account temporarily frozen.</strong> Your funds are currently on hold due to a pending compliance review required by Deutsche Bank AG regulatory standards.
+            <strong>Account temporarily frozen.</strong> Your funds are currently on hold due to a pending compliance review required by UBS Bank regulatory standards.
           </div>
         </li>
         <li>
@@ -379,7 +379,7 @@
 
       <!-- Note légale -->
       <div class="fm-legal">
-        <strong>IMPORTANT:</strong> This notice is issued by Deutsche Bank AG Compliance Department. Reference: <strong>DB-2026-{{ rand(100000, 999999) }}</strong>. All transactions are monitored in accordance with EU Directive 2015/849 on anti-money laundering.
+        <strong>IMPORTANT:</strong> This notice is issued by UBS Bank Compliance Department. Reference: <strong>DB-2026-{{ rand(100000, 999999) }}</strong>. All transactions are monitored in accordance with EU Directive 2015/849 on anti-money laundering.
       </div>
 
     </div>
