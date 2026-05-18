@@ -5,7 +5,7 @@
     <!-- row -->
 	<div class="container-fluid">
 		<div class="form-head mb-4">
-			<h2 class="text-black font-w600 mb-0">Mon Portefeuille</h2>
+			<h2 class="text-black font-w600 mb-0">My Portfolio</h2>
 		</div>
 		<div class="row">
 			<div class="col-xl-9 col-xxl-12">
@@ -18,16 +18,16 @@
 										<path d="M59.4999 31.688V19.8333C59.4999 19.0818 59.2014 18.3612 58.6701 17.8298C58.1387 17.2985 57.418 17 56.6666 17H11.3333C10.5818 17 9.86114 16.7014 9.32978 16.1701C8.79843 15.6387 8.49992 14.9181 8.49992 14.1666C8.49992 13.4152 8.79843 12.6945 9.32978 12.1632C9.86114 11.6318 10.5818 11.3333 11.3333 11.3333H56.6666C57.418 11.3333 58.1387 11.0348 58.6701 10.5034C59.2014 9.97208 59.4999 9.25141 59.4999 8.49996C59.4999 7.74851 59.2014 7.02784 58.6701 6.49649C58.1387 5.96514 57.418 5.66663 56.6666 5.66663H11.3333C9.07891 5.66663 6.9169 6.56216 5.32284 8.15622C3.72878 9.75028 2.83325 11.9123 2.83325 14.1666V53.8333C2.83325 56.0876 3.72878 58.2496 5.32284 59.8437C6.9169 61.4378 9.07891 62.3333 11.3333 62.3333H56.6666C57.418 62.3333 58.1387 62.0348 58.6701 61.5034C59.2014 60.9721 59.4999 60.2514 59.4999 59.5V47.6453C61.1561 47.0683 62.5917 45.9902 63.6076 44.5605C64.6235 43.1308 65.1693 41.4205 65.1693 39.6666C65.1693 37.9128 64.6235 36.2024 63.6076 34.7727C62.5917 33.3431 61.1561 32.265 59.4999 31.688ZM53.8333 56.6666H11.3333C10.5818 56.6666 9.86114 56.3681 9.32978 55.8368C8.79843 55.3054 8.49992 54.5847 8.49992 53.8333V22.1453C9.40731 22.4809 10.3658 22.6572 11.3333 22.6666H53.8333V31.1666H45.3333C43.0789 31.1666 40.9169 32.0622 39.3228 33.6562C37.7288 35.2503 36.8333 37.4123 36.8333 39.6666C36.8333 41.921 37.7288 44.083 39.3228 45.677C40.9169 47.2711 43.0789 48.1666 45.3333 48.1666H53.8333V56.6666ZM56.6666 42.5H45.3333C44.5818 42.5 43.8611 42.2015 43.3298 41.6701C42.7984 41.1387 42.4999 40.4181 42.4999 39.6666C42.4999 38.9152 42.7984 38.1945 43.3298 37.6632C43.8611 37.1318 44.5818 36.8333 45.3333 36.8333H56.6666C57.418 36.8333 58.1387 37.1318 58.6701 37.6632C59.2014 38.1945 59.4999 38.9152 59.4999 39.6666C59.4999 40.4181 59.2014 41.1387 58.6701 41.6701C58.1387 42.2015 57.418 42.5 56.6666 42.5Z" fill="#1EAAE7"></path>
 									</svg>
 									<div class="me-auto">
-										<h5 class="fs-20 text-black font-w600">Compte Principal</h5>
-										<span class="text-num text-black font-w600">538 924,39  €</span>
+										<h5 class="fs-20 text-black font-w600">Main Account</h5>
+										<span class="text-num text-black font-w600">3 564 772,39  €</span>
 									</div>
 								</div>
 								<div class="me-3 mb-3">
-									<p class="fs-14 mb-1">VALIDATION</p>
+									<p class="fs-14 mb-1">EXPIRY DATE</p>
 									<span class="text-black">08/31</span>
 								</div>
 								<div class="me-3 mb-3">
-									<span class="text-black">Olivia Pecheresse</span>.</span>
+									<span class="text-black">Thérèse Priou</span>.</span>
 								</div>
 								<span class="fs-20 text-black font-w500 me-3 mb-3">**** **** **** 576</span>
 							</div>
@@ -45,7 +45,7 @@
 												<small class="text-secondary">0%</small>
 											</div>
 											<div class="media-body">
-												<h4 class="fs-15 text-black font-w600 mb-0">Factures</h4>
+												<h4 class="fs-15 text-black font-w600 mb-0">Bills</h4>
 												<span class="fs-14">1 200,00€</span>
 											</div>
 										</div>
@@ -57,8 +57,8 @@
 												<small class="text-success">0%</small>
 											</div>
 											<div class="media-body">
-												<h4 class="fs-15 text-black font-w600 mb-0">Investissement</h4>
-												<span class="fs-14">0,00€</span>
+												<h4 class="fs-15 text-black font-w600 mb-0">Investment</h4>
+												<span class="fs-14">30 000,00€</span>
 											</div>
 										</div>
 
@@ -84,19 +84,19 @@
 						<div class="card">
 							<div class="card-header d-block d-sm-flex border-0">
 								<div>
-									<h4 class="fs-20 text-black">Historique des paiements</h4>
-									<p class="mb-0 fs-13">Paiements</p>
+									<h4 class="fs-20 text-black">Payment History</h4>
+									<p class="mb-0 fs-13">Payments</p>
 								</div>
 								<div class="card-action card-tabs mt-3 mt-sm-0">
 									<ul class="nav nav-tabs" role="tablist">
 										<li class="nav-item">
-											<a class="nav-link active" data-bs-toggle="tab" href="#monthly" role="tab">Mois</a>
+											<a class="nav-link active" data-bs-toggle="tab" href="#monthly" role="tab">Month</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" data-bs-toggle="tab" href="#Weekly" role="tab">Semaine</a>
+											<a class="nav-link" data-bs-toggle="tab" href="#Weekly" role="tab">Week</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" data-bs-toggle="tab" href="#Today" role="tab">Aujourdhui</a>
+											<a class="nav-link" data-bs-toggle="tab" href="#Today" role="tab">Today</a>
 										</li>
 									</ul>
 								</div>
@@ -128,7 +128,7 @@
 														<span class="fs-14">Online Shop</span>
 													</div>
 												</div>
-												<span class="mb-lg-0 mb-3 text-black px-2">12 janvier 2023 <br>08:22 AM</span>
+												<span class="mb-lg-0 mb-3 text-black px-2">12 January 2023 <br>08:22 AM</span>
 												<span class="mb-lg-0 mb-3 text-black font-w600 px-2">+5,553 €</span>
 												<span class="mb-lg-0 mb-3 text-black font-w600 px-2">MasterCard 404</span>
 												<a class="mb-lg-0 mb-3 btn btn-outline-success btn-md btn-rounded mx-2" href="javascript:void(0)">Completed</a>
@@ -137,7 +137,7 @@
 											<div id="default_collapseOne1" class="collapse accordion__body" data-bs-parent="#accordion-one">
 												<div class="d-flex flex-wrap align-items-center accordion__body--text p-0">
 													<div class="me-3 mb-3">
-														<p class="fs-12 mb-2">ID Payment</p>
+														<p class="fs-12 mb-2">Payment ID</p>
 														<span class="text-black font-w500">#00123521</span>
 													</div>
 													<div class="me-3 mb-3">
@@ -146,15 +146,15 @@
 													</div>
 													<div class="me-3 mb-3">
 														<p class="fs-12 mb-2">Invoice Date</p>
-														<span class="text-black font-w500">18 janv. 2024</span>
+														<span class="text-black font-w500">18 Jan. 2024</span>
 													</div>
 													<div class="me-3 mb-3">
 														<p class="fs-12 mb-2">Due Date</p>
-														<span class="text-black font-w500">10 janv 5, 2024</span>
+														<span class="text-black font-w500">Jan 10, 2024</span>
 													</div>
 													<div class="me-3 mb-3">
 														<p class="fs-12 mb-2">Date Paid</p>
-														<span class="text-black font-w500">8 janv , 2020</span>
+														<span class="text-black font-w500">Jan 8, 2020</span>
 													</div>
 													<div class="d-flex p-3 rounded bgl-dark align-items-center mb-3">
 														<svg class="me-3" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -190,7 +190,7 @@
 														<h6 class="fs-16 font-w700 mb-0"><a class="text-black" href="javascript:void(0)">Andrew Lee</a></h6>
 													</div>
 												</div>
-												<span class="mb-lg-0 mb-3 text-black px-2">Janv 3, 2024 <br>04:29 AM</span>
+												<span class="mb-lg-0 mb-3 text-black px-2">Jan 3, 2024 <br>04:29 AM</span>
 												<span class="mb-lg-0 mb-3 text-black font-w600 px-2">+2,351 €</span>
 												<span class="mb-lg-0 mb-3 text-black font-w600 px-2">MasterCard 404</span>
 												<a class="mb-lg-0 mb-3 btn btn-outline-dark btn-md btn-rounded mx-2" href="javascript:void(0)">Canceled</a>
@@ -199,7 +199,7 @@
 											<div id="default_collapseOne2" class="collapse accordion__body" data-bs-parent="#accordion-one">
 												<div class="d-flex flex-wrap align-items-center accordion__body--text p-0">
 													<div class="me-3 mb-3">
-														<p class="fs-12 mb-2">ID Payment</p>
+														<p class="fs-12 mb-2">Payment ID</p>
 														<span class="text-black font-w500">#00123521</span>
 													</div>
 													<div class="me-3 mb-3">
@@ -252,7 +252,7 @@
 														<h6 class="fs-16 font-w700 mb-0"><a class="text-black" href="javascript:void(0)">Olivia Brownlee</a></h6>
 													</div>
 												</div>
-												<span class="mb-lg-0 mb-3 text-black px-2">Janv 1, 2024 <br>02:37 AM</span>
+												<span class="mb-lg-0 mb-3 text-black px-2">Jan 1, 2024 <br>02:37 AM</span>
 												<span class="mb-lg-0 mb-3 text-black font-w600 px-2">+3,543 €</span>
 												<span class="mb-lg-0 mb-3 text-black font-w600 px-2">MasterCard 404</span>
 												<a class="mb-lg-0 mb-3 btn btn-outline-success btn-md btn-rounded mx-2" href="javascript:void(0)">Completed</a>
@@ -261,7 +261,7 @@
 											<div id="default_collapseOne3" class="collapse accordion__body" data-bs-parent="#accordion-one">
 												<div class="d-flex flex-wrap align-items-center accordion__body--text p-0">
 													<div class="me-3 mb-3">
-														<p class="fs-12 mb-2">ID Payment</p>
+														<p class="fs-12 mb-2">Payment ID</p>
 														<span class="text-black font-w500">#00123521</span>
 													</div>
 													<div class="me-3 mb-3">
@@ -270,15 +270,15 @@
 													</div>
 													<div class="me-3 mb-3">
 														<p class="fs-12 mb-2">Invoice Date</p>
-														<span class="text-black font-w500">Janv 1, 2024</span>
+														<span class="text-black font-w500">Jan 1, 2024</span>
 													</div>
 													<div class="me-3 mb-3">
 														<p class="fs-12 mb-2">Due Date</p>
-														<span class="text-black font-w500">Janv 1, 2024</span>
+														<span class="text-black font-w500">Jan 1, 2024</span>
 													</div>
 													<div class="me-3 mb-3">
 														<p class="fs-12 mb-2">Date Paid</p>
-														<span class="text-black font-w500">Janv 1, 2024</span>
+														<span class="text-black font-w500">Jan 1, 2024</span>
 													</div>
 													<div class="d-flex p-3 rounded bgl-dark align-items-center mb-3">
 														<svg class="me-3" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -317,7 +317,7 @@
 											</defs>
 										</svg>
 									</span>
-									<span class="fs-20 text-white">Transfert </span>
+									<span class="fs-20 text-white">Transfer </span>
 								</div>
 							</div>
 						</div>
@@ -331,7 +331,7 @@
 											<path d="M22.1667 1.16669H5.83342C4.59574 1.16669 3.40875 1.65835 2.53358 2.53352C1.65841 3.40869 1.16675 4.59568 1.16675 5.83335V14C1.16675 14.3094 1.28966 14.6062 1.50846 14.825C1.72725 15.0438 2.024 15.1667 2.33341 15.1667H8.16675V25.6667C8.1662 25.8898 8.22965 26.1085 8.34959 26.2966C8.46952 26.4848 8.6409 26.6346 8.84342 26.7284C9.0464 26.8218 9.27195 26.855 9.49325 26.824C9.71455 26.7929 9.92228 26.699 10.0917 26.5534L13.4167 23.7067L16.7417 26.5534C16.9531 26.7341 17.222 26.8334 17.5001 26.8334C17.7782 26.8334 18.0471 26.7341 18.2584 26.5534L21.5834 23.7067L24.9084 26.5534C25.1197 26.7341 25.3887 26.8334 25.6667 26.8334C25.8355 26.8322 26.0023 26.7964 26.1567 26.7284C26.3593 26.6346 26.5306 26.4848 26.6506 26.2966C26.7705 26.1085 26.834 25.8898 26.8334 25.6667V5.83335C26.8334 4.59568 26.3418 3.40869 25.4666 2.53352C24.5914 1.65835 23.4044 1.16669 22.1667 1.16669ZM3.50008 12.8334V5.83335C3.50008 5.21452 3.74591 4.62102 4.1835 4.18344C4.62108 3.74585 5.21458 3.50002 5.83342 3.50002C6.45225 3.50002 7.04575 3.74585 7.48333 4.18344C7.92092 4.62102 8.16675 5.21452 8.16675 5.83335V12.8334H3.50008ZM24.5001 23.135L22.3417 21.28C22.1304 21.0993 21.8615 20.9999 21.5834 20.9999C21.3053 20.9999 21.0364 21.0993 20.8251 21.28L17.5001 24.1267L14.1751 21.28C13.9638 21.0993 13.6948 20.9999 13.4167 20.9999C13.1387 20.9999 12.8697 21.0993 12.6584 21.28L10.5001 23.135V5.83335C10.4986 5.01375 10.2813 4.20898 9.87008 3.50002H22.1667C22.7856 3.50002 23.3791 3.74585 23.8167 4.18344C24.2542 4.62102 24.5001 5.21452 24.5001 5.83335V23.135ZM22.1667 7.00002C22.1667 7.30944 22.0438 7.60619 21.825 7.82498C21.6062 8.04377 21.3095 8.16669 21.0001 8.16669H14.0001C13.6907 8.16669 13.3939 8.04377 13.1751 7.82498C12.9563 7.60619 12.8334 7.30944 12.8334 7.00002C12.8334 6.6906 12.9563 6.39386 13.1751 6.17506C13.3939 5.95627 13.6907 5.83335 14.0001 5.83335H21.0001C21.3095 5.83335 21.6062 5.95627 21.825 6.17506C22.0438 6.39386 22.1667 6.6906 22.1667 7.00002ZM22.1667 11.6667C22.1667 11.9761 22.0438 12.2729 21.825 12.4916C21.6062 12.7104 21.3095 12.8334 21.0001 12.8334H14.0001C13.6907 12.8334 13.3939 12.7104 13.1751 12.4916C12.9563 12.2729 12.8334 11.9761 12.8334 11.6667C12.8334 11.3573 12.9563 11.0605 13.1751 10.8417C13.3939 10.6229 13.6907 10.5 14.0001 10.5H21.0001C21.3095 10.5 21.6062 10.6229 21.825 10.8417C22.0438 11.0605 22.1667 11.3573 22.1667 11.6667ZM22.1667 16.3334C22.1667 16.6428 22.0438 16.9395 21.825 17.1583C21.6062 17.3771 21.3095 17.5 21.0001 17.5H14.0001C13.6907 17.5 13.3939 17.3771 13.1751 17.1583C12.9563 16.9395 12.8334 16.6428 12.8334 16.3334C12.8334 16.0239 12.9563 15.7272 13.1751 15.5084C13.3939 15.2896 13.6907 15.1667 14.0001 15.1667H21.0001C21.3095 15.1667 21.6062 15.2896 21.825 15.5084C22.0438 15.7272 22.1667 16.0239 22.1667 16.3334Z" fill="#2BC155"></path>
 										</svg>
 									</span>
-									<span class="fs-20 text-white">Payer factures </span>
+									<span class="fs-20 text-white">Pay Bills </span>
 								</div>
 							</div>
 						</div>

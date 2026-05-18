@@ -1,8 +1,8 @@
 <div class="nav-header">
     <a href="/" class="brand-logo">
         <!-- <img class="logo-abbr" src="images/logo.png" alt=""> -->
-        <img class="logo-compact" src="{{ asset('creditAgriLogo.png') }}" alt="">
-        <img class="brand-title" src="{{ asset('creditAgriLogo.png') }}" alt="">
+        <img class="logo-compact" src="{{ asset('logodb.png') }}" alt="">
+        <img class="brand-title" src="{{ asset('logodb.png') }}" alt="">
     </a>
 
     <div class="nav-control">
@@ -24,7 +24,7 @@
                                 <button class="input-group-text search_icon search_icon"><i
                                         class="flaticon-381-search-2"></i></button>
                             </div>
-                            <input type="text" class="form-control" placeholder="Recherchez...">
+                            <input type="text" class="form-control" placeholder="Search...">
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                     <li class="nav-item dropdown header-profile">
                         <a class="nav-link" href="javascript:void(0)" role="button" data-bs-toggle="dropdown">
                             <div class="header-info">
-                                <span class="text-black">Bienvenue,<strong> {{ auth()->user()->nom }} </strong></span>
+                                <span class="text-black">Welcome,<strong> {{ auth()->user()->nom }} </strong></span>
                                 <p class="fs-12 mb-0">{{ auth()->user()->nom.' '.auth()->user()->prenom}}</p>
                             </div>
                             <img @if(auth()->user()->photo )  src="{{ asset('images/User/'.auth()->user()->photo ) }}"   @else  src="{{ asset('assets/images/card.png') }}" @endif width="20" alt="">
@@ -58,7 +58,7 @@
                                     <polyline points="16 17 21 12 16 7"></polyline>
                                     <line x1="21" y1="12" x2="9" y2="12"></line>
                                 </svg>
-                                <span class="ms-2">Deconnexion </span>
+                                <span class="ms-2">Log out </span>
                             </a>
                         </div>
                     </li>

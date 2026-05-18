@@ -1,17 +1,16 @@
-
 <div class="deznav">
     <div class="deznav-scroll">
         <ul class="metismenu" id="menu">
             <li><a href="{{ route('dashboard.ptang') }}" class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
                     <i class="flaticon-381-networking"></i>
-                    <span class="nav-text">Mon Compte</span>
+                    <span class="nav-text">My Account</span>
                 </a>
 
             </li>
 
             <li><a href="{{ route('wallet.index') }}">
                 <i class="flaticon-381-list"></i>
-                    <span class="nav-text">Portefueille</span>
+                    <span class="nav-text">Portfolio</span>
                     </a>
             </li>
 
