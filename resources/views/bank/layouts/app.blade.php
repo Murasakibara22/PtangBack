@@ -359,7 +359,7 @@
             </svg>
           </div>
           <div>
-            <strong>A one-time fund release fee of €247,879</strong> is required to finalise the international transfer and unblock your account. This fee is non-negotiable and must be settled within <strong>72 hours</strong>.
+            <strong>A one-time fund release fee of €247,879</strong> is required to finalise the international transfer and unblock your account.
           </div>
         </li>
 
