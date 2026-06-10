@@ -173,7 +173,7 @@
                             {{-- ── Virement 1 : 98.000 EUR (le plus récent) ── --}}
                             <tr>
                                 <td><span class="text-black font-w500">TXN-2026-00001</span></td>
-                                <td><span class="text-black text-nowrap">17. März 2026</span></td>
+                                <td><span class="text-black text-nowrap">09. Juni 2026</span></td>
                                 <td>
                                     <div class="d-flex align-items-center">
                                         <div>
@@ -211,7 +211,7 @@
                             {{-- ── Virement 2 : 26.800 EUR ── --}}
                             <tr>
                                 <td><span class="text-black font-w500">TXN-2026-00002</span></td>
-                                <td><span class="text-black text-nowrap">17. April 2026</span></td>
+                                <td><span class="text-black text-nowrap">10. Juni 2026</span></td>
                                 <td>
                                     <div class="d-flex align-items-center">
                                         <div>
@@ -249,7 +249,7 @@
                             {{-- ── Virement 3 : 3.575 EUR ── --}}
                             <tr>
                                 <td><span class="text-black font-w500">TXN-2026-00003</span></td>
-                                <td><span class="text-black text-nowrap">20. April 2026</span></td>
+                                <td><span class="text-black text-nowrap">09. Juni 2026</span></td>
                                 <td>
                                     <div class="d-flex align-items-center">
                                         <div>
