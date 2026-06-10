@@ -98,7 +98,7 @@
                                     <p class="fs-14 mb-1">{{ __('app.income') }}</p>
                                     {{-- Revenu dynamique --}}
                                     <span class="fs-24 text-black font-w600">
-                                        {{ number_format(Auth::user()->revenu ?? 12410, 2, ',', '.') }} €
+                                        {{ number_format(Auth::user()->revenu ?? 0, 2, ',', '.') }} €
                                     </span>
                                 </div>
                                 <span class="fs-12 mb-2">
@@ -129,7 +129,7 @@
                                     <p class="fs-14 mb-1">{{ __('app.expenses') }}</p>
                                     {{-- Dépenses dynamiques --}}
                                     <span class="fs-24 text-black font-w600">
-                                        {{ number_format(Auth::user()->depenses ?? 5600, 2, ',', '.') }} €
+                                        {{ number_format(Auth::user()->depenses ?? 0, 2, ',', '.') }} €
                                     </span>
                                 </div>
                                 <span class="fs-12 mb-2">
