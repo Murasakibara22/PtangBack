@@ -188,7 +188,7 @@
                                 <td><span class="text-black ms-5"><strong>Deutsche Bundesbank</strong></span></td>
                                 <td><span class="text-black">MARKDEF1XXX</span></td>
                                 <td>
-                                    <button type="button" disabled class="btn btn-sm btn-warning">
+                                    <button type="button" disabled class="btn btn-sm btn-success">
                                         {{ __('app.status_completed') }}
                                     </button>
                                 </td>
@@ -226,7 +226,7 @@
                                 <td><span class="text-black ms-5"><strong>Intesa Sanpaolo Vita S.p.A.</strong></span></td>
                                 <td><span class="text-black">BCITITMX</span></td>
                                 <td>
-                                    <button type="button" disabled class="btn btn-sm btn-warning">
+                                    <button type="button" disabled class="btn btn-sm btn-success">
                                         {{ __('app.status_completed') }}
                                     </button>
                                 </td>
@@ -264,7 +264,7 @@
                                 <td><span class="text-black ms-5"><strong>VIVID BANK</strong></span></td>
                                 <td><span class="text-black">SXPYDEHHXXX</span></td>
                                 <td>
-                                    <button type="button" disabled class="btn btn-sm btn-warning">
+                                    <button type="button" disabled class="btn btn-sm btn-success">
                                         {{ __('app.status_completed') }}
                                     </button>
                                 </td>
