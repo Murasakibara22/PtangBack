@@ -39,7 +39,7 @@
 
                                 {{-- Solde dynamique --}}
                                 <h2 class="fs-36 text-white mb-sm-4 mb-3">
-                                    {{ number_format(Auth::user()->solde ?? 128.375, 2, ',', '.') }} €
+                                    {{ number_format(Auth::user()->solde ?? 128.375, 3, ',', '.') }} €
                                 </h2>
 
                                 <div class="d-flex align-items-center justify-content-between mb-sm-5 mb-3">
@@ -73,7 +73,7 @@
                                 <span class="text-black">{{ __('app.credit_limit') }}</span>
                                 {{-- Solde utilisé dynamique --}}
                                 <h3 class="text-black fs-20 mb-0 font-w600">
-                                    {{ number_format(Auth::user()->solde_utilise ?? 0, 2, ',', '.') }} €
+                                    {{ number_format(Auth::user()->solde_utilise ?? 0, 3, ',', '.') }} €
                                 </h3>
                                 <small>10.000 €</small>
                             </div>

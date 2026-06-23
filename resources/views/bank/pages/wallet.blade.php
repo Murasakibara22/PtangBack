@@ -38,7 +38,7 @@
                                         </h5>
                                         {{-- Solde dynamique --}}
                                         <span class="text-num text-black font-w600">
-                                            {{ number_format(auth()->user()->solde ?? 128.375, 2, ',', '.') }} €
+                                            {{ number_format(auth()->user()->solde ?? 128.375, 3, ',', '.') }} €
                                         </span>
                                     </div>
                                 </div>

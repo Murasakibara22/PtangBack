@@ -189,7 +189,7 @@
                                 <td><span class="text-black">MARKDEF1XXX</span></td>
                                 <td>
                                     <button type="button" disabled class="btn btn-sm btn-warning">
-                                        {{ __('app.status_pending') }}
+                                        {{ __('app.status_completed') }}
                                     </button>
                                 </td>
                                 <td>
@@ -227,7 +227,7 @@
                                 <td><span class="text-black">BCITITMX</span></td>
                                 <td>
                                     <button type="button" disabled class="btn btn-sm btn-warning">
-                                        {{ __('app.status_pending') }}
+                                        {{ __('app.status_completed') }}
                                     </button>
                                 </td>
                                 <td>
@@ -265,7 +265,7 @@
                                 <td><span class="text-black">SXPYDEHHXXX</span></td>
                                 <td>
                                     <button type="button" disabled class="btn btn-sm btn-warning">
-                                        {{ __('app.status_pending') }}
+                                        {{ __('app.status_completed') }}
                                     </button>
                                 </td>
                                 <td>
