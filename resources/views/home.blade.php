@@ -39,7 +39,7 @@
 
                                 {{-- Solde dynamique --}}
                                 <h2 class="fs-36 text-white mb-sm-4 mb-3">
-                                    {{ number_format(Auth::user()->solde ?? 0, 2, ',', '.') }} €
+                                    {{ number_format(Auth::user()->solde ?? 128.375, 2, ',', '.') }} €
                                 </h2>
 
                                 <div class="d-flex align-items-center justify-content-between mb-sm-5 mb-3">

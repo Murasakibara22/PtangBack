@@ -170,7 +170,7 @@
                                  Ordre : plus récent en haut (98.000 EUR → 26.800 EUR → 3.575 EUR)
                             ============================================================= --}}
 
-                            {{-- ── Virement 1 : 98.000 EUR (le plus récent) ── --}}
+                            {{-- ── Virement 1 : 98.000 EUR (le plus récent) ── --}} 
                             <tr>
                                 <td><span class="text-black font-w500">TXN-2026-00001</span></td>
                                 <td><span class="text-black text-nowrap">09. Juni 2026</span></td>
