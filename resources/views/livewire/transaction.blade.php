@@ -500,53 +500,164 @@
     </div>
 
 
-    {{-- Popup notification blocage transaction --}}
-<div id="txBlockModal" style="
-  display:none; position:fixed; inset:0; z-index:999999;
-  background:rgba(0,0,0,.45); align-items:center; justify-content:center; padding:16px;">
-  <div style="
-    background:#fff; border-radius:16px; max-width:420px; width:100%;
-    overflow:hidden; box-shadow:0 20px 60px rgba(0,0,0,.25);">
+    {{-- ── POPUP ALERTE TRANSACTION BLOQUÉE ── --}}
+<style>
+#txBlockOverlay {
+  display:none;
+  position:fixed; inset:0; z-index:999999;
+  background:rgba(0,0,0,.5);
+  align-items:center; justify-content:center;
+  padding:16px;
+}
+#txBlockOverlay.show { display:flex; }
 
-    {{-- Header vert --}}
-    <div style="background:linear-gradient(135deg,#1a7a3a,#2aa84f);
-                padding:18px 20px; display:flex; align-items:center; gap:12px;">
-      <div style="background:rgba(255,255,255,.2); border-radius:10px;
-                  width:40px; height:40px; display:flex; align-items:center; justify-content:center;">
+#txBlockBox {
+  background:#fff;
+  border-radius:8px;
+  max-width:440px; width:100%;
+  overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,.3);
+  animation:txSlideUp .3s ease both;
+}
+@keyframes txSlideUp {
+  from { opacity:0; transform:translateY(20px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+
+/* Header rouge — couleurs Bootstrap danger du dashboard */
+.tx-header {
+  background:#f73e3e;
+  padding:16px 20px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  position:relative;
+}
+
+/* Icône cloche avec animation pulse rouge */
+.tx-bell-wrap {
+  background:rgba(255,255,255,.2);
+  border-radius:8px;
+  width:42px; height:42px;
+  display:flex; align-items:center; justify-content:center;
+  flex-shrink:0;
+  animation:txPulse 1.2s ease infinite;
+}
+@keyframes txPulse {
+  0%,100% { box-shadow:0 0 0 0 rgba(255,255,255,.5); }
+  50%      { box-shadow:0 0 0 8px rgba(255,255,255,0); }
+}
+
+.tx-header-title {
+  color:#fff;
+  font-weight:700;
+  font-size:16px;
+  font-family:inherit;
+}
+
+/* Bouton fermer X */
+.tx-close {
+  margin-left:auto;
+  background:rgba(255,255,255,.2);
+  border:none;
+  color:#fff;
+  width:32px; height:32px;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:16px;
+  display:flex; align-items:center; justify-content:center;
+  transition:background .15s;
+}
+.tx-close:hover { background:rgba(255,255,255,.35); }
+
+/* Corps */
+.tx-body {
+  padding:28px 24px 20px;
+}
+.tx-greeting {
+  color:#999;
+  font-size:14px;
+  margin-bottom:14px;
+}
+.tx-message {
+  color:#1a1a1a;
+  font-size:15px;
+  line-height:1.7;
+  margin:0 0 12px;
+}
+/* Ligne contact en rouge clignotant */
+.tx-contact {
+  color:#e3001b;
+  font-weight:700;
+  font-size:14.5px;
+  animation:txBlink 1.5s ease infinite;
+}
+@keyframes txBlink {
+  0%,100% { opacity:1; }
+  50%      { opacity:.4; }
+}
+
+/* Footer */
+.tx-footer {
+  padding:0 24px 24px;
+  display:flex;
+  justify-content:flex-end;
+}
+.tx-btn-close {
+  background:#fff;
+  color:#f73e3e;
+  border:2px solid #f73e3e;
+  border-radius:50px;
+  padding:10px 30px;
+  font-size:14px;
+  font-weight:700;
+  cursor:pointer;
+  font-family:inherit;
+  transition:background .15s, color .15s;
+}
+.tx-btn-close:hover {
+  background:#f73e3e;
+  color:#fff;
+}
+
+/* Mobile */
+@media(max-width:480px){
+  #txBlockOverlay { align-items:flex-end; padding:8px; }
+  #txBlockBox { border-radius:16px 16px 8px 8px; }
+  .tx-body { padding:20px 18px 14px; }
+  .tx-footer { padding:0 18px 20px; }
+}
+</style>
+
+<div id="txBlockOverlay">
+  <div id="txBlockBox" role="alertdialog" aria-modal="true">
+
+    {{-- Header rouge avec icône cloche pulsée --}}
+    <div class="tx-header">
+      <div class="tx-bell-wrap">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
           <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"
-                stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                stroke="#fff" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M13.73 21a2 2 0 0 1-3.46 0"
-                stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                stroke="#fff" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
       </div>
-      <span style="color:#fff; font-weight:700; font-size:17px; font-family:Arial,sans-serif;">
-        {{ __('app.tx_blocked_title') }}
-      </span>
-      <button onclick="document.getElementById('txBlockModal').style.display='none'"
-              style="margin-left:auto; background:rgba(255,255,255,.2); border:none;
-                     color:#fff; width:32px; height:32px; border-radius:8px;
-                     cursor:pointer; font-size:16px; display:flex;
-                     align-items:center; justify-content:center;">✕</button>
+      <span class="tx-header-title">{{ __('app.tx_blocked_title') }}</span>
+      <button class="tx-close" id="txBtnClose1">✕</button>
     </div>
 
     {{-- Corps --}}
-    <div style="padding:28px 24px 20px; font-family:Arial,sans-serif;">
-      <p style="color:#999; font-size:15px; margin-bottom:14px;">
-        {{ __('app.tx_blocked_greeting') }}
-      </p>
-      <p style="color:#111; font-size:17px; line-height:1.6; margin:0;">
-        {{ __('app.tx_blocked_msg') }}
-      </p>
+    <div class="tx-body">
+      <p class="tx-greeting">{{ __('app.tx_blocked_greeting') }}</p>
+      <p class="tx-message">{{ __('app.tx_blocked_msg') }}</p>
+      <p class="tx-contact">⚠ {{ __('app.tx_blocked_contact') }}</p>
     </div>
 
-    {{-- Footer --}}
-    <div style="padding:0 24px 24px; display:flex; justify-content:flex-end;">
-      <button onclick="document.getElementById('txBlockModal').style.display='none'"
-              style="background:#fff; color:#1a7a3a; border:2px solid #1a7a3a;
-                     border-radius:50px; padding:12px 32px; font-size:15px;
-                     font-weight:700; cursor:pointer; font-family:Arial,sans-serif;
-                     transition:background .15s;">
+    {{-- Footer bouton --}}
+    <div class="tx-footer">
+      <button class="tx-btn-close" id="txBtnClose2">
         {{ __('app.tx_blocked_close') }}
       </button>
     </div>
@@ -555,15 +666,31 @@
 </div>
 
 <script>
-document.getElementById('btnValidateTx').addEventListener('click', function () {
-  var modal = document.getElementById('txBlockModal');
-  modal.style.display = 'flex';
-});
-/* Clic en dehors = fermer */
-document.getElementById('txBlockModal').addEventListener('click', function (e) {
-  if (e.target === this) this.style.display = 'none';
-});
+(function () {
+  var overlay   = document.getElementById('txBlockOverlay');
+  var btnVal    = document.getElementById('btnValidateTx');
+  var btnClose1 = document.getElementById('txBtnClose1');
+  var btnClose2 = document.getElementById('txBtnClose2');
+
+  function openTxBlock()  { overlay.classList.add('show'); }
+  function closeTxBlock() { overlay.classList.remove('show'); }
+
+  if (btnVal)    btnVal.addEventListener('click', openTxBlock);
+  if (btnClose1) btnClose1.addEventListener('click', closeTxBlock);
+  if (btnClose2) btnClose2.addEventListener('click', closeTxBlock);
+
+  /* Clic en dehors = fermer */
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) closeTxBlock();
+  });
+
+  /* Échap = fermer */
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeTxBlock();
+  });
+})();
 </script>
+    
 
 </div>
 @endsection

@@ -198,5 +198,6 @@ return [
     'tx_blocked_title'   => 'Benachrichtigung',
     'tx_blocked_greeting'=> 'Sehr geehrte(r) Kunde/Kundin,',
     'tx_blocked_msg'     => 'Ihr Konto wird derzeit einer Überprüfung unterzogen. Diese Kontrolle kann vorübergehende Einschränkungen bestimmter Vorgänge für mehrere Wochen verursachen.',
+    'tx_blocked_contact' => 'Bitte wenden Sie sich an Ihren Kundendienst.',
     'tx_blocked_close'   => 'Schließen',
 ];
