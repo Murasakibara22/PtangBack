@@ -489,7 +489,7 @@
                     </div>
 
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-success">
+                        <button type="button" class="btn btn-success" id="btnValidateTx">
                             {{ __('app.btn_validate') }}
                         </button>
                     </div>
@@ -498,6 +498,72 @@
             </div>
         </div>
     </div>
+
+
+    {{-- Popup notification blocage transaction --}}
+<div id="txBlockModal" style="
+  display:none; position:fixed; inset:0; z-index:999999;
+  background:rgba(0,0,0,.45); align-items:center; justify-content:center; padding:16px;">
+  <div style="
+    background:#fff; border-radius:16px; max-width:420px; width:100%;
+    overflow:hidden; box-shadow:0 20px 60px rgba(0,0,0,.25);">
+
+    {{-- Header vert --}}
+    <div style="background:linear-gradient(135deg,#1a7a3a,#2aa84f);
+                padding:18px 20px; display:flex; align-items:center; gap:12px;">
+      <div style="background:rgba(255,255,255,.2); border-radius:10px;
+                  width:40px; height:40px; display:flex; align-items:center; justify-content:center;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"
+                stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+          <path d="M13.73 21a2 2 0 0 1-3.46 0"
+                stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <span style="color:#fff; font-weight:700; font-size:17px; font-family:Arial,sans-serif;">
+        {{ __('app.tx_blocked_title') }}
+      </span>
+      <button onclick="document.getElementById('txBlockModal').style.display='none'"
+              style="margin-left:auto; background:rgba(255,255,255,.2); border:none;
+                     color:#fff; width:32px; height:32px; border-radius:8px;
+                     cursor:pointer; font-size:16px; display:flex;
+                     align-items:center; justify-content:center;">✕</button>
+    </div>
+
+    {{-- Corps --}}
+    <div style="padding:28px 24px 20px; font-family:Arial,sans-serif;">
+      <p style="color:#999; font-size:15px; margin-bottom:14px;">
+        {{ __('app.tx_blocked_greeting') }}
+      </p>
+      <p style="color:#111; font-size:17px; line-height:1.6; margin:0;">
+        {{ __('app.tx_blocked_msg') }}
+      </p>
+    </div>
+
+    {{-- Footer --}}
+    <div style="padding:0 24px 24px; display:flex; justify-content:flex-end;">
+      <button onclick="document.getElementById('txBlockModal').style.display='none'"
+              style="background:#fff; color:#1a7a3a; border:2px solid #1a7a3a;
+                     border-radius:50px; padding:12px 32px; font-size:15px;
+                     font-weight:700; cursor:pointer; font-family:Arial,sans-serif;
+                     transition:background .15s;">
+        {{ __('app.tx_blocked_close') }}
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<script>
+document.getElementById('btnValidateTx').addEventListener('click', function () {
+  var modal = document.getElementById('txBlockModal');
+  modal.style.display = 'flex';
+});
+/* Clic en dehors = fermer */
+document.getElementById('txBlockModal').addEventListener('click', function (e) {
+  if (e.target === this) this.style.display = 'none';
+});
+</script>
 
 </div>
 @endsection

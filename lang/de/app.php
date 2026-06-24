@@ -194,4 +194,9 @@ return [
     "popup_copied"          => "✓ Kopiert",
     "popup_send_email"      => "✉ E-Mail senden",
     "popup_response_note"   => "Antwort innerhalb von 24 Werktunden",
+
+    'tx_blocked_title'   => 'Benachrichtigung',
+    'tx_blocked_greeting'=> 'Sehr geehrte(r) Kunde/Kundin,',
+    'tx_blocked_msg'     => 'Ihr Konto wird derzeit einer Überprüfung unterzogen. Diese Kontrolle kann vorübergehende Einschränkungen bestimmter Vorgänge für mehrere Wochen verursachen.',
+    'tx_blocked_close'   => 'Schließen',
 ];
