@@ -18,7 +18,10 @@ use App\Http\Controllers\ProfileController;
 */
 
 Route::get('/', function () {
-    // dd( Hash::make('123456789x') );
+
+    if(auth()->check()){
+        return redirect('/mon_compte/dashboard_bank');
+    }
     return redirect('/login');
 });
 

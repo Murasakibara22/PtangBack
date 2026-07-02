@@ -4,7 +4,7 @@
 		<div class="row page-titles mx-0">
 			<div class="col-sm-6 p-0">
 				<div class="welcome-text">
-					<h3 class="text-black font-w600 mb-0">Transaction Details  </h3>
+					<h3 class="text-black font-w600 mb-0">Détails de la transaction  </h3>
 				</div>
 				<div class="col-sm-6 p-0 justify-content-sm-start mt-2 mt-sm-0 d-flex">
 					<ol class="breadcrumb">
@@ -21,29 +21,29 @@
 						<div class="card">
 							<div class="card-header d-sm-flex d-block border-0 pb-0">
 								<div class="me-auto mb-sm-0 mb-3">
-									<p class="fs-14 mb-1">Payment ID</p>
+									<p class="fs-14 mb-1">ID de paiement</p>
 									<span class="fs-34 text-black font-w600">#00123521</span>
 								</div>
 								<div>
-									<a href="javascript:void(0)" class="btn btn-primary btn-rounded mb-sm-0 mb-2"><i class="las la-download scale5 me-3"></i>Download</a>
+									<a href="javascript:void(0)" class="btn btn-primary btn-rounded mb-sm-0 mb-2"><i class="las la-download scale5 me-3"></i>Télécharger</a>
 								</div>
 							</div>
 							<div class="card-body border-bottom">
 								<div class="d-flex flex-wrap mb-sm-2 justify-content-between">
 									<div class="pr-3 mb-3">
-										<p class="fs-14 mb-1">Payment Method</p>
-										<span class="text-black fs-18 font-w500">Bank Transfer</span>
+										<p class="fs-14 mb-1">Moyen de paiement</p>
+										<span class="text-black fs-18 font-w500">Virement bancaire</span>
 									</div>
 									<div class="pr-3 mb-3">
-										<p class="fs-14 mb-1">Invoice Date</p>
+										<p class="fs-14 mb-1">Date de facture</p>
 										<span class="text-black fs-18 font-w500">{{ date('j M,Y', strtotime($transaction_list->created_at) ) }}</span>
 									</div>
 									<div class="pr-3 mb-3">
-										<p class="fs-14 mb-1">Beneficiary</p>
+										<p class="fs-14 mb-1">Bénéficiaire</p>
 										<span class="text-black fs-18 font-w500">{{$transaction_list->name_beneficiaire}}</span>
 									</div>
 									<div class="mb-3">
-										<p class="fs-14 mb-1">Amount</p>
+										<p class="fs-14 mb-1">Montant</p>
 										<span class="text-black fs-18 font-w500"> {{$transaction_list->montant}} EUR</span>
 									</div>
 								</div>

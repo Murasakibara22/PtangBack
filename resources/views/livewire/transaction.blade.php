@@ -37,7 +37,7 @@
 								</svg>
 							</span>
 							<div class="media-body">
-								<p class="mb-1">Pending</p>
+								<p class="mb-1">En attente</p>
 								<h4 class="mb-0">{{ App\Models\Transaction::count() }}</h4>
 								<span class="badge badge-warning">0%</span>
 							</div>
@@ -59,7 +59,7 @@
 								</svg>
 							</span>
 							<div class="media-body">
-								<p class="mb-1">Failed</p>
+								<p class="mb-1">Échoué</p>
 								<h4 class="mb-0">0</h4>
 								<span class="badge badge-danger">0%</span>
 							</div>
@@ -91,20 +91,20 @@
 
 
 		<div class= "page-titles form-head d-flex flex-wrap justify-content-between align-items-center mb-4">
-			<h2 class="text-black font-w600 mb-0 me-auto mb-2 pe-3">Transaction History</h2>
+			<h2 class="text-black font-w600 mb-0 me-auto mb-2 pe-3">Historique des transactions</h2>
 			<button type="button"  class="btn btn-info btn-rounded me-3 " data-bs-toggle="modal" data-bs-target="#exampledownload">
 			<i class="las la-plus scale5 me-3"></i>
-			Make a Transfer</button>
+			Effectuer un virement</button>
 			<div class="dropdown custom-dropdown mb-0">
 				<div class="btn btn-light btn-rounded" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 					<i class="las la-calendar-alt scale5 me-3"></i>
-					Filter Date
+					Filtrer par date
 					<i class="fa fa-caret-down text-success ms-3" aria-hidden="true"></i>
 				</div>
 				<div class="dropdown-menu dropdown-menu-end">
-					<a class="dropdown-item" href="javascript:void(0);">Today</a>
-					<a class="dropdown-item" href="javascript:void(0);">Last week</a>
-					<a class="dropdown-item" href="javascript:void(0);">Last month</a>
+					<a class="dropdown-item" href="javascript:void(0);">Aujourd'hui</a>
+					<a class="dropdown-item" href="javascript:void(0);">La semaine dernière</a>
+					<a class="dropdown-item" href="javascript:void(0);">Le mois dernier</a>
 				</div>
 			</div>
 		</div>
@@ -118,11 +118,11 @@
 
 								<th>ID</th>
 								<th>Date</th>
-								<th>Beneficiary</th>
+								<th>Bénéficiaire</th>
 								<th>Montant</th>
-								<th>Bank Institution</th>
-								<th>BIC Code</th>
-								<th>Status</th>
+								<th>Établissement bancaire</th>
+								<th>Code BIC</th>
+								<th>Statut</th>
 								<th>Actions</th>
 
 							</tr>
@@ -166,7 +166,7 @@
                                                     </defs>
                                                 </svg>
                                             </span>
-                                            Pending
+                                            En attente
                                         </div> --}}
 
                                         <button type="button" disabled class="btn btn-sm btn-danger">Blocked</button>
@@ -182,7 +182,7 @@
                                                 </svg>
                                             </div>
                                             <div class="dropdown-menu dropdown-menu-end">
-                                                <a class="dropdown-item" href="/mon_compte/show_transaction/{{$item_transac->id}}">Details</a>
+                                                <a class="dropdown-item" href="/mon_compte/show_transaction/{{$item_transac->id}}">Détails</a>
                                             </div>
                                         </div>
                                     </td>
@@ -205,7 +205,7 @@
 				<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 					<div class="modal-content ">
 						<div class="modal-header bg-primary">
-							<h5 class="modal-title text-white text-uppercase">Enter Beneficiary Details</h5>
+							<h5 class="modal-title text-white text-uppercase">Informations du bénéficiaire</h5>
 							<button type="button color-white" class="close" data-bs-dismiss="modal"><span>&times;</span>
 							</button>
 						</div>
@@ -215,30 +215,30 @@
                             <div class="basic-form text-black">
                                     <div class="row">
                                         <div class="mb-3 col-md-8 mx-auto">
-                                            <label class="form-label">IBAN Nationality</label>
+                                            <label class="form-label">Nationalité de l'IBAN</label>
                                             <input type="text" wire:model='nat_IBAN' class="form-control text-black" placeholder="France">
                                             @error('nat_IBAN')
                                                 <span  class="text-danger">{{$message}} </span>
                                             @enderror
                                         </div>
                                         <div class="mb-3 col-md-8 mx-auto">
-                                            <label class="form-label">Amount (EUR)</label>
+                                            <label class="form-label">Montant (EUR)</label>
                                             <input type="number" wire:model='montant' class="form-control text-black" placeholder="000000 EUR">
                                             @error('montant')
                                                 <span  class="text-danger">{{$message}} </span>
                                             @enderror
                                         </div>
                                         <div class="mb-3 col-md-8 mx-auto">
-                                            <label class="form-label">Bank Institution</label>
-                                            <input type="text" wire:model='etab_banque' class="form-control text-black" placeholder="Bank name">
+                                            <label class="form-label">Établissement bancaire</label>
+                                            <input type="text" wire:model='etab_banque' class="form-control text-black" placeholder="Nom de la banque">
                                             @error('etab_banque')
                                                 <span  class="text-danger">{{$message}} </span>
                                             @enderror
                                         </div>
 
                                         <div class="mb-3 col-md-8 mx-auto">
-                                            <label class="form-label">Beneficiary full name</label>
-                                            <input type="text" wire:model='name_beneficiaire' class="form-control text-black" placeholder="First & last name">
+                                            <label class="form-label">Nom et prénom du bénéficiaire</label>
+                                            <input type="text" wire:model='name_beneficiaire' class="form-control text-black" placeholder="Prénom et nom">
                                         </div>
 
                                     </div>
@@ -253,7 +253,7 @@
                                         </div>
 
                                         <div class="mb-3 col-md-8 mx-auto">
-                                            <label class="form-label">BIC Code</label>
+                                            <label class="form-label">Code BIC</label>
                                             <input type="text" wire:model='code_BIC' class="form-control text-black">
                                         </div>
 
@@ -261,14 +261,14 @@
 
                                     <div class="row mx-auto">
                                         <label class="form-label">Description</label>
-                                        <textarea class="form-control"  rows="6" placeholder="Enter a reason for this transaction..." id="comment">{{$description}}</textarea>
+                                        <textarea class="form-control"  rows="6" placeholder="Motif de la transaction..." id="comment">{{$description}}</textarea>
                                     </div>
                             </div>
 
 
 						</div>
 						<div class="modal-footer">
-							<button type="submit" class="btn btn-success">Confirm</button>
+							<button type="submit" class="btn btn-success">Valider</button>
 						</div>
                     </form>
 					</div>

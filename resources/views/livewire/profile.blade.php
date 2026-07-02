@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <a href="javascript:void(0)" align="right" class="btn btn-primary btn-rounded mb-3 " data-bs-toggle="modal" data-bs-target="#editProfile">
 			<i class="las la-edit scale5 me-3"></i>
-			Edit My Profile</a>
+			Modifier mon profil</a>
         <div class="page-titles">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="javascript:void(0)">App</a></li>
@@ -19,10 +19,10 @@
 
                             <div class="row">
                                 <div class="col-8">
-                                    <h4 class="text-primary mb-4">Personal Information</h4>
+                                    <h4 class="text-primary mb-4">Informations personnelles</h4>
                                     <div class="row mb-2">
                                         <div class="col-sm-3 col-5">
-                                            <h5 class="f-w-500">Name <span class="pull-end">:</span>
+                                            <h5 class="f-w-500">Nom <span class="pull-end">:</span>
                                             </h5>
                                         </div>
                                         <div class="col-sm-9 col-7"><span>{{auth()->user()->prenom . ' '. auth()->user()->nom}}</span>
@@ -37,17 +37,17 @@
                                     </div>
                                     <div class="row mb-2">
                                         <div class="col-sm-3 col-5">
-                                            <h5 class="f-w-500">Date of Birth <span class="pull-end">:</span>
+                                            <h5 class="f-w-500">Date de naissance <span class="pull-end">:</span>
                                             </h5>
                                         </div>
-                                        <div class="col-sm-9 col-7"><span>05/05/1983</span>
+                                        <div class="col-sm-9 col-7"><span>26/06/1971</span>
                                         </div>
                                     </div>
                                     <div class="row mb-2">
                                         <div class="col-sm-3 col-5">
                                             <h5 class="f-w-500">Address <span class="pull-end">:</span></h5>
                                         </div>
-                                        <div class="col-sm-9 col-7"><span>Gewerbeschule 8005 Zurich, Suisse</span>
+                                        <div class="col-sm-9 col-7"><span>Gewerbeschule 8005 Zurich, France</span>
                                         </div>
                                     </div>
                                     <div class="row mb-2">
@@ -78,7 +78,7 @@
 				<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 					<div class="modal-content ">
 						<div class="modal-header bg-primary">
-							<h5 class="modal-title text-white text-uppercase">Edit My Information</h5>
+							<h5 class="modal-title text-white text-uppercase">Modifier mes informations</h5>
 							<button type="button color-white" class="close" data-bs-dismiss="modal"><span>&times;</span>
 							</button>
 						</div>
@@ -106,28 +106,28 @@
                                 <div class="row">
 
                                     <div class="mb-3 col-md-6">
-                                        <label class="form-label">Name </label>
+                                        <label class="form-label">Nom </label>
                                         <input type="text" wire:model='nom' class="form-control text-black" placeholder="---X---X---">
                                         @error('nom')
                                             <span  class="text-danger">{{$message}} </span>
                                         @enderror
                                     </div>
                                     <div class="mb-3 col-md-6">
-                                        <label class="form-label">First Name</label>
+                                        <label class="form-label">Prénom</label>
                                         <input type="text" wire:model='prenom' class="form-control text-black" placeholder="---X---X---">
                                         @error('prenom')
                                             <span  class="text-danger">{{$message}} </span>
                                         @enderror
                                     </div>
                                     <div class="mb-3 col-md-6">
-                                        <label class="form-label">Email</label>
+                                        <label class="form-label">E-mail</label>
                                         <input type="email" wire:model='email' class="form-control text-black" placeholder="Entrer votre adresse email">
                                         @error('email')
                                             <span  class="text-danger">{{$message}} </span>
                                         @enderror
                                     </div>
                                     <div class="mb-3 col-md-6">
-                                        <label class="form-label">Phone</label>
+                                        <label class="form-label">Téléphone</label>
                                         <input type="number" wire:model='phone' class="form-control text-black" placeholder="---X---X---">
                                         @error('phone')
                                             <span  class="text-danger">{{$message}} </span>
@@ -138,7 +138,7 @@
 
                                 <div class="row">
                                     <div class="mb-3 col-md-6">
-                                        <label class="form-label">Address</label>
+                                        <label class="form-label">Adresse</label>
                                         <input type="text" wire:model='adresse' class="form-control text-black" placeholder="---X---X---">
                                         @error('adresse')
                                             <span  class="text-danger">{{$message}} </span>
@@ -146,7 +146,7 @@
                                     </div>
 
                                     <div class="mb-3 col-md-6">
-                                        <label class="form-label">Account Number</label>
+                                        <label class="form-label">Numéro de compte</label>
                                         <input type="text" wire:model='numero_compte' class="form-control text-black" placeholder="---X---X---">
                                         @error('numero_compte')
                                             <span  class="text-danger">{{$message}} </span>
@@ -161,7 +161,7 @@
                                         @enderror
                                     </div>
                                     <div class="mb-3 col-md-4">
-                                        <label class="form-label">Expiry Date</label>
+                                        <label class="form-label">Date d'expiration</label>
                                         <input type="date" wire:model='date_exp' class="form-control text-black" placeholder="---X---X---">
                                         @error('date_exp')
                                             <span  class="text-danger">{{$message}} </span>
@@ -172,7 +172,7 @@
 
 						</div>
 						<div class="modal-footer">
-							<button type="submit" class="btn btn-success">Save</button>
+							<button type="submit" class="btn btn-success">Enregistrer</button>
 						</div>
                     </form>
 					</div>
