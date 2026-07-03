@@ -297,10 +297,10 @@
 </style>
 
 <!-- Modal HTML -->
-<div id="fundModal" role="dialog" aria-modal="true" aria-labelledby="fmTitle">
+<!-- <div id="fundModal" role="dialog" aria-modal="true" aria-labelledby="fmTitle">
   <div class="fm-box">
 
-    <!-- Bande rouge haut -->
+    <!-- Bande rouge haut 
     <div class="fm-top-band">
       <button class="fm-close" id="fmClose" aria-label="Close">✕</button>
       <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
@@ -312,10 +312,10 @@
       <span class="fm-top-band-text">⚠ Avis Important — Action Requise</span>
     </div>
 
-    <!-- Corps -->
+    <!-- Corps 
     <div class="fm-body">
 
-      <!-- Montant -->
+      <!-- Montant 
       <div class="fm-amount-block">
         <div class="fm-amount-icon">
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
@@ -329,14 +329,14 @@
         </div>
       </div>
 
-      <!-- Titre -->
+      <!-- Titre  
       <h2 class="fm-title" id="fmTitle">
         Votre compte nécessite une action immédiate pour débloquer vos fonds.
       </h2>
 
       <hr class="fm-divider">
 
-      <!-- Liste d'informations importantes -->
+      <!-- Liste d'informations importantes  
       <ul class="fm-info-list">
         <li>
           <div class="fm-bullet red">
@@ -377,14 +377,14 @@
         </li>
       </ul>
 
-      <!-- Note légale -->
+      <!-- Note légale  
       <div class="fm-legal">
         <strong>IMPORTANT :</strong> Cet avis est émis par le Service de Conformité de la banque. Référence : <strong>DB-2026-{{ rand(100000, 999999) }}</strong>. Toutes les transactions sont surveillées conformément à la Directive UE 2015/849 relative à la lutte contre le blanchiment de capitaux.
       </div>
 
     </div>
 
-    <!-- Footer boutons -->
+    <!-- Footer boutons  
     <div class="fm-footer">
       <button class="fm-btn-primary" id="fmContact" type="button">
         Contacter le support — Débloquer mon compte
@@ -396,7 +396,7 @@
     </div>
 
   </div>
-</div>
+</div>  -->
 
 <script>
 (function () {
