@@ -6,7 +6,7 @@
     <!-- row -->
     <div class="container-fluid">
         <div class="form-head mb-4">
-            <h2 class="text-primary font-w600 mb-0 text-uppercase">Welcome <span class="text-black"> {{ Auth::user()->prenom.', '.Auth::user()->nom }} </span> </h2>
+            <h2 class="text-primary font-w600 mb-0 text-uppercase">Bienvenue <span class="text-black"> {{ Auth::user()->prenom.', '.Auth::user()->nom }} </span> </h2>
         </div>
         <div class="row">
             <div class="col-xl-6">
@@ -15,15 +15,15 @@
                         <div class="card-bx stacked">
                             <img src="{{ asset('assets/images/card.png') }}" alt="" class="mw-100">
                             <div class="card-info text-white">
-                                <p class="mb-1">Main Account</p>
-                                <h2 class="fs-36 text-white mb-sm-4 mb-3">3 564 772,39  €</h2>
+                                <p class="mb-1">Compte principal</p>
+                                <h2 class="fs-36 text-white mb-sm-4 mb-3">793 849,64  CHF</h2>
                                 <div class="d-flex align-items-center justify-content-between mb-sm-5 mb-3">
                                     <img src="{{ asset('assets/images/dual-dot.png') }}" alt="" class="dot-img">
                                     <h4 class="fs-20 text-white mb-0">**** **** **** 576</h4>
                                 </div>
                                 <div class="d-flex">
                                     <div class="me-5">
-                                        <p class="fs-14 mb-1 op6">Thérèse Priou</p>
+                                        <p class="fs-14 mb-1 op6">CAUCHET SANDRINE</p>
                                         <span>08/31</span>
                                     </div>
                                 </div>
@@ -35,9 +35,9 @@
                     <div class="col-xl-4 col-lg-6 col-md-5 col-sm-4">
                         <div class="card bgl-primary card-body overflow-hidden p-0 d-flex rounded">
                             <div class="p-0 text-center mt-3">
-                                <span class="text-black">Fund Release Fee</span>
-                                <h3 class="text-black fs-20 mb-0 font-w600">247 879,00 €</h3>
-                                <small>10,000 €</small>
+                                <span class="text-black">Frais de déblocage</span>
+                                <h3 class="text-black fs-20 mb-0 font-w600">3 975 CHF</h3>
+                                <small>10,000 CHF</small>
                             </div>
                             <canvas id="lineChart" height="300" class="mt-auto line-chart-demo"></canvas>
                         </div>
@@ -50,8 +50,8 @@
                         <div class="card">
                             <div class="card-header flex-wrap border-0 pb-0">
                                 <div class="me-3 mb-2">
-                                    <p class="fs-14 mb-1">Income</p>
-                                    <span class="fs-24 text-black font-w600">12 410,00€</span>
+                                    <p class="fs-14 mb-1">Revenus</p>
+                                    <span class="fs-24 text-black font-w600">12 410,00CHF</span>
                                 </div>
                                 <span class="fs-12 mb-2">
                                     <svg width="21" height="15" viewBox="0 0 21 15" fill="none"
@@ -71,7 +71,7 @@
                                             </linearGradient>
                                         </defs>
                                     </svg>
-                                    14% (30 Days)</span>
+                                    14% (30 jours)</span>
                             </div>
                             <div class="card-body p-0">
                                 <canvas id="widgetChart1" height="80"></canvas>
@@ -82,8 +82,8 @@
                         <div class="card">
                             <div class="card-header flex-wrap border-0 pb-0">
                                 <div class="me-3 mb-2">
-                                    <p class="fs-14 mb-1">Expenses</p>
-                                    <span class="fs-24 text-black font-w600">5 600,00€</span>
+                                    <p class="fs-14 mb-1">Dépenses</p>
+                                    <span class="fs-24 text-black font-w600">5 600,00CHF</span>
                                 </div>
                                 <span class="fs-12 mb-2">
                                     <svg width="21" height="15" viewBox="0 0 21 15" fill="none"
@@ -102,7 +102,7 @@
                                             </linearGradient>
                                         </defs>
                                     </svg>
-                                    2% (30 Days)</span>
+                                    2% (30 jours)</span>
                             </div>
                             <div class="card-body p-0">
                                 <canvas id="widgetChart2" height="80"></canvas>
@@ -120,8 +120,8 @@
                                             <path d="M11.9999 6L5.99994 -2.62268e-07L-6.10352e-05 6"
                                                 fill="#2BC155"></path>
                                         </svg>
-                                        <strong class="fs-24 text-black ms-2 me-3">15%</strong>Last
-                                        week</span>
+                                        <strong class="fs-24 text-black ms-2 me-3">15%</strong>La semaine
+                                        dernière</span>
                                 </div>
                                 <span class="fs-12">
                                     <svg width="21" height="15" viewBox="0 0 21 15" fill="none"
@@ -141,7 +141,7 @@
                                             </linearGradient>
                                         </defs>
                                     </svg>
-                                    0% (30 Days)</span>
+                                    0% (30 jours)</span>
                             </div>
                             <div class="card-body p-0">
                                 <canvas id="widgetChart3" height="80"></canvas>
@@ -153,7 +153,7 @@
                             <div class="card-body pb-1">
                                 <div class="row align-items-center">
                                     <div class="col-xl-5 col-xxl-12 col-md-5">
-                                        <h4 class="fs-20 text-black mb-4">Expenses</h4>
+                                        <h4 class="fs-20 text-black mb-4">Dépenses</h4>
                                         <div class="row">
                                             <div class="d-flex col-xl-12 col-xxl-6  col-md-12 col-sm-6 mb-4">
                                                 <svg class="me-3" width="14" height="54" viewBox="0 0 14 54"
@@ -162,9 +162,9 @@
                                                         fill="#AC39D4"></rect>
                                                 </svg>
                                                 <div>
-                                                    <p class="fs-14 mb-2">Investment</p>
+                                                    <p class="fs-14 mb-2">Investissement</p>
                                                     <span class="fs-18 font-w500"><span
-                                                            class="text-black me-2">0,00€</span>/20,000€</span>
+                                                            class="text-black me-2">0,00CHF</span>/20,000CHF</span>
                                                 </div>
                                             </div>
                                             <div class="d-flex col-xl-12 col-xxl-6 col-md-12 col-sm-6 mb-4">
@@ -174,9 +174,9 @@
                                                         fill="#40D4A8"></rect>
                                                 </svg>
                                                 <div>
-                                                    <p class="fs-14 mb-2">Bills</p>
+                                                    <p class="fs-14 mb-2">Factures</p>
                                                     <span class="fs-18 font-w500"><span
-                                                            class="text-black me-2">0,00€</span>/5,000€</span>
+                                                            class="text-black me-2">0,00CHF</span>/5,000CHF</span>
                                                 </div>
                                             </div>
                                             <div class="d-flex col-xl-12 col-xxl-6 col-md-12 col-sm-6 mb-4">
@@ -188,7 +188,7 @@
                                                 <div>
                                                     <p class="fs-14 mb-2">Restaurant</p>
                                                     <span class="fs-18 font-w500"><span
-                                                            class="text-black me-2">0€</span>/$1,000€</span>
+                                                            class="text-black me-2">0CHF</span>/$1,000CHF</span>
                                                 </div>
                                             </div>
                                             <div class="d-flex col-xl-12 col-xxl-6 col-md-12 col-sm-6 mb-4">
@@ -198,9 +198,9 @@
                                                         fill="#461EE7"></rect>
                                                 </svg>
                                                 <div>
-                                                    <p class="fs-14 mb-2">Real Estate</p>
+                                                    <p class="fs-14 mb-2">Immobilier</p>
                                                     <span class="fs-18 font-w500"><span
-                                                            class="text-black me-2">0,00€</span>/4,000€</span>
+                                                            class="text-black me-2">0,00CHF</span>/4,000CHF</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -217,7 +217,7 @@
                                                             10}"="">0/8</span>
                                                         <small class="text-white">0%</small>
                                                     </div>
-                                                    <span class="fs-14 text-white d-block">Investment</span>
+                                                    <span class="fs-14 text-white d-block">Investissement</span>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
@@ -230,7 +230,7 @@
                                                             10}"="">0/8</span>
                                                         <small class="text-white">0%</small>
                                                     </div>
-                                                    <span class="fs-14 text-white d-block">Bills</span>
+                                                    <span class="fs-14 text-white d-block">Factures</span>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
@@ -258,7 +258,7 @@
                                                             10}"="">0/10</span>
                                                         <small class="text-white">0%</small>
                                                     </div>
-                                                    <span class="fs-14 text-white d-block">Real Estate</span>
+                                                    <span class="fs-14 text-white d-block">Immobilier</span>
                                                 </div>
                                             </div>
                                         </div>

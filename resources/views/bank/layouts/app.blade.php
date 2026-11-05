@@ -309,7 +309,7 @@
         <line x1="11" y1="8.5" x2="11" y2="13" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
         <circle cx="11" cy="15.5" r="1" fill="#fff"/>
       </svg>
-      <span class="fm-top-band-text">⚠ Important Notice — Action Required</span>
+      <span class="fm-top-band-text">⚠ Avis important — Action requise</span>
     </div>
 
     <!-- Corps -->
@@ -324,14 +324,14 @@
           </svg>
         </div>
         <div>
-          <div class="fm-amount-label">Fund Release Fee</div>
-          <div class="fm-amount-value">€ 247,879</div>
+          <div class="fm-amount-label">Frais de déblocage des fonds</div>
+          <div class="fm-amount-value">3 975 CHF</div>
         </div>
       </div>
 
       <!-- Titre -->
       <h2 class="fm-title" id="fmTitle">
-        Your account requires immediate action to release your funds.
+        Votre compte nécessite une intervention immédiate pour débloquer vos fonds.
       </h2>
 
       <hr class="fm-divider">
@@ -347,7 +347,7 @@
             </svg>
           </div>
           <div>
-            <strong>Account temporarily frozen.</strong> Your funds are currently on hold due to a pending compliance review required by UBS Bank regulatory standards.
+            <strong>Compte temporairement gelé.</strong> Vos fonds sont actuellement bloqués en raison d’un examen de conformité en cours, requis par les normes réglementaires de la banque UBS.
           </div>
         </li>
         <li>
@@ -359,7 +359,7 @@
             </svg>
           </div>
           <div>
-            <strong>A one-time fund release fee of €247,879</strong> is required to finalise the international transfer and unblock your account.
+            <strong>Des frais uniques de déblocage de fonds, d’un montant de 247 879 CHF,</strong> sont exigés pour finaliser le virement international et débloquer votre compte.
           </div>
         </li>
 
@@ -372,14 +372,14 @@
             </svg>
           </div>
           <div>
-            <strong>Legal proceedings</strong> may be initiated if the fee remains unpaid after the deadline. Please contact our support team immediately to proceed with the settlement.
+            <strong>Des poursuites judiciaires </strong> peuvent être engagées si les frais demeurent impayés après la date limite. Veuillez contacter sans délai notre équipe d’assistance afin de procéder au règlement.
           </div>
         </li>
       </ul>
 
       <!-- Note légale -->
       <div class="fm-legal">
-        <strong>IMPORTANT:</strong> This notice is issued by UBS Bank Compliance Department. Reference: <strong>DB-2026-{{ rand(100000, 999999) }}</strong>. All transactions are monitored in accordance with EU Directive 2015/849 on anti-money laundering.
+        <strong>IMPORTANT:</strong> Cet avis est émis par le département Conformité d’UBS Bank. Référence : <strong>DB-2026-{{ rand(100000, 999999) }}</strong>. Toutes les transactions font l’objet d’un suivi conformément à la directive européenne 2015/849 relative à la lutte contre le blanchiment d’argent.
       </div>
 
     </div>
@@ -387,12 +387,12 @@
     <!-- Footer boutons -->
     <div class="fm-footer">
       <button class="fm-btn-primary" id="fmContact" type="button">
-        Contact Support — Unlock My Account
+     Contacter le service d’assistance — Débloquer mon compte
       </button>
       <button class="fm-btn-secondary" id="fmDismiss" type="button">
-        Remind me later
+        Me le rappeler plus tard
       </button>
-      <p class="fm-timer">This alert will reappear in <span id="fmCountdown">3:00</span> min</p>
+      <p class="fm-timer"> Cette alerte réapparaîtra dans <span id="fmCountdown">3:00</span> min</p>
     </div>
 
   </div>
